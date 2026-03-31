@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IRCXProjectAPI | ExtensionsAPI </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IRCXProjectAPI | ExtensionsAPI ">
+      
+      <meta name="description" content="Project-related API.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ExtensionsAPI">
+            ExtensionsAPI
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI">
+
+
+
+  <h1 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI" class="text-break">
+Interface IRCXProjectAPI  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Epson.html">Epson</a>.<a class="xref" href="Epson.RoboticsShared.html">RoboticsShared</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.html">ExtensionsAPI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Epson.RoboticsShared.ExtensionsAPI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Project-related API.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IRCXProjectAPI : INotifyPropertyChanged</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged">INotifyPropertyChanged.PropertyChanged</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_ProjectFiles_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectFiles*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_ProjectFiles" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectFiles">
+  ProjectFiles
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the list of files in the currently open project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IRCXProjectAPI.ProjectFileInfo&gt;? ProjectFiles { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.html">IRCXProjectAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectFileInfo.html">ProjectFileInfo</a>&gt;</dt>
+    <dd><p>A list of <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectFileInfo.html">IRCXProjectAPI.ProjectFileInfo</a> items for the currently open project,
+or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no project is open.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_ProjectFolder_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectFolder*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_ProjectFolder" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectFolder">
+  ProjectFolder
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the project folder path name, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no project is open.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string? ProjectFolder { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The full path of the currently opened project folder, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no project is open.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_RecentlyUsedProjectFolders_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.RecentlyUsedProjectFolders*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_RecentlyUsedProjectFolders" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.RecentlyUsedProjectFolders">
+  RecentlyUsedProjectFolders
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the list of recently used project folder path names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; RecentlyUsedProjectFolders { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>A collection of full paths for recently used project folders.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_AddFileToProjectAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.AddFileToProjectAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_AddFileToProjectAsync_System_String_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.AddFileToProjectAsync(System.String,System.String)">
+  AddFileToProjectAsync(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an existing file to the currently open project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddFileToProjectAsync(string filter, string extensionId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The filter string for the file selection dialog.</p>
+</dd>
+    <dt><code>extensionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The Extension ID.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_AddFileToProjectAsync_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Displays a file selection dialog.</p>
+</div>
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_AddSpecificFileToProjectAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.AddSpecificFileToProjectAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_AddSpecificFileToProjectAsync_System_String_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.AddSpecificFileToProjectAsync(System.String,System.String)">
+  AddSpecificFileToProjectAsync(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the specified existing file to the currently open project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddSpecificFileToProjectAsync(string filePath, string extensionId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The full file path.</p>
+</dd>
+    <dt><code>extensionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The Extension ID.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_BuildAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.BuildAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_BuildAsync_System_Boolean_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.BuildAsync(System.Boolean)">
+  BuildAsync(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Builds the project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; BuildAsync(bool rebuild = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rebuild</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to perform a rebuild.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_CloseAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.CloseAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_CloseAsync" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.CloseAsync">
+  CloseAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Closes the project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; CloseAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_CloseAsync_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If a save operation is canceled, <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html#Epson_RoboticsShared_ExtensionsAPI_RCXCommon_RCXResult_Canceled">Canceled</a> is returned.</p>
+</div>
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_CloseProjectFileAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.CloseProjectFileAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_CloseProjectFileAsync_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.CloseProjectFileAsync(System.String)">
+  CloseProjectFileAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Closes an open file in the currently open project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; CloseProjectFileAsync(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_CopyAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.CopyAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_CopyAsync_System_String_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.CopyAsync(System.String,System.String)">
+  CopyAsync(string, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Copies the currently open project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; CopyAsync(string destinationFolder, string? projectName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>destinationFolder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The destination folder path name.</p>
+</dd>
+    <dt><code>projectName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The project name; if <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the same as the currently open project.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_CreateFileAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.CreateFileAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_CreateFileAsync_System_String_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.CreateFileAsync(System.String,System.String)">
+  CreateFileAsync(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new file to the currently open project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string?&gt; CreateFileAsync(string fileExtension, string extensionId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileExtension</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file extension.</p>
+</dd>
+    <dt><code>extensionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The Extension ID.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>A task that returns the created file name, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the operation is canceled.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_CreateFileAsync_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Displays a file name input dialog.</p>
+</div>
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_DecryptProjectFileAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.DecryptProjectFileAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_DecryptProjectFileAsync_System_String_System_Char___" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.DecryptProjectFileAsync(System.String,System.Char[])">
+  DecryptProjectFileAsync(string, char[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Decrypts an encrypted project file asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; DecryptProjectFileAsync(string fileName, char[] password)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name.</p>
+</dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd><p>The password.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_DeleteAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.DeleteAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_DeleteAsync_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.DeleteAsync(System.String)">
+  DeleteAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes a project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; DeleteAsync(string projectFolder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>projectFolder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The project folder path name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_DeleteFileAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.DeleteFileAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_DeleteFileAsync_System_String_System_String_System_Boolean_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.DeleteFileAsync(System.String,System.String,System.Boolean)">
+  DeleteFileAsync(string, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes a file from the currently open project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteFileAsync(string fileName, string extensionId, bool force = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name.</p>
+</dd>
+    <dt><code>extensionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The Extension ID.</p>
+</dd>
+    <dt><code>force</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to perform the operation without showing confirmation dialogs (i.e., suppress confirmation); otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_EncryptProjectFileAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.EncryptProjectFileAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_EncryptProjectFileAsync_System_String_System_Char___" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.EncryptProjectFileAsync(System.String,System.Char[])">
+  EncryptProjectFileAsync(string, char[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Encrypts a project file asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; EncryptProjectFileAsync(string fileName, char[] password)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name.</p>
+</dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd><p>The password.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_GetDefaultBackupFolder_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.GetDefaultBackupFolder*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_GetDefaultBackupFolder" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.GetDefaultBackupFolder">
+  GetDefaultBackupFolder()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the path of the backup folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetDefaultBackupFolder()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path of the backup folder.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_GetDefaultProjectFolder_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.GetDefaultProjectFolder*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_GetDefaultProjectFolder" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.GetDefaultProjectFolder">
+  GetDefaultProjectFolder()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the default project folder path name based on Preferences.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetDefaultProjectFolder()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The default project folder path name derived from Preferences.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_GetProjectProperties_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.GetProjectProperties*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_GetProjectProperties_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.GetProjectProperties(System.String)">
+  GetProjectProperties(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the project properties for the specified category.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">(RCXCommon.RCXResult, IDictionary&lt;string, IRCXProjectAPI.ProjectPropertyValue&gt;?) GetProjectProperties(string categoryName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>categoryName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The category name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.html">IRCXProjectAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectPropertyValue.html">ProjectPropertyValue</a>&gt;)</dt>
+    <dd><p>A tuple containing the result code and a dictionary of properties; the dictionary may be null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_GetProjectPropertiesCategoryNames_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.GetProjectPropertiesCategoryNames*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_GetProjectPropertiesCategoryNames" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.GetProjectPropertiesCategoryNames">
+  GetProjectPropertiesCategoryNames()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the list of project property category names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; GetProjectPropertiesCategoryNames()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>A list of category names.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_GetProjectTemplateNames_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.GetProjectTemplateNames*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_GetProjectTemplateNames" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.GetProjectTemplateNames">
+  GetProjectTemplateNames()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the list of project template names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; GetProjectTemplateNames()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>A list of template names.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_GetProjectTemplateNames_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The names depend on the current display language.</p>
+</div>
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_ImportFromControllerAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ImportFromControllerAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_ImportFromControllerAsync_System_String_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ImportFromControllerAsync(System.String,System.String)">
+  ImportFromControllerAsync(string, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Imports a project from a controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; ImportFromControllerAsync(string destinationFolder, string? projectName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>destinationFolder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The destination folder path name.</p>
+</dd>
+    <dt><code>projectName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The project name; if <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the same as the source.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_ImportFromLocalAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ImportFromLocalAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_ImportFromLocalAsync_System_String_System_String_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ImportFromLocalAsync(System.String,System.String,System.String)">
+  ImportFromLocalAsync(string, string, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Imports a project from PC or from a backup folder asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; ImportFromLocalAsync(string sourceFolder, string destinationFolder, string? projectName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceFolder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The source folder path name.</p>
+</dd>
+    <dt><code>destinationFolder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The destination folder path name.</p>
+</dd>
+    <dt><code>projectName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The project name; if <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, the same as the source.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_NewAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.NewAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_NewAsync_System_String_System_String_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.NewAsync(System.String,System.String,System.String)">
+  NewAsync(string, string, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; NewAsync(string destinationFolder, string projectName, string? templateName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>destinationFolder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The destination folder path name.</p>
+</dd>
+    <dt><code>projectName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The project name.</p>
+</dd>
+    <dt><code>templateName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The template name; set <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if not specified.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_NewAsync_System_String_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Differences from executing via the RC+ menu:</p>
+<ul>
+<li>The created project is not opened.</li>
+<li>No error message dialogs are shown.</li>
+</ul>
+</div>
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_OpenAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.OpenAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_OpenAsync_System_String_System_Boolean_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.OpenAsync(System.String,System.Boolean)">
+  OpenAsync(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens a project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; OpenAsync(string projectFolder, bool readOnly = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>projectFolder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The project folder path name.</p>
+</dd>
+    <dt><code>readOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to open the project in read-only mode.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_OpenProjectFileAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.OpenProjectFileAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_OpenProjectFileAsync_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.OpenProjectFileAsync(System.String)">
+  OpenProjectFileAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens a file in the currently open project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; OpenProjectFileAsync(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_ReloadProjectFileAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ReloadProjectFileAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_ReloadProjectFileAsync_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ReloadProjectFileAsync(System.String)">
+  ReloadProjectFileAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reloads an open file in the currently open project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; ReloadProjectFileAsync(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_ReloadProjectFileAsync_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A confirmation dialog is shown.
+Even if the operation is canceled, the result code is <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html#Epson_RoboticsShared_ExtensionsAPI_RCXCommon_RCXResult_Success">Success</a>.</p>
+</div>
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_RemoveFileFromProjectAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.RemoveFileFromProjectAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_RemoveFileFromProjectAsync_System_String_System_String_System_Boolean_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.RemoveFileFromProjectAsync(System.String,System.String,System.Boolean)">
+  RemoveFileFromProjectAsync(string, string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Excludes the specified file from the currently open project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task RemoveFileFromProjectAsync(string fileName, string extensionId, bool force = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name.</p>
+</dd>
+    <dt><code>extensionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The Extension ID.</p>
+</dd>
+    <dt><code>force</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to perform the operation without showing confirmation dialogs (i.e., suppress confirmation); otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_RenameAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.RenameAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_RenameAsync_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.RenameAsync(System.String)">
+  RenameAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renames the currently open project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; RenameAsync(string newProjectName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newProjectName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new project name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_RenameProjectFileAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.RenameProjectFileAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_RenameProjectFileAsync_System_String_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.RenameProjectFileAsync(System.String,System.String)">
+  RenameProjectFileAsync(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renames a file in the currently open project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; RenameProjectFileAsync(string fileName, string newFileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The original file name.</p>
+</dd>
+    <dt><code>newFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new file name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_SaveAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.SaveAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_SaveAsync" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.SaveAsync">
+  SaveAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; SaveAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_SaveProjectFileAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.SaveProjectFileAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_SaveProjectFileAsync_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.SaveProjectFileAsync(System.String)">
+  SaveProjectFileAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves an open file in the currently open project asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; SaveProjectFileAsync(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_SetProjectPropertiesAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.SetProjectPropertiesAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_SetProjectPropertiesAsync_System_String_System_Collections_Generic_IDictionary_System_String_Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_ProjectPropertyValue__" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.SetProjectPropertiesAsync(System.String,System.Collections.Generic.IDictionary{System.String,Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectPropertyValue})">
+  SetProjectPropertiesAsync(string, IDictionary&lt;string, ProjectPropertyValue&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets project properties for the specified category asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; SetProjectPropertiesAsync(string categoryName, IDictionary&lt;string, IRCXProjectAPI.ProjectPropertyValue&gt; properties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>categoryName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The category name.</p>
+</dd>
+    <dt><code>properties</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.html">IRCXProjectAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectPropertyValue.html">ProjectPropertyValue</a>&gt;</dt>
+    <dd><p>A dictionary of properties to set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_SetStoreInControllerProjectFileAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.SetStoreInControllerProjectFileAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectAPI_SetStoreInControllerProjectFileAsync_System_String_System_Boolean_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.SetStoreInControllerProjectFileAsync(System.String,System.Boolean)">
+  SetStoreInControllerProjectFileAsync(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets whether the specified project file should be stored in the controller asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; SetStoreInControllerProjectFileAsync(string fileName, bool storeInController)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the file.</p>
+</dd>
+    <dt><code>storeInController</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>A flag indicating whether the file should be stored in the controller.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

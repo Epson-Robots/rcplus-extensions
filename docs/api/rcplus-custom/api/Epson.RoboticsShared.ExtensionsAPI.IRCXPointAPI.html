@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IRCXPointAPI | ExtensionsAPI </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IRCXPointAPI | ExtensionsAPI ">
+      
+      <meta name="description" content="API related to points.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ExtensionsAPI">
+            ExtensionsAPI
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI">
+
+
+
+  <h1 id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI" class="text-break">
+Interface IRCXPointAPI  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Epson.html">Epson</a>.<a class="xref" href="Epson.RoboticsShared.html">RoboticsShared</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.html">ExtensionsAPI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Epson.RoboticsShared.ExtensionsAPI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>API related to points.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IRCXPointAPI : INotifyPropertyChanged</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged">INotifyPropertyChanged.PropertyChanged</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_ControllerCurrentPointFile_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.ControllerCurrentPointFile*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_ControllerCurrentPointFile" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.ControllerCurrentPointFile">
+  ControllerCurrentPointFile
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the controller's current points file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string? ControllerCurrentPointFile { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name of the controller's current points file, or <code>null</code> if not set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_PointFileDescriptors_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointFileDescriptors*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_PointFileDescriptors" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointFileDescriptors">
+  PointFileDescriptors
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the list of point file descriptors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IRCXPointAPI.RCXPointFileDescriptor&gt; PointFileDescriptors { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.html">IRCXPointAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointFileDescriptor.html">RCXPointFileDescriptor</a>&gt;</dt>
+    <dd><p>A list of <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointFileDescriptor.html">IRCXPointAPI.RCXPointFileDescriptor</a> instances describing available points files.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_PointNumberMax_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointNumberMax*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_PointNumberMax" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointNumberMax">
+  PointNumberMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the maximum allowed point number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int PointNumberMax { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The maximum point number.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_PointNumberMin_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointNumberMin*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_PointNumberMin" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointNumberMin">
+  PointNumberMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the minimum allowed point number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int PointNumberMin { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The minimum point number.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_AddPoint_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.AddPoint*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_AddPoint_System_String_System_Collections_Generic_IDictionary_System_String_Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_RCXPointElement__System_Boolean_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.AddPoint(System.String,System.Collections.Generic.IDictionary{System.String,Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement},System.Boolean)">
+  AddPoint(string, IDictionary&lt;string, RCXPointElement&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a point to the specified file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RCXCommon.RCXResult AddPoint(string fileName, IDictionary&lt;string, IRCXPointAPI.RCXPointElement&gt; point, bool shouldSave = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name.</p>
+</dd>
+    <dt><code>point</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.html">IRCXPointAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.html">RCXPointElement</a>&gt;</dt>
+    <dd><p>The point data.</p>
+</dd>
+    <dt><code>shouldSave</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to save the point file.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a></dt>
+    <dd><p>The result code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_AddPoint_System_String_System_Collections_Generic_IDictionary_System_String_Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_RCXPointElement__System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If a predefined point number is specified within the provided data, the existing point will be updated.</p>
+</div>
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_DeletePoint_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.DeletePoint*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_DeletePoint_System_String_System_Int32_System_Boolean_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.DeletePoint(System.String,System.Int32,System.Boolean)">
+  DeletePoint(string, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes a point from the specified file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RCXCommon.RCXResult DeletePoint(string fileName, int pointNumber, bool shouldSave = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name.</p>
+</dd>
+    <dt><code>pointNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The point number.</p>
+</dd>
+    <dt><code>shouldSave</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to save the point file.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a></dt>
+    <dd><p>The result code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_GetPoints_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.GetPoints*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_GetPoints_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.GetPoints(System.String)">
+  GetPoints(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets points from the specified file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">(RCXCommon.RCXResult, IReadOnlyList&lt;IDictionary&lt;string, IRCXPointAPI.RCXPointElement&gt;&gt;?) GetPoints(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.html">IRCXPointAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.html">RCXPointElement</a>&gt;&gt;)</dt>
+    <dd><p>A tuple containing the <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXCommon.RCXResult</a> and the points data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_SetControllerCurrentPointFileAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.SetControllerCurrentPointFileAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_SetControllerCurrentPointFileAsync_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.SetControllerCurrentPointFileAsync(System.String)">
+  SetControllerCurrentPointFileAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the controller's current points file asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; SetControllerCurrentPointFileAsync(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code of the operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_TeachPoint_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.TeachPoint*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_TeachPoint_System_String_System_Int32_System_String_System_String_System_Boolean_System_Boolean_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.TeachPoint(System.String,System.Int32,System.String,System.String,System.Boolean,System.Boolean)">
+  TeachPoint(string, int, string?, string?, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the current position of the current robot as a point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RCXCommon.RCXResult TeachPoint(string fileName, int pointNumber, string? label = null, string? description = null, bool simVisible = false, bool shouldSave = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name.</p>
+</dd>
+    <dt><code>pointNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The point number.</p>
+</dd>
+    <dt><code>label</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The label to assign; specify <code>null</code> to omit.</p>
+</dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The description/comment to assign; specify <code>null</code> to omit.</p>
+</dd>
+    <dt><code>simVisible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether the point is visible in the simulator.</p>
+</dd>
+    <dt><code>shouldSave</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to save the point file.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a></dt>
+    <dd><p>The result code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXPointAPI_PointsChanged" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointsChanged">
+  PointsChanged
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs when points have been changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event IRCXPointAPI.PointsChangedEventHandler PointsChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.html">IRCXPointAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointsChangedEventHandler.html">PointsChangedEventHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

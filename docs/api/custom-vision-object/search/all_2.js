@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['count_0',['Count',['../struct_c_v_o___d_e_t_e_c_t___i_t_e_m_s.html#ab9224780a77fa9a9b7403b024145a677',1,'CVO_DETECT_ITEMS']]],
+  ['cvo_5fapi_5fversion_1',['CVO_API_VERSION',['../_r_c_plus80_custom_vision_object_8h.html#a0a6cc0736e65dbfd2b9c73e13c1b17d1',1,'RCPlus80CustomVisionObject.h']]],
+  ['cvo_5fdetect_5fitem_2',['CVO_DETECT_ITEM',['../struct_c_v_o___d_e_t_e_c_t___i_t_e_m.html',1,'']]],
+  ['cvo_5fdetect_5fitem_5fmax_3',['CVO_DETECT_ITEM_MAX',['../_r_c_plus80_custom_vision_object_8h.html#a011aa899d00c550c9c07ceb3341bdd9d',1,'RCPlus80CustomVisionObject.h']]],
+  ['cvo_5fdetect_5fitems_4',['CVO_DETECT_ITEMS',['../struct_c_v_o___d_e_t_e_c_t___i_t_e_m_s.html',1,'']]],
+  ['cvo_5fimg_5',['CVO_IMG',['../struct_c_v_o___i_m_g.html',1,'']]],
+  ['cvo_5fin_5fparams_6',['CVO_IN_PARAMS',['../struct_c_v_o___i_n___p_a_r_a_m_s.html',1,'']]],
+  ['cvo_5fmodel_7',['CVO_MODEL',['../struct_c_v_o___m_o_d_e_l.html',1,'']]],
+  ['cvo_5fmodel_5fbuffer_5fmax_8',['CVO_MODEL_BUFFER_MAX',['../_r_c_plus80_custom_vision_object_8h.html#a5c49c0f47210355caea09e2f7381ca97',1,'RCPlus80CustomVisionObject.h']]],
+  ['cvo_5fout_5fparams_9',['CVO_OUT_PARAMS',['../struct_c_v_o___o_u_t___p_a_r_a_m_s.html',1,'']]],
+  ['cvo_5fprofile_10',['CVO_PROFILE',['../struct_c_v_o___p_r_o_f_i_l_e.html',1,'']]],
+  ['cvo_5fvalue_5fmax_5flength_11',['CVO_VALUE_MAX_LENGTH',['../_r_c_plus80_custom_vision_object_8h.html#ad5404aea7f7d58d03ad43a4e071aa100',1,'RCPlus80CustomVisionObject.h']]],
+  ['cvoapi_12',['CVOAPI',['../_r_c_plus80_custom_vision_object_8h.html#ae83a89223b02dc3591aa2fd51018ade1',1,'RCPlus80CustomVisionObject.h']]],
+  ['cvogetapiversion_13',['CVOGetAPIVersion',['../_r_c_plus80_custom_vision_object_8h.html#a00fd29e13835c232177d5bda9dc97a32',1,'RCPlus80CustomVisionObject.h']]],
+  ['cvogetprofile_14',['CVOGetProfile',['../_r_c_plus80_custom_vision_object_8h.html#a7f86aa7788d5d0b8fa942e776508d3f7',1,'RCPlus80CustomVisionObject.h']]],
+  ['cvorun_15',['CVORun',['../_r_c_plus80_custom_vision_object_8h.html#a5370f6eefd50544c6ac7dbd723406df3',1,'RCPlus80CustomVisionObject.h']]],
+  ['cvoteach_16',['CVOTeach',['../_r_c_plus80_custom_vision_object_8h.html#a1f83843e7888c0949960a04054c7e19e',1,'RCPlus80CustomVisionObject.h']]]
+];

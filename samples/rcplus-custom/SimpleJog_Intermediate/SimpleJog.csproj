@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+    <Configurations>Debug;Release</Configurations>
+    <CaptionsSource>Captions.xlsx</CaptionsSource>
+    <CaptionsGeneratedMarker>obj\Captions.stamp</CaptionsGeneratedMarker>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <AssemblyName>SimpleJog_d2525b11-6852-4164-bba0-1a0469afa2d1</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="install.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Strings\English_en\SimpleJog.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Strings\Japanese_ja\SimpleJog.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Strings\German_de\SimpleJog.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Strings\French_fr\SimpleJog.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Strings\Spanish_es\SimpleJog.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Strings\Chinese(Simplefied)_zh-Hans\SimpleJog.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Strings\Chinese(Traditional)_zh-Hant\SimpleJog.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Extension.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PackageItems\manifest.rcxmanifest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ManifestEditor>true</ManifestEditor>
+    </Content>
+    <Content Include="PackageItems\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Epson.RoboticsShared.ExtensionsAPI" Version="1.0.0" />
+    <PackageReference Include="ReactiveProperty.WPF" Version="7.12.0" />
+    <PackageReference Include="System.ComponentModel.Composition" Version="4.7.0" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.2" />
+  </ItemGroup>
+
+  <Target Name="GenerateCaptionResources" BeforeTargets="PreBuildEvent" Inputs="$(CaptionsSource)" Outputs="$(CaptionsGeneratedMarker)">
+    <Message Text="Create Caption Resources" Importance="high" />
+    <Exec Command="$(EPSON_RC80_EXTENSIONS_API_DIR)\Tools\generateStringResources.exe $(CaptionsSource) &quot;localized strings&quot; --outdir Resources\Strings --basename $(ProjectName) --symbol Constants.cs" />
+    <Touch Files="$(CaptionsGeneratedMarker)" AlwaysCreate="true" />
+  </Target>
+
+  <Target Name="DeleteMarkerThenUninstall" AfterTargets="Clean">
+    <Delete Files="$(CaptionsGeneratedMarker)" />
+    <CallTarget Targets="Uninstall" />
+  </Target>
+
+  <Target Name="Install" AfterTargets="PostBuildEvent">
+    <Message Text="Install Extension Binaries for Experimental Mode" Importance="high" />
+    <Exec Command="$(EPSON_RC80_EXTENSIONS_API_DIR)\Tools\extensionInstaller.exe install.json bin\$(PlatformTarget)\$(Configuration)\$(TargetFramework) &quot;$(EPSON_RC80_DIR)&quot;" />
+  </Target>
+
+  <Target Name="Uninstall">
+    <Message Text="Uninstall Extension Binaries for Experimental Mode" Importance="high" />
+    <Exec Command="$(EPSON_RC80_EXTENSIONS_API_DIR)\Tools\extensionInstaller.exe -u install.json bin\$(PlatformTarget)\$(Configuration)\$(TargetFramework) &quot;$(EPSON_RC80_DIR)&quot;" />
+  </Target>
+
+  <Target Name="Packaging">
+    <Message Text="Create RC+ Extensions Package" Importance="high" />
+    <Exec Command="$(EPSON_RC80_EXTENSIONS_API_DIR)\Tools\validateManifest.exe -s manifest_schema.json PackageItems\manifest.rcxmanifest" />
+    <Exec Command="$(EPSON_RC80_EXTENSIONS_API_DIR)\Tools\generatePackage.exe . bin\$(PlatformTarget)\$(Configuration) $(Configuration)" />
+  </Target>
+
+</Project>
