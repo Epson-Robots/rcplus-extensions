@@ -1,0 +1,46 @@
+category: Custom Vision Object (PV)
+id: FeatureMatch_14ec0470-f13e-40ae-97ff-d7729b471680
+vendor: com.epson
+vendor_info:
+  en: Seiko Epson Corporation
+  ja: Seiko Epson Corporation
+  de: Seiko Epson Corporation
+  fr: Seiko Epson Corporation
+  es: Seiko Epson Corporation
+  zh-Hans: Seiko Epson Corporation
+  zh-Hant: Seiko Epson Corporation
+  default: en
+version: 1.0.0
+released_at: "2026-03-31T00:00:00Z"
+name:
+  en: FeatureMatch
+  ja: FeatureMatch
+  default: en
+summary:
+  en: Custom vision object extension for position detection using feature matching.
+  ja: 特徴量マッチングを使用して位置検出をおこなうカスタムビジョンオブジェクト
+  de: Vision-Objekt-Erweiterung zur Positionsdetektion per Merkmalsabgleich
+  fr: Extens. objet vision personnalisé pour détection de position à l'aide de correspondance caract.
+  es: Exten. obj. visión perso. para detec. de pos. mediante la coinc. de caract.
+  zh-Hans: 使用特征匹配进行位置检测的自定义视觉对象
+  zh-Hant: 使用特徵匹配進行位置偵測的自定義視覺物件
+  default: en
+description:
+  en: |
+    Custom vision object extension for position detection using feature matching based on taught model information.
+  ja: |
+    ティーチしたモデル情報をもとに特徴量マッチングを使用して位置検出をおこなうカスタムビジョンオブジェクトです。
+  de: |
+    Vision-Objekt-Erweiterung zur Positionsdetektion per Merkmalsabgleich mit angelerntem Modell
+  fr: |
+    Extens. objet vision personnalisé pour détection de position à l'aide de correspondance caract. basée sur infos modèle appris.
+  es: |
+    Exten. obj. visión perso. para detec. de pos. mediante la coinc. de caract. basada en inf. modelo enseñado.
+  zh-Hans: |
+    基于已示教的模型信息，使用特征匹配进行位置检测的自定义视觉对象。
+  zh-Hant: |
+    基於已示教的模型資訊，使用特徵匹配進行位置偵測的自定義視覺物件。
+  default: en
+image_file:
+  en: image.png
+  default: en

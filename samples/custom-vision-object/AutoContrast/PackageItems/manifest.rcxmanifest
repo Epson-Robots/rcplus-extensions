@@ -1,0 +1,46 @@
+category: Custom Vision Object (PV)
+id: AutoContrast_a796de44-1825-46c2-82e8-b0c6cb699061
+vendor: com.epson
+vendor_info:
+  en: Seiko Epson Corporation
+  ja: Seiko Epson Corporation
+  de: Seiko Epson Corporation
+  fr: Seiko Epson Corporation
+  es: Seiko Epson Corporation
+  zh-Hans: Seiko Epson Corporation
+  zh-Hant: Seiko Epson Corporation
+  default: en
+version: 1.0.0
+released_at: "2026-03-31T00:00:00Z"
+name:
+  en: AutoContrast
+  ja: AutoContrast
+  default: en
+summary:
+  en: Custom vision object plugin that convert color selected area to obtain good contrast image.
+  ja: コントラストを高めるように色変換するカスタムビジョンオブジェクト
+  de: Vision-Objekt-Erweiterung zur Farbkonvertierung für besseren Kontrast
+  fr: Extens. objet vision personnalisé qui convertit couleurs pour améliorer contraste.
+  es: Exten. obj. visión perso. que convierte color para mejorar contraste.
+  zh-Hans: 用于增强对比度进行颜色转换的自定义视觉对象
+  zh-Hant: 用於增強對比度進行顏色轉換的自定義視覺物件
+  default: en
+description:
+  en: |
+    Custom vision object extension that converts color to enhance contrast in a selected area.
+  ja: |
+    選択領域の画像のコントラストを高めるように色変換するカスタムビジョンオブジェクトです。
+  de: |
+    Vision-Objekt-Erweiterung zur Farbkonvertierung für besseren Kontrast im gewählten Bereich
+  fr: |
+    Extens. objet vision personnalisé qui convertit couleurs pour améliorer contraste dans zone sélectionnée.
+  es: |
+    Exten. obj. visión perso. que convierte color para mejorar contraste en área selecc.
+  zh-Hans: |
+    对所选区域的图像进行颜色转换以增强对比度的自定义视觉对象。
+  zh-Hant: |
+    對所選區域的影像進行顏色轉換以增強對比度的自动作定義視覺物件。
+  default: en
+image_file:
+  en: image.png
+  default: en

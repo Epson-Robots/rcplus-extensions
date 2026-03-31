@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "onRCPlus": {
+      "commandName": "Executable",
+      "executablePath": "%EPSON_RC80_DIR%\\erc80.exe",
+      "commandLineArgs": "/EXP",
+      "workingDirectory": "%EPSON_RC80_DIR%"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">网络摄像头记录器</string>
+  <string name="0001">网络摄像头记录器</string>
+  <string name="0400">网络摄像头记录器</string>
+  <string name="0401">相机：</string>
+  <string name="0402">开始</string>
+  <string name="0403">停止</string>
+</resources>
