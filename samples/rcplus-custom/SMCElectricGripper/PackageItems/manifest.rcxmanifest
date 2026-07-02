@@ -1,0 +1,150 @@
+category: RC+ Extensions.V2
+id: SMCElectricGripper_e7c7851d-4638-4576-9113-4a73a58c4bfc
+rcplus_version: 8.1.4.0
+vendor: com.epson
+vendor_info:
+  en: Seiko Epson Corporation
+  ja: Seiko Epson Corporation
+  de: Seiko Epson Corporation
+  fr: Seiko Epson Corporation
+  es: Seiko Epson Corporation
+  zh-Hans: Seiko Epson Corporation
+  zh-Hant: Seiko Epson Corporation
+  default: en
+version: 1.0.0
+released_at: "2026-06-30T00:00:00Z"
+name:
+  en: SMC Electric Gripper
+  ja: SMC電動グリッパ
+  de: SMC-Elektrogreifer
+  fr: Pince électrique SMC
+  es: Gripper eléctrico SMC
+  zh-Hans: SMC电动夹爪
+  zh-Hant: SMC 電動夾爪
+  default: en
+summary:
+  en: An extension for configuring and controlling SMC LEHR series electric grippers.
+  ja: SMC電動グリッパ LEHRシリーズの設定および制御を行うための拡張機能です。
+  de: Eine Erweiterung zur Konfiguration und Steuerung von elektrischen Greifern der SMC-LEHR-Serie.
+  fr: Extension permettant de configurer et de contrôler les pinces électriques de la série SMC LEHR.
+  es: Extensión para configurar y controlar grippers eléctricos de la serie LEHR de SMC.
+  zh-Hans: 这是用于对SMC电动夹爪LEHR系列进行设置及控制的扩展功能。
+  zh-Hant: 用於設定與控制 SMC 電動夾爪 LEHR 系列的擴充功能。
+  default: en
+description:
+  en: |
+    This extension supports SMC LEHR series electric grippers.   
+    It allows users to configure, operate, and check the status of the gripper. 
+    
+    Main features: 
+    
+    * Connect to and disconnect from the gripper
+    * Register Operation Settings (operation mode, position, speed, and gripping force)
+    * Execute and interrupt Operation Settings
+    * Open/close jog operations for function check
+    * Backup and restore Operation Settings
+    * Control via SPEL+ programs (through a control library)
+    
+    For installation instructions and detailed usage, please refer to the README available on GitHub.
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.1.4.0/samples/rcplus-custom/SMCElectricGripper>
+  ja: |
+    SMC電動グリッパ LEHRシリーズに対応した拡張機能です。  
+    グリッパの設定・運転・状態確認を行うことができます。
+    
+    主な機能：
+    
+    * グリッパとの接続および切断
+    * 動作設定（動作モード、位置、速度、把持力）の登録
+    * 動作設定の実行および中断
+    * 開く／閉じるジョグ操作による動作確認
+    * 動作設定のバックアップおよびリストア
+    * SPEL+プログラムからの制御（制御ライブラリー経由）
+    
+    インストール方法や詳細な使用方法については、GitHub 上で公開している README を参照してください。
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.1.4.0/samples/rcplus-custom/SMCElectricGripper>
+  de: |
+    Diese Erweiterung unterstützt elektrische Greifer der SMC-LEHR-Serie.   
+    Sie ermöglicht es Anwendern, den Greifer zu konfigurieren, zu bedienen und den Status zu überprüfen. 
+    
+    Hauptfunktionen: 
+    
+    * Verbindung zum Greifer herstellen und trennen
+    * Betriebseinstellungen registrieren (Betriebsmodus, Position, Geschwindigkeit und Greifkraft)
+    * Betriebseinstellungen ausführen und unterbrechen
+    * Funktionsprüfung über Jog-Operationen (Öffnen/Schließen)
+    * Sichern und Wiederherstellen von Betriebseinstellungen
+    * Steuerung über SPEL+-Programme (über eine Steuerbibliothek)
+    
+    Installationsanweisungen und detaillierte Nutzungshinweise finden Sie in der README auf GitHub.
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.1.4.0/samples/rcplus-custom/SMCElectricGripper>
+  fr: |
+    Cette extension prend en charge les pinces électriques de la série SMC LEHR.   
+    Elle permet aux utilisateurs de configurer, d'utiliser et de vérifier l'état de la pince. 
+    
+    Fonctionnalités principales : 
+    
+    * Connexion et déconnexion de la pince
+    * Enregistrement des Param. de fonctionnement (mode de fonctionnement, position, vitesse et force de préhension)
+    * Exécution et interruption des Param. de fonctionnement
+    * Vérification du fonctionnement via jog ouverture/fermeture
+    * Sauvegarde et restauration des Param. de fonctionnement
+    * Contrôle via programmes SPEL+ (via une biblio. de contrôle)
+    
+    Pour les instructions d'installation et l'utilisation détaillée, consultez le fichier README disponible sur GitHub.
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.1.4.0/samples/rcplus-custom/SMCElectricGripper>
+  es: |
+    Ext. compatible con grippers eléctricos de serie LEHR de SMC.   
+    Permite a los usuarios configurar, manejar y comprobar el estado del gripper. 
+    
+    Caract. principales: 
+    
+    * Conectarse y desconectarse del gripper
+    * Registrar Config. de comunicación (modo, posición, velocidad y fuerza de sujeción)
+    * Ejecutar e interrumpir Config. de comunicación
+    * Oper. de apertura/cierre (jog) para comprobar el funcionamiento
+    * Copia de seg. y restauración de Config. de comunicación
+    * Control con programas SPEL+ (mediante biblio. control)
+    
+    Para instrucciones de instalación e inf. detallada sobre uso, consulte el archivo README en GitHub.
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.1.4.0/samples/rcplus-custom/SMCElectricGripper>
+  zh-Hans: |
+    该扩展功能支持SMC电动夹爪LEHR系列。  
+    可进行夹爪的设置、运行及状态确认。
+    
+    主要功能：
+    
+    * 连接/断开夹爪
+    * 注册动作设置（动作模式、位置、速度、夹持力）
+    * 执行动作设置及中断
+    * 通过打开/关闭步进操作进行动作确认
+    * 动作设置的备份与恢复
+    * 从SPEL+程序进行控制（通过控制库）
+    
+    关于安装方法及详细的使用方法，请参阅GitHub上公开的README。
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.1.4.0/samples/rcplus-custom/SMCElectricGripper>
+  zh-Hant: |
+    此擴充功能支援 SMC 電動夾爪 LEHR 系列。  
+    可進行夾爪的設定、運轉與狀態確認。
+    
+    主要功能：
+    
+    * 與夾爪連線及斷開連線
+    * 註冊動作設定（動作模式、位置、速度、夾持力）
+    * 執行／中斷動作設定
+    * 透過開啟／關閉步進操作進行動作確認
+    * 動作設定的備份與還原
+    * 從 SPEL+ 程式進行控制（透過控制函式庫）
+    
+    有關安裝方式與詳細使用方法，請參閱 GitHub 上公開的 README。
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.1.4.0/samples/rcplus-custom/SMCElectricGripper>
+  default: en
+image_file:
+  en: image.png
+  default: en

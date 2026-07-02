@@ -1,0 +1,8 @@
+{
+    "Contents": [
+    ],
+    "Dependents": [
+        "Microsoft.Windows.SDK.NET.dll",
+        "WinRT.Runtime.dll"
+    ]
+}

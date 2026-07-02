@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">集成式步进面板</string>
+  <string name="0001">集成式步进面板</string>
+  <string name="0100">集成式步进面板</string>
+  <string name="0110">集成式步进面板 项目</string>
+  <string name="0120">集成式步进面板 项目命令</string>
+  <string name="0200">集成式步进面板</string>
+  <string name="0201">集成式步进面板 文件</string>
+  <string name="0300">集成式步进面板</string>
+  <string name="0400">集成式步进面板</string>
+  <string name="0401">集成式步进面板</string>
+  <string name="0501">OK</string>
+  <string name="0502">取消</string>
+  <string name="0503">重置</string>
+  <string name="10001">切换为仅显示步进</string>
+  <string name="10002">切换为显示全部</string>
+  <string name="11000">步进</string>
+  <string name="11001">步进布局</string>
+  <string name="11002">编辑</string>
+  <string name="11003">更新点位</string>
+  <string name="11004">在前方插入</string>
+  <string name="11005">在后方插入</string>
+  <string name="11006">添加点位</string>
+  <string name="11007">连接控制器</string>
+  <string name="11101">隐藏项目</string>
+  <string name="11102">显示项目</string>
+  <string name="11103">上移</string>
+  <string name="11104">下移</string>
+  <string name="11200">显示位选择</string>
+  <string name="11300">步进移动距离</string>
+  <string name="11301">以整数调整</string>
+  <string name="11302">统一 mm 距离</string>
+  <string name="11303">统一 deg 距离</string>
+  <string name="12000">点位列表</string>
+  <string name="12001">上移</string>
+  <string name="12002">将所选点位上移</string>
+  <string name="12003">下移</string>
+  <string name="12004">将所选点位下移</string>
+  <string name="12005">删除</string>
+  <string name="12006">删除所选点位</string>
+  <string name="12007">全部删除</string>
+  <string name="12008">删除所有点位</string>
+  <string name="12009">移动到所选点位</string>
+  <string name="12010">移动至所选点位</string>
+  <string name="12011">从起点到所选点位</string>
+  <string name="12012">从起点依次移动至所选点位</string>
+  <string name="12013">从起点到最后一个点位</string>
+  <string name="12014">从起点依次移动至最后一个点位</string>
+  <string name="12015">从剪贴板添加点位</string>
+  <string name="12016">添加从RC+的点位编辑器复制到剪贴板的点位数据</string>
+  <string name="12017">设置点位数据到剪贴板</string>
+  <string name="12018">将点位数据复制到剪贴板，以便复制到RC+的点位编辑器</string>
+  <string name="12019">从RC+点位文件读取</string>
+  <string name="12020">从所选RC+点位文件读取点位数据</string>
+  <string name="12021">导出到RC+点位文件</string>
+  <string name="12022">将点位数据导出到新的或现有的RC+点位文件</string>
+  <string name="12023">*可编辑</string>
+  <string name="12024">停止</string>
+  <string name="12025">停止执行动作命令</string>
+  <string name="12026">无法加载点位从0开始但存在断点的非连续点位列表。</string>
+  <string name="12027">无法加载包含Local值不为0的点位列表。</string>
+  <string name="12028">点位已设置在列表中。要如何处理？
+
+[是] 使用加载的点位列表进行覆盖
+[否] 添加加载的点位列表
+[取消] 取消加载</string>
+  <string name="12029">点位{0}保存失败。</string>
+  <string name="12100">选择RC+点位文件</string>
+  <string name="13000">视图</string>
+  <string name="13001">鼠标拖动 --- 移动视图区域
+鼠标滚轮 --- 缩放视图区域
+点击机器人点位 --- 选择机器人点位</string>
+  <string name="13002">鼠标拖动 --- 移动视图区域
+鼠标滚轮 --- 缩放视图区域
+点击机器人点位 --- 选择机器人点位并执行
+在已选择点位且机器人位于该位置时拖动鼠标
+--- 机器人移动，同时更新点位</string>
+  <string name="13003">机器人信息</string>
+  <string name="13004">视角选择</string>
+  <string name="13005">Tool步进按钮布局选择</string>
+  <string name="13006">点位</string>
+  <string name="13007">轨迹</string>
+  <string name="13008">凝视点</string>
+  <string name="13009">点位标签</string>
+  <string name="13010">Tool点位</string>
+  <string name="13011">调整模式</string>
+  <string name="13012">危险！调整模式</string>
+  <string name="13013">机器人将通过鼠标操作进行动作。请小心。</string>
+  <string name="13014">更改</string>
+  <string name="13015">{0}mm以内的移动有效。</string>
+</resources>

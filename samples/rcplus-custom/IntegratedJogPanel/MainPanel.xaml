@@ -1,0 +1,450 @@
+﻿<UserControl x:Class="IntegratedJogPanel.MainPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IntegratedJogPanel"
+             xmlns:view="clr-namespace:IntegratedJogPanel.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <DockPanel Background="#F0F0F0">
+        <Grid Margin="8 4 8 8">
+            <Grid.Resources>
+                <Style TargetType="GridSplitter" x:Key="splitterH">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="Width" Value="4"/>
+                </Style>
+                <Style TargetType="GridSplitter" x:Key="splitterV">
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                    <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                    <Setter Property="Height" Value="4"/>
+                </Style>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="288"/>
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="_gridLeftPane" Grid.Column="0" Margin="0 0 4 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TabControl>
+                    <TabItem Header="{Binding Path=[ViewArea_Title].Value, Source={x:Static local:Main.Captions}}">
+                        <Grid Grid.Row="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="0" BorderBrush="White" BorderThickness="4" Background="White">
+                                <Grid Background="White">
+                                    <Grid ClipToBounds="True">
+                                        <Canvas x:Name="_map2dCanvas"/>
+                                        <Grid x:Name="_map2dFront" Background="Transparent"/>
+                                        <Canvas x:Name="_map2dCanvasPts"/>
+                                        <Canvas x:Name="_map2dCanvasAdj" Background="#0800FF00"/>
+                                    </Grid>
+                                    <WrapPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Vertical">
+                                        <WrapPanel.Resources>
+                                            <Style TargetType="Expander">
+                                                <Setter Property="HorizontalAlignment" Value="Left"/>
+                                            </Style>
+                                        </WrapPanel.Resources>
+                                        <Expander Header="{Binding Path=[ViewArea_RobotInformation].Value, Source={x:Static local:Main.Captions}}" IsExpanded="True">
+                                            <StackPanel Margin="2" Width="128">
+                                                <view:NameAndValueItem x:Name="_nvRobotName" TxtName="Name" IsStartItem="True"/>
+                                                <view:NameAndValueItem x:Name="_nvRobotModelName" TxtName="Model"/>
+                                                <view:NameAndValueItem x:Name="_nvRobotSerialNumber" TxtName="S/N"/>
+                                            </StackPanel>
+                                        </Expander>
+                                        <Expander Header="World" IsExpanded="True">
+                                            <StackPanel Margin="2" Width="128">
+                                                <view:NameAndValueItem x:Name="_nvCurPosX" TxtName="X mm" IsStartItem="True"/>
+                                                <view:NameAndValueItem x:Name="_nvCurPosY" TxtName="Y mm"/>
+                                                <view:NameAndValueItem x:Name="_nvCurPosZ" TxtName="Z mm"/>
+                                                <view:NameAndValueItem x:Name="_nvCurPosU" TxtName="U deg"/>
+                                                <view:NameAndValueItem x:Name="_nvCurPosV" TxtName="V deg"/>
+                                                <view:NameAndValueItem x:Name="_nvCurPosW" TxtName="W deg"/>
+                                            </StackPanel>
+                                        </Expander>
+                                        <Expander Header="Joint" IsExpanded="True">
+                                            <StackPanel Margin="2" Width="128">
+                                                <view:NameAndValueItem x:Name="_nvCurPosJ1" TxtName="J1" IsStartItem="True"/>
+                                                <view:NameAndValueItem x:Name="_nvCurPosJ2" TxtName="J2"/>
+                                                <view:NameAndValueItem x:Name="_nvCurPosJ3" TxtName="J3"/>
+                                                <view:NameAndValueItem x:Name="_nvCurPosJ4" TxtName="J4"/>
+                                                <view:NameAndValueItem x:Name="_nvCurPosJ5" TxtName="J5"/>
+                                                <view:NameAndValueItem x:Name="_nvCurPosJ6" TxtName="J6"/>
+                                            </StackPanel>
+                                        </Expander>
+                                        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="8 16 0 4" x:Name="_txtBlockGuidance" IsHitTestVisible="False" TextWrapping="Wrap" FontSize="10" Foreground="#505050"/>
+                                    </WrapPanel>
+                                    <Grid HorizontalAlignment="Right" VerticalAlignment="Top" Width="168">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <view:PosViewControl Grid.Row="0" x:Name="_posViewCtrl" HorizontalAlignment="Center"/>
+                                        <Expander Grid.Row="1" Header="{Binding Path=[ViewArea_ViewDirection].Value, Source={x:Static local:Main.Captions}}" IsExpanded="True">
+                                            <view:ViewDirectionSelectControl x:Name="_viewDirectionSelect"/>
+                                        </Expander>
+                                        <Expander Grid.Row="2" IsExpanded="True">
+                                            <Expander.Header>
+                                                <TextBlock Text="{Binding Path=[ViewArea_ToolJogButtonLayout].Value, Source={x:Static local:Main.Captions}}" TextWrapping="Wrap" />
+                                            </Expander.Header>
+                                            <view:ToolJogBtnLayoutSelectControl x:Name="_toolJogBtnLayoutSelect"/>
+                                        </Expander>
+                                    </Grid>
+                                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" x:Name="_txtBlockDanger" IsHitTestVisible="False" Visibility="Hidden" Text="{Binding Path=[ViewArea_AdujustModeWan2].Value, Source={x:Static local:Main.Captions}}" FontWeight="Bold" FontSize="16" Margin="0 0 0 0" Foreground="#FFAF00"/>
+                                </Grid>
+                            </Border>
+                            <Grid Grid.Row="1">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <StackPanel.Resources>
+                                        <Style TargetType="view:OnOffButton">
+                                            <Setter Property="Margin" Value="8 0 0 0"/>
+                                        </Style>
+                                    </StackPanel.Resources>
+                                    <view:OnOffButton x:Name="_onOffBtnShowPoints" LabelText="{Binding Path=[ViewArea_ShowPoints].Value, Source={x:Static local:Main.Captions}}" SwitchOn="True"/>
+                                    <view:OnOffButton x:Name="_onOffBtnShowLocus" LabelText="{Binding Path=[ViewArea_ShowLocus].Value, Source={x:Static local:Main.Captions}}" SwitchOn="True"/>
+                                    <view:OnOffButton x:Name="_onOffBtnShowPtAdv" LabelText="{Binding Path=[ViewArea_ShowPtAdv].Value, Source={x:Static local:Main.Captions}}" SwitchOn="False"/>
+                                    <view:OnOffButton x:Name="_onOffBtnShowPtLabel" LabelText="{Binding Path=[ViewArea_ShowPtLabel].Value, Source={x:Static local:Main.Captions}}" SwitchOn="False"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                    <StackPanel.Resources>
+                                        <Style TargetType="view:OnOffButton">
+                                            <Setter Property="Margin" Value="0 0 4 0"/>
+                                        </Style>
+                                    </StackPanel.Resources>
+                                    <view:OnOffButton x:Name="_onOffBtnAdjustMode" LabelText="{Binding Path=[ViewArea_AdjustMode].Value, Source={x:Static local:Main.Captions}}" SwitchOn="False"/>
+                                </StackPanel>
+                            </Grid>
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+                <GridSplitter Grid.Row="1" Style="{StaticResource splitterV}"/>
+                <TabControl Grid.Row="2">
+                    <TabItem Header="{Binding Path=[PointsArea_Title].Value, Source={x:Static local:Main.Captions}}">
+                        <Grid Margin="4">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0" Orientation="Horizontal" Margin="0 0 0 4">
+                                    <Button x:Name="_btnRobotPointUp" Content="{Binding Path=[PointsArea_EditUp].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_EditUp_Tip].Value, Source={x:Static local:Main.Captions}}"/>
+                                    <Button x:Name="_btnRobotPointDown" Content="{Binding Path=[PointsArea_EditDown].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_EditDown_Tip].Value, Source={x:Static local:Main.Captions}}" Margin="4 0 0 0"/>
+                                    <Button x:Name="_btnRobotPointRemove" Content="{Binding Path=[PointsArea_EditRemove].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_EditRemove_Tip].Value, Source={x:Static local:Main.Captions}}" Margin="20 0 0 0"/>
+                                    <Button x:Name="_btnRobotPointsClear" Content="{Binding Path=[PointsArea_EditRemoveAll].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_EditRemoveAll_Tip].Value, Source={x:Static local:Main.Captions}}" Margin="4 0 0 0"/>
+                                    <TextBlock Text="{Binding Path=[PointsArea_Editable].Value, Source={x:Static local:Main.Captions}}" Margin="20 0 0 0" VerticalAlignment="Center"/>
+                                </StackPanel>
+                                <WrapPanel Grid.Column="1" HorizontalAlignment="Right">
+                                    <StackPanel x:Name="_stackPanelMotionReqMove" Orientation="Horizontal" Margin="0 0 0 4">
+                                        <TextBlock Text="Move " VerticalAlignment="Center"/>
+                                        <Button x:Name="_btnRobotPointMove" Content="{Binding Path=[PointsArea_MotionToSelect].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_MotionToSelect_Tip].Value, Source={x:Static local:Main.Captions}}" Margin="0 0 4 0"/>
+                                        <Button x:Name="_btnRobotPointMoveHeadToSel" Content="{Binding Path=[PointsArea_MotionHeadToSelect].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_MotionHeadToSelect_Tip].Value, Source={x:Static local:Main.Captions}}" Margin="0 0 4 0"/>
+                                        <Button x:Name="_btnRobotPointMoveAll" Content="{Binding Path=[PointsArea_MotionHeadToTail].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_MotionHeadToTail_Tip].Value, Source={x:Static local:Main.Captions}}" Margin="0 0 20 0"/>
+                                    </StackPanel>
+                                    <StackPanel x:Name="_stackPanelMotionReqGo" Orientation="Horizontal" Margin="0 0 0 4">
+                                        <TextBlock Text="Go " VerticalAlignment="Center"/>
+                                        <Button x:Name="_btnRobotPointGo" Content="{Binding Path=[PointsArea_MotionToSelect].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_MotionToSelect_Tip].Value, Source={x:Static local:Main.Captions}}" Margin="0 0 4 0"/>
+                                        <Button x:Name="_btnRobotPointGoHeadToSel" Content="{Binding Path=[PointsArea_MotionHeadToSelect].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_MotionHeadToSelect_Tip].Value, Source={x:Static local:Main.Captions}}" Margin="0 0 4 0"/>
+                                        <Button x:Name="_btnRobotPointGoAll" Content="{Binding Path=[PointsArea_MotionHeadToTail].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_MotionHeadToTail_Tip].Value, Source={x:Static local:Main.Captions}}"/>
+                                    </StackPanel>
+                                    <Button x:Name="_btnRobotPointStop" IsEnabled="False" Content="{Binding Path=[PointsArea_Stop].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_Stop_Tip].Value, Source={x:Static local:Main.Captions}}" Margin="8 0 0 4"/>
+                                </WrapPanel>
+                            </Grid>
+                            <view:RobotPointsControl Grid.Row="1" x:Name="_robotPointsControl" Margin="0 0 0 0"/>
+                            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" Margin="2 4 0 0">
+                                <Button x:Name="_btnAddPointsFromClipboard" Content="{Binding Path=[PointsArea_PointsFromClipboard].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_PointsFromClipboard_Tip].Value, Source={x:Static local:Main.Captions}}" Margin="0 0 4 0"/>
+                                <Button x:Name="_btnPointsToClipboard" Content="{Binding Path=[PointsArea_PointsToClipboard].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_PointsToClipboard_Tip].Value, Source={x:Static local:Main.Captions}}"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 4 0 0">
+                                <Button x:Name="_btnLoadFromRCPlusPts" Content="{Binding Path=[PointsArea_LoadPoints].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_LoadPoints_Tip].Value, Source={x:Static local:Main.Captions}}" Margin="0 0 4 0"/>
+                                <Button x:Name="_btnSaveToRCPlusPts" Content="{Binding Path=[PointsArea_SavePoints].Value, Source={x:Static local:Main.Captions}}" ToolTip="{Binding Path=[PointsArea_SavePoints_Tip].Value, Source={x:Static local:Main.Captions}}"/>
+                            </StackPanel>
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+            </Grid>
+            <Grid Grid.Column="1">
+                <TabControl>
+                    <TabItem Header="{Binding Path=[JogArea_Title].Value, Source={x:Static local:Main.Captions}}">
+                        <Grid Margin="4">
+                            <StackPanel>
+                                <view:OnOffButton x:Name="_onOffButtonControllerConnection" LabelText="{Binding Path=[JogArea_ControllerConnect].Value, Source={x:Static local:Main.Captions}}"/>
+                                <view:OnOffButton x:Name="_onOffButtonMotor" LabelText="Motor"/>
+                                <Border BorderBrush="LightGray" x:Name="_borderControllerState" BorderThickness="1" Margin="0 4 0 0">
+                                    <Grid Margin="6 3 6 6">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                                                <StackPanel.Resources>
+                                                    <Style TargetType="TextBlock">
+                                                        <Setter Property="Margin" Value="0 0 8 0"/>
+                                                    </Style>
+                                                </StackPanel.Resources>
+                                                <TextBlock Text="EStop" x:Name="_txtBlockEStop"/>
+                                                <TextBlock Text="Safeguard" x:Name="_txtBlockSafety"/>
+                                                <TextBlock Text="Error" x:Name="_txtBlockError"/>
+                                                <TextBlock Text="Warning" x:Name="_txtBlockWarning"/>
+                                            </StackPanel>
+                                            <TextBlock Grid.Row="1" x:Name="_textBlockControllerStatus" TextWrapping="Wrap" Height="34" FontSize="10" Foreground="Red" Margin="0 4 0 0"/>
+                                        </Grid>
+                                        <Button x:Name="_btnReset" Content="Reset" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 8 -4 -4"/>
+                                    </Grid>
+                                </Border>
+                                <Grid Margin="0 4 0 4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <view:TwoOptionSelButton Grid.Column="0" x:Name="_btnPower" LabelTxt="Power" TxtA="Low" TxtB="High"/>
+                                    <view:TwoOptionSelButton Grid.Column="1" x:Name="_btnSpeed" LabelTxt="Speed" TxtA="Low" TxtB="High"/>
+                                </Grid>
+                                <Grid x:Name="_gridJogItems">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <view:JogItemPanel Grid.Row="0" x:Name="_jogItemIOIn" Header="I/O In" ShowHSel="False">
+                                        <StackPanel x:Name="_stackPanelIOIn" Orientation="Horizontal" Margin="0 0 0 8"/>
+                                    </view:JogItemPanel>
+                                    <view:JogItemPanel Grid.Row="1" x:Name="_jogItemIOOut" Header="I/O Out" ShowHSel="False">
+                                        <StackPanel x:Name="_stackPanelIOOut" Orientation="Horizontal" Margin="0 0 0 8"/>
+                                    </view:JogItemPanel>
+                                    <view:JogItemPanel Grid.Row="2" x:Name="_jogItemJoint" Header="Joint">
+                                        <StackPanel Width="264" HorizontalAlignment="Left" Margin="6 0 0 8">
+                                            <view:JointControl x:Name="_jogJ1" JointIndex="0"/>
+                                            <view:JointControl x:Name="_jogJ2" JointIndex="1"/>
+                                            <view:JointControl x:Name="_jogJ3" JointIndex="2"/>
+                                            <view:JointControl x:Name="_jogJ4" JointIndex="3"/>
+                                            <view:JointControl x:Name="_jogJ5" JointIndex="4"/>
+                                            <view:JointControl x:Name="_jogJ6" JointIndex="5"/>
+                                        </StackPanel>
+                                    </view:JogItemPanel>
+                                    <view:JogItemPanel Grid.Row="3" x:Name="_jogItemWorld" Header="World">
+                                        <Grid>
+                                            <Grid Margin="0 0 0 8">
+                                                <Grid.Resources>
+                                                    <Style TargetType="Button">
+                                                        <Setter Property="Width" Value="28"/>
+                                                        <Setter Property="Height" Value="28"/>
+                                                        <Setter Property="Margin" Value="2"/>
+                                                        <Setter Property="Template">
+                                                            <Setter.Value>
+                                                                <ControlTemplate TargetType="Button">
+                                                                    <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="1" BorderBrush="DimGray" BorderThickness="1">
+                                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                                    </Border>
+                                                                    <ControlTemplate.Triggers>
+                                                                        <Trigger Property="IsEnabled" Value="False">
+                                                                            <Setter TargetName="border" Property="Background" Value="#F4F4F4"/>
+                                                                            <Setter TargetName="border" Property="BorderBrush" Value="#C3C7C9"/>
+                                                                        </Trigger>
+                                                                    </ControlTemplate.Triggers>
+                                                                </ControlTemplate>
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Foreground" Value="Gray"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                    <Style TargetType="TextBlock" x:Key="posTxt">
+                                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                                        <Setter Property="FontSize" Value="10"/>
+                                                        <Setter Property="Height" Value="12"/>
+                                                        <Setter Property="Margin" Value="2 0 2 0"/>
+                                                    </Style>
+                                                    <Style TargetType="view:PlusMinusIntControl">
+                                                        <Setter Property="Margin" Value="2 0 2 0"/>
+                                                    </Style>
+                                                </Grid.Resources>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="16"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="Auto"/>
+                                                </Grid.RowDefinitions>
+                                                <TextBlock Style="{StaticResource posTxt}" x:Name="_txtBlockJogA" Grid.Column="0" Grid.Row="0"/>
+                                                <TextBlock Style="{StaticResource posTxt}" x:Name="_txtBlockJogB" Grid.Column="1" Grid.Row="0"/>
+                                                <TextBlock Style="{StaticResource posTxt}" x:Name="_txtBlockJogC" Grid.Column="2" Grid.Row="0"/>
+                                                <TextBlock Style="{StaticResource posTxt}" x:Name="_txtBlockJogD" Grid.Column="3" Grid.Row="0"/>
+                                                <view:PlusMinusIntControl x:Name="_txtJogDistanceA" Grid.Column="0" Grid.Row="1"/>
+                                                <view:PlusMinusIntControl x:Name="_txtJogDistanceB" Grid.Column="1" Grid.Row="1"/>
+                                                <view:PlusMinusIntControl x:Name="_txtJogDistanceC" Grid.Column="2" Grid.Row="1"/>
+                                                <view:PlusMinusIntControl x:Name="_txtJogDistanceD" Grid.Column="3" Grid.Row="1"/>
+                                                <Button x:Name="_btnJogA" Grid.Column="0" Grid.Row="2" Grid.RowSpan="2" Content="X-"/>
+                                                <Button x:Name="_btnJogB1" Grid.Column="1" Grid.Row="2" Content="Y+"/>
+                                                <Button x:Name="_btnJogB2" Grid.Column="1" Grid.Row="3" Content="Y-"/>
+                                                <Button x:Name="_btnJogC" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Content="X+"/>
+                                                <Button x:Name="_btnJogD1" Grid.Column="3" Grid.Row="2" Content="Z+"/>
+                                                <Button x:Name="_btnJogD2" Grid.Column="3" Grid.Row="3" Content="Z-"/>
+                                                <TextBlock Style="{StaticResource posTxt}" x:Name="_txtBlockJogU" Grid.Column="5" Grid.Row="0"/>
+                                                <TextBlock Style="{StaticResource posTxt}" x:Name="_txtBlockJogV" Grid.Column="6" Grid.Row="0"/>
+                                                <TextBlock Style="{StaticResource posTxt}" x:Name="_txtBlockJogW" Grid.Column="7" Grid.Row="0"/>
+                                                <view:PlusMinusIntControl x:Name="_txtJogDistanceU" Grid.Column="5" Grid.Row="1"/>
+                                                <view:PlusMinusIntControl x:Name="_txtJogDistanceV" Grid.Column="6" Grid.Row="1"/>
+                                                <view:PlusMinusIntControl x:Name="_txtJogDistanceW" Grid.Column="7" Grid.Row="1"/>
+                                                <Button x:Name="_btnJogUPlus" Grid.Column="5" Grid.Row="2" Content="U+"/>
+                                                <Button x:Name="_btnJogUMinus" Grid.Column="5" Grid.Row="3" Content="U-"/>
+                                                <Button x:Name="_btnJogVPlus" Grid.Column="6" Grid.Row="2" Content="V+"/>
+                                                <Button x:Name="_btnJogVMinus" Grid.Column="6" Grid.Row="3" Content="V-"/>
+                                                <Button x:Name="_btnJogWPlus" Grid.Column="7" Grid.Row="2" Content="W+"/>
+                                                <Button x:Name="_btnJogWMinus" Grid.Column="7" Grid.Row="3" Content="W-"/>
+                                            </Grid>
+                                            <Button x:Name="_btnWorldJogLayout" Visibility="Hidden" Content="Lay&#xa;out" Width="20" Height="28" FontSize="9" BorderBrush="LightGray" Padding="0" Margin="0 -4 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent"/>
+                                            <view:ViewDirectionSelectControl x:Name="_viewDirectionSelectJogWorld" Background="White" Visibility="Collapsed"/>
+                                        </Grid>
+                                    </view:JogItemPanel>
+                                    <view:JogItemPanel Grid.Row="4" x:Name="_jogItemTool" Header="Tool">
+                                        <Grid>
+                                            <Grid Margin="0 0 0 8">
+                                                <Grid.Resources>
+                                                    <Style TargetType="Button">
+                                                        <Setter Property="Width" Value="28"/>
+                                                        <Setter Property="Height" Value="28"/>
+                                                        <Setter Property="Margin" Value="2"/>
+                                                        <Setter Property="Template">
+                                                            <Setter.Value>
+                                                                <ControlTemplate TargetType="Button">
+                                                                    <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="14" BorderBrush="DimGray" BorderThickness="1">
+                                                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                                    </Border>
+                                                                    <ControlTemplate.Triggers>
+                                                                        <Trigger Property="IsEnabled" Value="False">
+                                                                            <Setter TargetName="border" Property="Background" Value="#F4F4F4"/>
+                                                                            <Setter TargetName="border" Property="BorderBrush" Value="#C3C7C9"/>
+                                                                        </Trigger>
+                                                                    </ControlTemplate.Triggers>
+                                                                </ControlTemplate>
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                <Setter Property="Foreground" Value="Gray"/>
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                    <Style TargetType="view:PlusMinusIntControl">
+                                                        <Setter Property="Margin" Value="2 0 2 0"/>
+                                                    </Style>
+                                                </Grid.Resources>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="16"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="Auto"/>
+                                                </Grid.RowDefinitions>
+                                                <view:PlusMinusIntControl x:Name="_txtJogDistanceTLA" Grid.Column="0" Grid.Row="0"/>
+                                                <view:PlusMinusIntControl x:Name="_txtJogDistanceTLB" Grid.Column="1" Grid.Row="0"/>
+                                                <view:PlusMinusIntControl x:Name="_txtJogDistanceTLC" Grid.Column="2" Grid.Row="0"/>
+                                                <view:PlusMinusIntControl x:Name="_txtJogDistanceTLD" Grid.Column="3" Grid.Row="0"/>
+                                                <Button x:Name="_btnJogTLXYa" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" Content="X-"/>
+                                                <Button x:Name="_btnJogTLXYb1" Grid.Column="1" Grid.Row="1" Content="Y+"/>
+                                                <Button x:Name="_btnJogTLXYb2" Grid.Column="1" Grid.Row="2" Content="Y-"/>
+                                                <Button x:Name="_btnJogTLXYc" Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Content="X+"/>
+                                                <Button x:Name="_btnJogTLZPlus" Grid.Column="3" Grid.Row="1" Content="Z+"/>
+                                                <Button x:Name="_btnJogTLZMinus" Grid.Column="3" Grid.Row="2" Content="Z-"/>
+                                                <view:PlusMinusIntControl x:Name="_txtJogDistanceTLU" Grid.Column="5" Grid.Row="0"/>
+                                                <view:PlusMinusIntControl x:Name="_txtJogDistanceTLV" Grid.Column="6" Grid.Row="0"/>
+                                                <view:PlusMinusIntControl x:Name="_txtJogDistanceTLW" Grid.Column="7" Grid.Row="0"/>
+                                                <Button x:Name="_btnJogTLUPlus" Grid.Column="5" Grid.Row="1" Content="U+"/>
+                                                <Button x:Name="_btnJogTLUMinus" Grid.Column="5" Grid.Row="2" Content="U-"/>
+                                                <Button x:Name="_btnJogTLVPlus" Grid.Column="6" Grid.Row="1" Content="V+"/>
+                                                <Button x:Name="_btnJogTLVMinus" Grid.Column="6" Grid.Row="2" Content="V-"/>
+                                                <Button x:Name="_btnJogTLWPlus" Grid.Column="7" Grid.Row="1" Content="W+"/>
+                                                <Button x:Name="_btnJogTLWMinus" Grid.Column="7" Grid.Row="2" Content="W-"/>
+                                            </Grid>
+                                            <Button x:Name="_btnToolJogLayout" Visibility="Hidden" Content="Lay&#xa;out" Width="20" Height="28" FontSize="9" BorderBrush="LightGray" Padding="0" Margin="0 -4 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent"/>
+                                            <view:ToolJogBtnLayoutSelectControl x:Name="_toolJogBtnLayoutSelectJogTool" Background="White" Visibility="Collapsed"/>
+                                        </Grid>
+                                    </view:JogItemPanel>
+                                </Grid>
+                            </StackPanel>
+                            <Grid HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 -3 -0 0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <ComboBox Grid.Row="0" x:Name="_cmbBoxTool" SelectedIndex="0" Margin="0 2 0 0" Width="80"/>
+                                <TextBlock Grid.Row="1" x:Name="_textBlockTool" Text="0,0,0,0,0,0" FontSize="9"/>
+                            </Grid>
+                            <StackPanel x:Name="_stackPanelAddPoint" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                                <StackPanel.Resources>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Width" Value="66"/>
+                                        <Setter Property="Height" Value="32"/>
+                                        <Setter Property="FontSize" Value="11"/>
+                                        <Setter Property="Padding" Value="0"/>
+                                    </Style>
+                                </StackPanel.Resources>
+                                <Button x:Name="_btnUpdatePoint" Margin="0 0 3 0">
+                                    <TextBlock Text="{Binding Path=[JogArea_UpdatePoint].Value, Source={x:Static local:Main.Captions}}" TextWrapping="Wrap"/>
+                                </Button>
+                                <Button x:Name="_btnInsertPointBefore" Margin="0 0 3 0">
+                                    <TextBlock Text="{Binding Path=[JogArea_InsertBefore].Value, Source={x:Static local:Main.Captions}}" TextWrapping="Wrap"/>
+                                </Button>
+                                <Button x:Name="_btnInsertPointAfter" Margin="0 0 3 0">
+                                    <TextBlock Text="{Binding Path=[JogArea_InsertAfter].Value, Source={x:Static local:Main.Captions}}" TextWrapping="Wrap"/>
+                                </Button>
+                                <Button x:Name="_btnAddPoint">
+                                    <TextBlock Text="{Binding Path=[JogArea_AddPoint].Value, Source={x:Static local:Main.Captions}}" TextWrapping="Wrap"/>
+                                </Button>
+                            </StackPanel>
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+                    <Button x:Name="_btnToJogOnly" Content="to Jog only" FontSize="11"/>
+                    <Button x:Name="_btnJogLayout" Margin="4 0 0 0">
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Width="14" Height="14">
+                                <Path x:Name="_jogLayoutMarkToOpen" Data="M3,5 L7,9 11,5" Stroke="#444" StrokeThickness="1" Stretch="None"/>
+                                <Path x:Name="_jogLayoutMarkToClose" Visibility="Hidden" Data="M3,9 L7,5 11,9" Stroke="#444" StrokeThickness="1" Stretch="None"/>
+                            </Grid>
+                            <TextBlock Text="{Binding Path=[JogArea_JogLaytout].Value, Source={x:Static local:Main.Captions}}" FontSize="11"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                <view:SelectSrcToDstControl x:Name="_jogLayoutPanel" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0 20 4 0" Visibility="Collapsed"/>
+            </Grid>
+        </Grid>
+    </DockPanel>
+</UserControl>

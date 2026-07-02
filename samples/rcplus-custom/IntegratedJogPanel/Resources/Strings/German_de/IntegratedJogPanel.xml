@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">IntegriertesJogPanel</string>
+  <string name="0001">IntegriertesJogPanel</string>
+  <string name="0100">IntegriertesJogPanel</string>
+  <string name="0110">IntegriertesJogPanel-Element</string>
+  <string name="0120">IntegriertesJogPanel-Elementbefehl</string>
+  <string name="0200">IntegriertesJogPanel</string>
+  <string name="0201">IntegriertesJogPanel-Datei</string>
+  <string name="0300">IntegriertesJogPanel</string>
+  <string name="0400">IntegriertesJogPanel</string>
+  <string name="0401">IntegriertesJogPanel</string>
+  <string name="0501">OK</string>
+  <string name="0502">Abbrechen</string>
+  <string name="0503">Reset</string>
+  <string name="10001">Nur Jog-Modus</string>
+  <string name="10002">Zur Gesamtansicht</string>
+  <string name="11000">Einrichten</string>
+  <string name="11001">Jog-Layout</string>
+  <string name="11002">Editieren</string>
+  <string name="11003">Punkt aktualisieren</string>
+  <string name="11004">Davor einfügen</string>
+  <string name="11005">Danach einfügen</string>
+  <string name="11006">Punkt hinzufügen</string>
+  <string name="11007">Steuerungsverbindung</string>
+  <string name="11101">Ausgeblendete Elemente</string>
+  <string name="11102">Sichtbare Elemente</string>
+  <string name="11103">Nach oben</string>
+  <string name="11104">Nach unten</string>
+  <string name="11200">Bit-Auswahl</string>
+  <string name="11300">Schritt&amp;weite</string>
+  <string name="11301">Ganzzahl drehen</string>
+  <string name="11302">Abstand abgleichen in mm</string>
+  <string name="11303">Abstand abgleichen in Grad</string>
+  <string name="12000">Punkte</string>
+  <string name="12001">Nach oben</string>
+  <string name="12002">Den ausgewählten Punkt nach oben verschieben.</string>
+  <string name="12003">Nach unten</string>
+  <string name="12004">Den ausgewählten Punkt nach unten verschieben.</string>
+  <string name="12005">Entfernen</string>
+  <string name="12006">Ausgewählten Punkt entfernen.</string>
+  <string name="12007">Alle entfernen</string>
+  <string name="12008">Alle Punkte entfernen.</string>
+  <string name="12009">Zu Punkt</string>
+  <string name="12010">Zum ausgewählten Punkt bewegen.</string>
+  <string name="12011">Von oben zu Auswahl</string>
+  <string name="12012">Von oben bis zum ausgewählten Punkt ausführen.</string>
+  <string name="12013">Von oben bis zum Ende</string>
+  <string name="12014">Vom Anfang bis zum letzten Punkt ausführen.</string>
+  <string name="12015">Punkte aus der Zwischenablage hinzufügen</string>
+  <string name="12016">Punktdaten hinzufügen, die aus dem RC+ Punkteditor in die Zwischenablage kopiert wurden.</string>
+  <string name="12017">Punkte in die Zwischenablage kopieren</string>
+  <string name="12018">Punktdaten in die Zwischenablage kopieren, um sie in den RC+ Punkteditor einzufügen.</string>
+  <string name="12019">Aus RC+ Punktdatei laden</string>
+  <string name="12020">Punkte aus der ausgewählten RC+ Punktdatei laden.</string>
+  <string name="12021">In RC+ Punktdatei speichern</string>
+  <string name="12022">Punkte in eine neue oder bestehende RC+ Punktdatei speichern.</string>
+  <string name="12023">*Bearbeitbar</string>
+  <string name="12024">Stopp</string>
+  <string name="12025">Ausführung des Bewegungsbefehls beenden.</string>
+  <string name="12026">Die Punktliste kann nicht geladen werden, wenn sie Lücken enthält oder keine bei Punkt 0 beginnende, durchgehende Sequenz darstellt.</string>
+  <string name="12027">Es können keine Punktlisten geladen werden, die Punkte enthalten, deren Local-Wert ungleich 0 ist.</string>
+  <string name="12028">In der Liste sind bereits Punkte festgelegt. Was möchten Sie tun? 
+
+[Ja] Mit der importierten Punktliste überschreiben
+[Nein] Die importierte Punktliste hinzufügen
+[Abbrechen] Import abbrechen</string>
+  <string name="12029">Das Speichern von Punkt {0} ist fehlgeschlagen.</string>
+  <string name="12100">RC+ Punktdatei auswählen</string>
+  <string name="13000">Ansicht</string>
+  <string name="13001">Maus ziehen --- Ansicht verschieben
+Mausrad --- Ansicht zoomen
+Mausklick auf Roboterpunkt --- Roboterpunkt auswählen</string>
+  <string name="13002">Maus ziehen --- Ansicht verschieben
+Mausrad --- Ansicht zoomen
+Mausklick auf Roboterpunkt --- Roboterpunkt auswählen und Start
+Maus ziehen, wenn ein Punkt ausgewählt ist und der Roboter sich am ausgewählten Punkt befindet
+ --- Roboter bewegen und Punkt aktualisieren</string>
+  <string name="13003">Roboterinformationen</string>
+  <string name="13004">Ansichtsauswahl</string>
+  <string name="13005">Tastenanordnung für Werkzeug-Jog</string>
+  <string name="13006">Punkte</string>
+  <string name="13007">Bewegungsverlauf</string>
+  <string name="13008">Punktvorschub</string>
+  <string name="13009">Punktbezeichnung</string>
+  <string name="13010">Werkzeugpunkt</string>
+  <string name="13011">Einstellmodus</string>
+  <string name="13012">GEFAHR! Einstellmodus</string>
+  <string name="13013">Der Roboter wird per Maussteuerung bedient. Gehen Sie vorsichtig vor.</string>
+  <string name="13014">Änderung</string>
+  <string name="13015">Bewegungen innerhalb von {0} mm sind zulässig.</string>
+</resources>

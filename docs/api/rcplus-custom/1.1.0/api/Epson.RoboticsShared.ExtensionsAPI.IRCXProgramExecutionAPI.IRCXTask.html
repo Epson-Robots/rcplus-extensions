@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IRCXProgramExecutionAPI.IRCXTask | ExtensionsAPI </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IRCXProgramExecutionAPI.IRCXTask | ExtensionsAPI ">
+      
+      <meta name="description" content="Represents a task object.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ExtensionsAPI">
+            ExtensionsAPI
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask">
+
+
+
+  <h1 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask" class="text-break">
+Interface IRCXProgramExecutionAPI.IRCXTask  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Epson.html">Epson</a>.<a class="xref" href="Epson.RoboticsShared.html">RoboticsShared</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.html">ExtensionsAPI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Epson.RoboticsShared.ExtensionsAPI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a task object.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IRCXProgramExecutionAPI.IRCXTask</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_CPU_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.CPU*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_CPU" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.CPU">
+  CPU
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the CPU load percentage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int? CPU { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The CPU load percentage; <code>null</code> if unavailable.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_ErrorNumber_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.ErrorNumber*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_ErrorNumber" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.ErrorNumber">
+  ErrorNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the error number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ErrorNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The error number.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_FinishTime_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.FinishTime*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_FinishTime" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.FinishTime">
+  FinishTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the finish time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime? FinishTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd><p>The finish time; <code>null</code> if not finished or unknown.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_FinishTime_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If connected to an RC700 controller, this property always returns null.</p>
+</div>
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_FunctionId_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.FunctionId*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_FunctionId" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.FunctionId">
+  FunctionId
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the function ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int FunctionId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The function ID.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_JointNumber_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.JointNumber*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_JointNumber" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.JointNumber">
+  JointNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the joint number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int JointNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The joint number.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_Kind_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.Kind*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_Kind" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.Kind">
+  Kind
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the task kind.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IRCXProgramExecutionAPI.IRCXTask.RCXTaskKind Kind { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.html">IRCXProgramExecutionAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.html">IRCXTask</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.RCXTaskKind.html">RCXTaskKind</a></dt>
+    <dd><p>The task kind.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_LineNumber_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.LineNumber*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_LineNumber" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.LineNumber">
+  LineNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the line number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int LineNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The line number.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_Name_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.Name*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_Name" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the task name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The task name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_Number_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.Number*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_Number" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.Number">
+  Number
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the task number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Number { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The task number.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_RobotNumber_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.RobotNumber*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_RobotNumber" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.RobotNumber">
+  RobotNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the robot number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int RobotNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The robot number.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_StartTime_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.StartTime*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_StartTime" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.StartTime">
+  StartTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the start time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime? StartTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd><p>The start time; <code>null</code> if not started or unknown.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_State_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.State*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_State" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.State">
+  State
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current task state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IRCXProgramExecutionAPI.IRCXTask.RCXTaskState State { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.html">IRCXProgramExecutionAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.html">IRCXTask</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.RCXTaskState.html">RCXTaskState</a></dt>
+    <dd><p>The task state.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_GetCallStack_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.GetCallStack*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_GetCallStack" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.GetCallStack">
+  GetCallStack()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the call stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IList&lt;IRCXProgramExecutionAPI.IRCXTask.IRCXCallStackEntry&gt;? GetCallStack()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.html">IRCXProgramExecutionAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.html">IRCXTask</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.IRCXCallStackEntry.html">IRCXCallStackEntry</a>&gt;</dt>
+    <dd><p>The call stack as a list of <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.IRCXCallStackEntry.html">IRCXProgramExecutionAPI.IRCXTask.IRCXCallStackEntry</a>; <code>null</code> if an error occurs.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_HaltAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.HaltAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_HaltAsync" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.HaltAsync">
+  HaltAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pauses (halts) the task asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; HaltAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_HaltAsync_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Tasks marked as <code>NoPause</code> or <code>NoEmgAbort</code> are also paused.</p>
+</div>
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_ResumeAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.ResumeAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_ResumeAsync" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.ResumeAsync">
+  ResumeAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resumes a task that is in the Halt state asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; ResumeAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_StepInAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.StepInAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_StepInAsync" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.StepInAsync">
+  StepInAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Steps into asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; StepInAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_StepOverAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.StepOverAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_StepOverAsync" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.StepOverAsync">
+  StepOverAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Steps over asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; StepOverAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_WalkAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.WalkAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_WalkAsync" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.WalkAsync">
+  WalkAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Walk asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; WalkAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that returns the result code.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXProgramExecutionAPI_IRCXTask_WalkAsync_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Runs until the next action or output instruction is encountered, then stops at the following line.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

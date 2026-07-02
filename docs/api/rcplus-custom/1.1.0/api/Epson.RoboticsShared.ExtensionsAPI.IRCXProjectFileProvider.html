@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IRCXProjectFileProvider | ExtensionsAPI </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IRCXProjectFileProvider | ExtensionsAPI ">
+      
+      <meta name="description" content="Interface for providing additional files for a project.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ExtensionsAPI">
+            ExtensionsAPI
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider">
+
+
+
+  <h1 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider" class="text-break">
+Interface IRCXProjectFileProvider  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Epson.html">Epson</a>.<a class="xref" href="Epson.RoboticsShared.html">RoboticsShared</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.html">ExtensionsAPI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Epson.RoboticsShared.ExtensionsAPI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Interface for providing additional files for a project.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IRCXProjectFileProvider</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_Extension_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.Extension*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_Extension" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.Extension">
+  Extension
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the file extension.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Extension { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file extension, including the leading dot.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_FileIcon_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.FileIcon*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_FileIcon" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.FileIcon">
+  FileIcon
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the icon image data for the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ImageSource? FileIcon { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.imagesource">ImageSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_FileTypeName_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.FileTypeName*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_FileTypeName" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.FileTypeName">
+  FileTypeName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the file type name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string FileTypeName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the file type. Must not contain whitespace characters.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_FileTypeNameCaption_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.FileTypeNameCaption*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_FileTypeNameCaption" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.FileTypeNameCaption">
+  FileTypeNameCaption
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the display caption for the file type name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RCXCaption FileTypeNameCaption { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCaption.html">RCXCaption</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_Id_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.Id*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_Id" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.Id">
+  Id
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Extension identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Id { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the Extension.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_ProjectExplorerRootItemCaption_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.ProjectExplorerRootItemCaption*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_ProjectExplorerRootItemCaption" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.ProjectExplorerRootItemCaption">
+  ProjectExplorerRootItemCaption
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the caption of the root category when using the default Project Explorer item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RCXCaption ProjectExplorerRootItemCaption { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCaption.html">RCXCaption</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_ProjectExplorerRootItemIconData_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.ProjectExplorerRootItemIconData*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_ProjectExplorerRootItemIconData" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.ProjectExplorerRootItemIconData">
+  ProjectExplorerRootItemIconData
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the icon image data of the root category when using the default Project Explorer item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ImageSource? ProjectExplorerRootItemIconData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.media.imagesource">ImageSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_UseDefaultProjectExplorerItem_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.UseDefaultProjectExplorerItem*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_UseDefaultProjectExplorerItem" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.UseDefaultProjectExplorerItem">
+  UseDefaultProjectExplorerItem
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the default Project Explorer item is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UseDefaultProjectExplorerItem { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_OpenAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.OpenAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_OpenAsync_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.OpenAsync(System.String)">
+  OpenAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously opens a file by executing the open command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task OpenAsync(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file name (or path) to open.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task representing the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_WriteInitialContent_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.WriteInitialContent*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_WriteInitialContent_System_IO_FileStream_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.WriteInitialContent(System.IO.FileStream)">
+  WriteInitialContent(FileStream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes the initial content when creating a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteInitialContent(FileStream fileStream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filestream">FileStream</a></dt>
+    <dd><p>The file stream to write the initial content to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXProjectFileProvider_WriteInitialContent_System_IO_FileStream__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If an empty file is acceptable, return without writing anything.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

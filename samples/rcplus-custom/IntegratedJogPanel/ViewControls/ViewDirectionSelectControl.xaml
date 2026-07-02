@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="IntegratedJogPanel.View.ViewDirectionSelectControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IntegratedJogPanel.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="200">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <local:ViewDirectionControl x:Name="_optCtrl4" Type="TopViewXLeft"/>
+                <local:ViewDirectionControl x:Name="_optCtrl5" Type="TopViewXBottom"/>
+                <local:ViewDirectionControl x:Name="_optCtrl6" Type="TopViewXRight"/>
+                <local:ViewDirectionControl x:Name="_optCtrl7" Type="TopViewXTop"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 0">
+                <local:ViewDirectionControl x:Name="_optCtrl0" Type="FrontView"/>
+                <local:ViewDirectionControl x:Name="_optCtrl1" Type="RightSideView"/>
+                <local:ViewDirectionControl x:Name="_optCtrl2" Type="RearView"/>
+                <local:ViewDirectionControl x:Name="_optCtrl3" Type="LeftSideView"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
