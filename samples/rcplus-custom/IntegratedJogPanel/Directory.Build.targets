@@ -1,0 +1,29 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+
+  <Target Name="CheckEnvironment" AfterTargets="BeforeBuild">
+
+    <PropertyGroup>
+      <RC80Dir>$(EPSON_RC80_DIR)</RC80Dir>
+      <ExtensionsAPIDir>$(EPSON_RC80_EXTENSIONS_API_DIR)</ExtensionsAPIDir>
+    </PropertyGroup>
+
+    <Error
+      Condition="'$(RC80Dir)' == ''"
+      Text="Please define environment variable 'EPSON_RC80_DIR' as RC+ executable directory." />
+    <Error
+      Condition="!Exists('$(RC80Dir)\erc80.exe')"
+      Text="$(RC80Dir)¥erc80.exe is not exists." />
+    <Error
+      Condition="'$(ExtensionsAPIDir)' == ''"
+      Text="Please define environment variable 'EPSON_RC80_EXTENSIONS_API_DIR' as API package directory." />
+
+  </Target>
+
+  <Target Name="EnsureExtensionAssets"
+          BeforeTargets="Build"
+          Condition="Exists('$(EPSON_RC80_EXTENSIONS_API_DIR)\Tools\generateExtensionAssets.exe')">
+    <Exec Command="&quot;$(EPSON_RC80_EXTENSIONS_API_DIR)\Tools\generateExtensionAssets.exe&quot; &quot;$(ManifestPath)&quot; --props &quot;$(MSBuildProjectDirectory)\ExtensionAssets.props&quot; --cs &quot;$(MSBuildProjectDirectory)\ExtensionIdentity.cs&quot; --namespace &quot;$(RootNamespace)&quot;" />
+  </Target>
+
+</Project>

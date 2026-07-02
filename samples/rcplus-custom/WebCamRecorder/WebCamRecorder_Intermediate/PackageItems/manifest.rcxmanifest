@@ -1,0 +1,79 @@
+category: RC+ Extensions
+id: WebCamRecorder_6435b625-886c-4333-923e-a65e65422530
+vendor: com.epson
+vendor_info:
+  en: Seiko Epson Corporation
+  ja: Seiko Epson Corporation
+  de: Seiko Epson Corporation
+  fr: Seiko Epson Corporation
+  es: Seiko Epson Corporation
+  zh-Hans: Seiko Epson Corporation
+  zh-Hant: Seiko Epson Corporation
+  default: en
+version: 1.0.0
+released_at: "2026-03-31T00:00:00Z"
+name:
+  en: WebCam Recorder
+  ja: ウェブカメラレコーダー
+  de: WebCam-Recorder
+  fr: Enregistreur webcam
+  es: Grabador WebCam
+  zh-Hans: 网络摄像头记录器
+  zh-Hant: 網路攝影機記錄器
+  default: en
+summary:
+  en: Allows video preview and recording using a PC‑connected webcam.
+  ja: PC 接続のウェブカメラを使用し、映像のプレビュー表示と録画が可能です。
+  de: Ermöglicht Videovorschau und -aufzeichnung über PC-Webcam.
+  fr: Permet prévisualisation et enregistrement vidéo à l'aide d'une webcam connectée à un PC.
+  es: Permite previs. y grab. de vídeo con una webcam conectada al PC.
+  zh-Hans: 使用连接到PC的网络摄像头，可进行画面预览显示和录像。
+  zh-Hant: 使用連接到PC的網路攝影機，可進行畫面預覽顯示與錄影。
+  default: en
+description:
+  en: |
+    Allows video preview and recording using a PC‑connected webcam. 
+    
+    Supports starting recording at any time and automatic recording during program execution. 
+    Recordings are split into 5‑second files, and only the latest two files are retained. 
+    All recorded data is saved in the project.
+  ja: |
+    PC 接続のウェブカメラを使用し、映像のプレビュー表示と録画が可能です。
+    
+    任意のタイミングでの録画開始と、プログラム実行中の自動録画に対応します。
+    録画は 5 秒ごとにファイルを分割し、最新 2 ファイルのみを保持します。
+    録画データはプロジェクト内に保存されます。
+  de: |
+    Ermöglicht Videovorschau und -aufzeichnung über PC-Webcam. 
+    
+    Unterstützt sowohl manuelle als auch automatische Aufzeichnung während der Ausführung. 
+    Aufzeichnungen aufgeteilt in 5-Sek.-Dateien; nur die zwei neuesten werden gespeichert. 
+    Alle Aufzeichnungen im Projekt gespeichert.
+  fr: |
+    Permet prévisualisation et enregistrement vidéo à l'aide d'une webcam connectée à un PC. 
+    
+    Permet de démarrer l'enreg. à tout moment et d'activer l'enreg. auto pendant exéc. du programme. 
+    Les enreg. sont divisés en fichiers de 5 s et seuls les deux derniers fichiers sont conservés. 
+    Toutes données enreg. sont sauveg. dans projet.
+  es: |
+    Permite previs. y grab. de vídeo con una webcam conectada al PC. 
+    
+    Permite iniciar la grab. en cualquier momento y la grab. auto. durante ejec. del prog. 
+    Las grabac. se dividen en arch. de 5 segundos y solo se conservan los dos últ. arch. 
+    Los datos grabados se guardan en proyecto.
+  zh-Hans: |
+    使用连接到PC的网络摄像头，可进行画面预览显示和录像。
+    
+    支持在任意时间开始录像，以及在程序运行中的自动录像。
+    录像每5秒分割为一个文件，仅保留最新的2个文件。
+    录像数据将保存在项目中。
+  zh-Hant: |
+    使用連接到PC的網路攝影機，可進行畫面預覽顯示與錄影。
+    
+    支援在任意時間開始錄影，以及在程式執行中的自動錄影。
+    錄影每5秒分割為一個檔案，僅保留最新的2個檔案。
+    錄影資料將儲存在專案中。
+  default: en
+image_file:
+  en: image.png
+  default: en

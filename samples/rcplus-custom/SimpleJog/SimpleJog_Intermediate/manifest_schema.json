@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RC+ Extensions Manifest",
+  "type": "object",
+  "properties": {
+    "category": {
+      "type": "string",
+      "enum": [
+        "RC+ Extensions"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^([A-Za-z][A-Za-z0-9]*)_([0-9a-f]{8}-?([0-9a-f]{4}-?){3}[0-9a-f]{12})$"
+    },
+    "vendor": {
+      "type": "string",
+      "pattern": "^(?=.{1,253}$)[a-z]{2,}(?:\\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)+$"
+    },
+    "vendor_info": {
+      "$ref": "#/$defs/localized"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^([0-9]+\\.){2}[0-9]+(\\.[0-9]+)?$"
+    },
+    "released_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "name": {
+      "$ref": "#/$defs/localized"
+    },
+    "summary": {
+      "$ref": "#/$defs/localized"
+    },
+    "description": {
+      "$ref": "#/$defs/localized"
+    },
+    "image_file": {
+      "$ref": "#/$defs/localized"
+    },
+    "release_note_file": {
+      "$ref": "#/$defs/localized"
+    },
+    "eula_file": {
+      "$ref": "#/$defs/localized"
+    },
+    "oss_notice_file": {
+      "$ref": "#/$defs/localized"
+    }
+  },
+  "required": [
+    "category",
+    "id",
+    "vendor",
+    "version",
+    "released_at",
+    "name",
+    "summary",
+    "description",
+    "image_file"
+  ],
+  "$defs": {
+    "localized": {
+      "title": "localized",
+      "type": "object",
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "ja": {
+          "type": "string"
+        },
+        "de": {
+          "type": "string"
+        },
+        "fr": {
+          "type": "string"
+        },
+        "es": {
+          "type": "string"
+        },
+        "zh-Hans": {
+          "type": "string"
+        },
+        "zh-Hant": {
+          "type": "string"
+        },
+        "default": {
+          "type": "string",
+          "enum": [
+            "en",
+            "ja",
+            "de",
+            "fr",
+            "es",
+            "zh-Hans",
+            "zh-Hant"
+          ]
+        }
+      },
+      "required": [
+        "default"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "default": {
+                "const": "en"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "en"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "default": {
+                "const": "ja"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "ja"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "default": {
+                "const": "de"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "de"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "default": {
+                "const": "fr"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "fr"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "default": {
+                "const": "es"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "es"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "default": {
+                "const": "zh-Hans"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "zh-Hans"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "default": {
+                "const": "zh-Hant"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "zh-Hant"
+            ]
+          }
+        }
+      ],
+      "additionalProperties": false
+    }
+  }
+}

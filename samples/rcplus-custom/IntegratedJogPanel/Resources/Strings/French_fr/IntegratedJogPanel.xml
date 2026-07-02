@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">Pann. Dépl. intégré</string>
+  <string name="0001">Pann. Dépl. intégré</string>
+  <string name="0100">Pann. Dépl. intégré</string>
+  <string name="0110">Élément Pann. Dépl. intégré</string>
+  <string name="0120">Commande élément Pann. Dépl. intégré</string>
+  <string name="0200">Pann. Dépl. intégré</string>
+  <string name="0201">Fichier Pann. Dépl. intégré</string>
+  <string name="0300">Pann. Dépl. intégré</string>
+  <string name="0400">Pann. Dépl. intégré</string>
+  <string name="0401">Pann. Dépl. intégré</string>
+  <string name="0501">OK</string>
+  <string name="0502">Annuler</string>
+  <string name="0503">Réinit.</string>
+  <string name="10001">Vers Dépl. uniq.</string>
+  <string name="10002">Vers affich. complet</string>
+  <string name="11000">Déplacement</string>
+  <string name="11001">Disposition dépl.</string>
+  <string name="11002">Modif.</string>
+  <string name="11003">Mettre à jour point</string>
+  <string name="11004">Insérer avant</string>
+  <string name="11005">Insérer après</string>
+  <string name="11006">Ajouter point</string>
+  <string name="11007">Connexion du contrôleur</string>
+  <string name="11101">Éléments masqués</string>
+  <string name="11102">Éléments visibles</string>
+  <string name="11103">Haut</string>
+  <string name="11104">Bas</string>
+  <string name="11200">Sélect. bit</string>
+  <string name="11300">Distance déplac.</string>
+  <string name="11301">Rotation entier</string>
+  <string name="11302">Faire corresp. distance en mm</string>
+  <string name="11303">Faire corresp. distance en deg</string>
+  <string name="12000">Points</string>
+  <string name="12001">Haut</string>
+  <string name="12002">Déplacer point sélectionné vers le haut.</string>
+  <string name="12003">Bas</string>
+  <string name="12004">Déplacer point sélectionné vers le bas.</string>
+  <string name="12005">Supprimer</string>
+  <string name="12006">Supprimer point sélectionné.</string>
+  <string name="12007">Suppr. tout</string>
+  <string name="12008">Suppr. tous les points.</string>
+  <string name="12009">Vers point</string>
+  <string name="12010">Se déplacer vers point sélectionné.</string>
+  <string name="12011">Haut vers sélect.</string>
+  <string name="12012">Exécuter du haut jusqu'au point sélectionné.</string>
+  <string name="12013">Haut vers fin</string>
+  <string name="12014">Exécuter du haut jusqu'au dernier point.</string>
+  <string name="12015">Ajouter points depuis presse-papiers</string>
+  <string name="12016">Ajouter données de point copiées dans presse-papiers depuis éditeur de points RC+.</string>
+  <string name="12017">Déf. points dans presse-papiers</string>
+  <string name="12018">Copiez données de point dans presse-papiers pour les copier dans éditeur de points RC+.</string>
+  <string name="12019">Charger depuis fichier de points RC+</string>
+  <string name="12020">Charger points depuis fichier de points RC+ sélectionné.</string>
+  <string name="12021">Enreg dans fichier de points RC+</string>
+  <string name="12022">Enreg points dans fichier de points RC+ nouveau ou existant.</string>
+  <string name="12023">*Modifiable</string>
+  <string name="12024">Arrêter</string>
+  <string name="12025">Arrêt exécution commande de mouvement.</string>
+  <string name="12026">Impossible de charger liste de points si elle comporte des lacunes ou si elle n'est pas une séq. continue commençant par le point 0.</string>
+  <string name="12027">Impossible de charger les listes de points contenant des points avec une valeur Local autre que 0.</string>
+  <string name="12028">Les points sont déjà définis dans la liste. Que voulez-vous faire ? 
+
+[Oui] Remplacer par liste de points importée
+[Non] Ajouter liste de points importée
+[Annuler] Arrêter importation</string>
+  <string name="12029">Échec sauvegarde point {0}.</string>
+  <string name="12100">Sélect. fichier points RC+</string>
+  <string name="13000">Vue</string>
+  <string name="13001">Glissemt souris --- Vue panoramique
+Molette souris --- Vue zoom
+Clic sur point robot --- Sélect. point robot</string>
+  <string name="13002">Glissemt souris --- Vue panoramique
+Molette souris --- Vue zoom
+Clic sur point robot --- Sélect. point robot et avancer
+Déplacer la souris lorsqu'un point est sélectionné et que le robot se trouve au point sélectionné.
+ --- Déplacer robot et mettre à jour le point</string>
+  <string name="13003">Informations robot</string>
+  <string name="13004">Sélect. vue</string>
+  <string name="13005">Disposition bouton dépl. outil</string>
+  <string name="13006">Points</string>
+  <string name="13007">Trajectoire</string>
+  <string name="13008">Av. pt</string>
+  <string name="13009">Étiq. pt</string>
+  <string name="13010">Point outil</string>
+  <string name="13011">Mode réglage</string>
+  <string name="13012">DANGER ! Mode réglage</string>
+  <string name="13013">Le robot se déplacera en réponse aux actions de la souris. Faites attention.</string>
+  <string name="13014">Modifier</string>
+  <string name="13015">Mouvement de {0} mm max. autorisé.</string>
+</resources>

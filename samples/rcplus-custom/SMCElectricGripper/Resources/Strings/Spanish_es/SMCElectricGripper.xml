@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">Gripper eléctrico SMC</string>
+  <string name="0001">Gripper eléctrico SMC</string>
+  <string name="0002">Conf. del Gripper eléctrico SMC</string>
+  <string name="0003">Importar biblio. control Gripper eléctrico SMC</string>
+  <string name="0004">Conf. del Gripper eléctrico SMC (LEHR)</string>
+  <string name="0100">Esta función no está disponible en la versión actual de Epson RC+. 
+Actualice a la última versión antes de utilizarla.</string>
+  <string name="0101">Se completó la importación de biblio. de control del gripper eléctrico SMC.</string>
+  <string name="0102">No se pudo extraer biblio. de control del Gripper eléct. SMC a carpeta Bibliotecas. 
+Compruebe espacio disp. en disco y permisos de escritura de la carpeta Bibliotecas.</string>
+  <string name="0103">El proyecto con biblio. de control del gripper eléctrico SMC no está abierto. 
+Tras "Importar biblio. de control del gripper eléctrico SMC", compruebe que "SMC_LEHR.lib" se ha añadido al proyecto y repita la operación.</string>
+  <string name="0104">Error al conectar con el controlador. Conéctese al controlador e inténtelo de nuevo.</string>
+  <string name="0105">Error al conectar con el Gripper. Compruebe que el Gripper esté encendido y que el cableado sea correcto.</string>
+  <string name="0106">Error de copia seg. de config. de mov. en archivo '{0}'.</string>
+  <string name="0107">Error al cargar la conf. de mov. desde el archivo '{0}'. 
+El arch. puede estar dañado.</string>
+  <string name="0108">Tarea en segundo plano del controlador desact. 
+Si continúa con la conex., podrá manejar el Gripper, pero las oper. de despl. manual del robot no estarán disponibles. 
+
+¿Desea continuar con la conexión?</string>
+  <string name="0109">No se pudo añadir biblio. de control del gripper eléctrico SMC al proyecto. 
+Si se alcanzó el núm. máx. de bibliotecas, elimine biblio. innecesarias e inténtelo de nuevo.</string>
+  <string name="0200">Config. de comunicación</string>
+  <string name="0201">Puerto COM:</string>
+  <string name="0202">Conectar</string>
+  <string name="0203">Desconectar</string>
+  <string name="0300">Config. de func.</string>
+  <string name="0301">N.º receta:</string>
+  <string name="0302">Modo operación:</string>
+  <string name="0303">Posicionam.</string>
+  <string name="0304">Sujeción</string>
+  <string name="0305">Posición:</string>
+  <string name="0306">Veloc.:</string>
+  <string name="0307">Fuerza sujeción:</string>
+  <string name="0308">C. seg</string>
+  <string name="0309">Restau.</string>
+  <string name="0310">Copia seg. conf. de Gripper eléct. SMC</string>
+  <string name="0311">Restaur. conf. del Gripper eléctrico SMC</string>
+  <string name="0400">Operación</string>
+  <string name="0401">Servo ON</string>
+  <string name="0402">Servo OFF</string>
+  <string name="0403">Restab.</string>
+  <string name="0404">Ejecutar</string>
+  <string name="0405">Anular</string>
+  <string name="0406">Mover:</string>
+  <string name="0407">Abrir</string>
+  <string name="0408">Cerrar</string>
+  <string name="0409">Estado:</string>
+  <string name="0410">Posición actual:</string>
+  <string name="0411">Actualizar</string>
+  <string name="0412">Servo:</string>
+</resources>

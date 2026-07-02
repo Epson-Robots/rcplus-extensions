@@ -1,0 +1,134 @@
+﻿<UserControl x:Class="IntegratedJogPanel.View.PosViewControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IntegratedJogPanel.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="200">
+    <Border x:Name="_border" BorderBrush="LightGray" BorderThickness="2" CornerRadius="4" Width="164" Height="140" Margin="2" Background="#FFFFFF">
+        <Grid>
+            <Grid.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                    <Setter Property="FontSize" Value="12"/>
+                    <Setter Property="Foreground" Value="#303030"/>
+                </Style>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="110"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Canvas Grid.Column="1" Grid.Row="1" x:Name="_canvasViewArea" ClipToBounds="True" Background="#c0c0c0"/>
+            <Path Grid.Column="1" Grid.Row="1" Data="M0,100 L100,100 100,0 0,0 Z M0,50 L100,50 M50,0 L50,100" Stroke="#a0a0a0" StrokeThickness="1" Stretch="Uniform"/>
+            <TextBlock Grid.Column="0" Grid.Row="1" x:Name="_txtBlockA" Margin="0 0 2 0" Text="A" HorizontalAlignment="Right"/>
+            <TextBlock Grid.Column="1" Grid.Row="2" x:Name="_txtBlockB" Margin="0 -2 0 0" Text="B" VerticalAlignment="Top"/>
+            <TextBlock Grid.Column="2" Grid.Row="1" x:Name="_txtBlockC" Margin="2 0 0 0" Text="C" HorizontalAlignment="Left"/>
+            <TextBlock Grid.Column="1" Grid.Row="0" x:Name="_txtBlockD" Margin="0 0 0 -2" Text="D" VerticalAlignment="Bottom"/>
+            <Grid Grid.Column="1" Grid.Row="1" Width="40" Height="40" x:Name="_gridRoboMark">
+                <Grid.Resources>
+                    <Style TargetType="Grid" x:Key="gridMarkStyle">
+                        <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+                        <Setter Property="Visibility" Value="Hidden"/>
+                    </Style>
+                    <Style TargetType="Image" x:Key="imgTopStyle">
+                        <Setter Property="Width" Value="32"/>
+                        <Setter Property="Source" Value="/IntegratedJogPanel_fd73aeee-5b11-4c78-8b66-0105b72583c4;component/Resources/RoboTop.png"/>
+                    </Style>
+                    <Style TargetType="Image" x:Key="imgFrontStyle">
+                        <Setter Property="Width" Value="32"/>
+                        <Setter Property="Source" Value="/IntegratedJogPanel_fd73aeee-5b11-4c78-8b66-0105b72583c4;component/Resources/RoboFront.png"/>
+                    </Style>
+                    <Style TargetType="Image" x:Key="imgRearStyle">
+                        <Setter Property="Width" Value="32"/>
+                        <Setter Property="Source" Value="/IntegratedJogPanel_fd73aeee-5b11-4c78-8b66-0105b72583c4;component/Resources/RoboRear.png"/>
+                    </Style>
+                    <Style TargetType="Image" x:Key="imgSideStyle">
+                        <Setter Property="Width" Value="32"/>
+                        <Setter Property="Source" Value="/IntegratedJogPanel_fd73aeee-5b11-4c78-8b66-0105b72583c4;component/Resources/RoboSide.png"/>
+                    </Style>
+                </Grid.Resources>
+                <Grid x:Name="_gridMark0" Style="{StaticResource gridMarkStyle}">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="-10"/>
+                            <RotateTransform Angle="270" />
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Image Style="{StaticResource imgTopStyle}"/>
+                </Grid>
+                <Grid x:Name="_gridMark1" Style="{StaticResource gridMarkStyle}">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="-10"/>
+                            <RotateTransform Angle="180" />
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Image Style="{StaticResource imgTopStyle}"/>
+                </Grid>
+                <Grid x:Name="_gridMark2" Style="{StaticResource gridMarkStyle}">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="-10"/>
+                            <RotateTransform Angle="90" />
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Image Style="{StaticResource imgTopStyle}"/>
+                </Grid>
+                <Grid x:Name="_gridMark3" Style="{StaticResource gridMarkStyle}">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="-10"/>
+                            <RotateTransform Angle="0" />
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Image Style="{StaticResource imgTopStyle}"/>
+                </Grid>
+                <Grid x:Name="_gridMark4" Style="{StaticResource gridMarkStyle}">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform Y="-16"/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Image Style="{StaticResource imgFrontStyle}"/>
+                </Grid>
+                <Grid x:Name="_gridMark5" Style="{StaticResource gridMarkStyle}">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="-9"/>
+                            <TranslateTransform Y="-16"/>
+                            <ScaleTransform ScaleX="-1"/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Image Style="{StaticResource imgSideStyle}"/>
+                </Grid>
+                <Grid x:Name="_gridMark6" Style="{StaticResource gridMarkStyle}">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform Y="-16"/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Image Style="{StaticResource imgRearStyle}"/>
+                </Grid>
+                <Grid x:Name="_gridMark7" Style="{StaticResource gridMarkStyle}">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="-9"/>
+                            <TranslateTransform Y="-16"/>
+                            <ScaleTransform ScaleX="1"/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Image Style="{StaticResource imgSideStyle}"/>
+                </Grid>
+            </Grid>
+            <Canvas Grid.Column="1" Grid.Row="1" x:Name="_canvasPts"/>
+        </Grid>
+    </Border>
+</UserControl>

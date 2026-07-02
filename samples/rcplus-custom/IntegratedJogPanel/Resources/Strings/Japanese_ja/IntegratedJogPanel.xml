@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">統合Jogパネル</string>
+  <string name="0001">統合Jogパネル</string>
+  <string name="0100">統合Jogパネル</string>
+  <string name="0110">統合Jogパネル Item</string>
+  <string name="0120">統合Jogパネル Item Command</string>
+  <string name="0200">統合Jogパネル</string>
+  <string name="0201">統合Jogパネル File</string>
+  <string name="0300">統合Jogパネル</string>
+  <string name="0400">統合Jogパネル</string>
+  <string name="0401">統合Jogパネル</string>
+  <string name="0501">OK</string>
+  <string name="0502">キャンセル</string>
+  <string name="0503">リセット</string>
+  <string name="10001">ジョグのみ表示へ</string>
+  <string name="10002">全体表示へ</string>
+  <string name="11000">ジョグ</string>
+  <string name="11001">ジョグレイアウト</string>
+  <string name="11002">編集</string>
+  <string name="11003">ポイント更新</string>
+  <string name="11004">まえに挿入</string>
+  <string name="11005">あとに挿入</string>
+  <string name="11006">ポイント追加</string>
+  <string name="11007">コントローラー接続</string>
+  <string name="11101">非表示アイテム</string>
+  <string name="11102">表示アイテム</string>
+  <string name="11103">上へ</string>
+  <string name="11104">下へ</string>
+  <string name="11200">表示ビット選択</string>
+  <string name="11300">ジョグ移動距離</string>
+  <string name="11301">整数でスピン</string>
+  <string name="11302">mmの距離は一致させる</string>
+  <string name="11303">degの距離は一致させる</string>
+  <string name="12000">ポイント一覧</string>
+  <string name="12001">上へ</string>
+  <string name="12002">選択ポイントを上へ</string>
+  <string name="12003">下へ</string>
+  <string name="12004">選択ポイントを下へ</string>
+  <string name="12005">削除</string>
+  <string name="12006">選択ポイントを削除する</string>
+  <string name="12007">すべて削除</string>
+  <string name="12008">すべてのポイントを削除する</string>
+  <string name="12009">選択ポイントへ</string>
+  <string name="12010">選択ポイントまで動作させる</string>
+  <string name="12011">先頭から選択ポイントまで</string>
+  <string name="12012">先頭から選択ポイントまで順次動作させる</string>
+  <string name="12013">先頭から最後のポイントまで</string>
+  <string name="12014">先頭から最後のポイントまで順次動作させる</string>
+  <string name="12015">クリップボードからポイントを追加</string>
+  <string name="12016">RC+本体のポイントエディターからクリップボードへコピーしたポイントデータを追加する</string>
+  <string name="12017">クリップボードへポイントデータを設定</string>
+  <string name="12018">RC+本体のポイントエディターへコピーするためのポイントデータをクリップボードへコピーする</string>
+  <string name="12019">RC+ポイントファイルから読み込み</string>
+  <string name="12020">選択したRC+ポイントファイルからポイントデータを読み込む</string>
+  <string name="12021">RC+ポイントファイルへ書き出し</string>
+  <string name="12022">新規または既存のRC+ポイントファイルへポイントデータを書き出す</string>
+  <string name="12023">*編集可</string>
+  <string name="12024">停止</string>
+  <string name="12025">動作命令実行を停止する</string>
+  <string name="12026">ポイントが0から連続していない歯抜けのあるポイント一覧は読み込めません。</string>
+  <string name="12027">Localが0以外のポイントを含むポイント一覧は読み込めません。</string>
+  <string name="12028">すでにポイントが一覧に設定されています。どうしますか？
+
+[はい] 読み込んだポイント一覧で上書きする
+[いいえ] 読み込んだポイント一覧を追加する
+[キャンセル] 読み込みをやめる</string>
+  <string name="12029">ポイント{0}の保存で失敗しました。</string>
+  <string name="12100">RC+ポイントファイル選択</string>
+  <string name="13000">ビュー</string>
+  <string name="13001">マウスドラッグ --- ビュー領域移動
+マウスホイール --- ビュー領域ズーム
+クリックロボットポイント --- ロボットポイント選択</string>
+  <string name="13002">マウスドラッグ --- ビュー領域移動
+マウスホイール --- ビュー領域ズーム
+クリックロボットポイント --- ロボットポイントを選択してGo
+ポイント選択かつロボットがその位置にいる状態でマウスドラッグ
+ --- ロボットが移動してポイントも更新</string>
+  <string name="13003">ロボット情報</string>
+  <string name="13004">視点選択</string>
+  <string name="13005">Toolジョグボタン配置選択</string>
+  <string name="13006">ポイント</string>
+  <string name="13007">軌跡</string>
+  <string name="13008">凝ポイント</string>
+  <string name="13009">ポイントラベル</string>
+  <string name="13010">Toolポイント</string>
+  <string name="13011">アジャストモード</string>
+  <string name="13012">DANGER! アジャストモード</string>
+  <string name="13013">マウス操作でロボットが動作します。注意してください</string>
+  <string name="13014">変更</string>
+  <string name="13015">{0}mm以内の移動が有効です。</string>
+</resources>

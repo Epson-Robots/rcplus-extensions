@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">WebCam-Recorder</string>
+  <string name="0001">WebCam-Recorder</string>
+  <string name="0400">WebCam-Recorder</string>
+  <string name="0401">Kamera:</string>
+  <string name="0402">Start</string>
+  <string name="0403">Stopp</string>
+</resources>
