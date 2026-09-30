@@ -1,0 +1,24 @@
+ENVT0100,LM:2026/04/17 02:21:54:303,DS:0000000546,CS:28973,MA:84-69-93-49-E7-81,EI:           
+sRCVersion="8.0.0"
+sGUID="32cd88a5-a9c4-420d-972e-7fba0813e10a"
+nCameraNumber=1
+nSequenceCount=0
+nCalibCount=0
+nCameraCount=1
+Camera1 {
+	nCameraNumber=1
+	nSysCamNum=1
+	bIsVirtual=True
+	sName="Camera 1"
+	sModel="acA2500-14gc"
+	sIPAddress="0.0.0.0"
+	sIPMask="0.0.0.0"
+	sType="Local"
+	sID="0000000"
+	nLensType=1
+	rLensFocalLength=25
+	rExtensionTubeLength=0
+	nMountRobotNumber=0
+	bIsRelatedSimulator=True
+	nCameraOrientation=100
+}

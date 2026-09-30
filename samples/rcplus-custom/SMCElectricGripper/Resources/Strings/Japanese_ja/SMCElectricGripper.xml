@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">SMC電動グリッパ</string>
+  <string name="0001">SMC電動グリッパ</string>
+  <string name="0002">SMC電動グリッパ設定</string>
+  <string name="0003">SMC電動グリッパ制御ライブラリーのインポート</string>
+  <string name="0004">SMC電動グリッパ設定 LEHR</string>
+  <string name="0100">現在のEpson RC+では利用できません。
+最新バージョンにアップデートしてから利用してください。</string>
+  <string name="0101">SMC電動グリッパ制御ライブラリーのインポートが完了しました。</string>
+  <string name="0102">SMC電動グリッパ制御ライブラリーをLibrariesフォルダに展開できませんでした。
+ディスクの空き容量や、Librariesフォルダへの書き込み権限を確認してください。</string>
+  <string name="0103">SMC電動グリッパ制御ライブラリーが含まれるプロジェクトを開いていません。
+"SMC電動グリッパ制御ライブラリーのインポート"を実行し、プロジェクトに"SMC_LEHR.lib"が登録されていることを確認してから再度実行してください。</string>
+  <string name="0104">コントローラー接続に失敗しました。コントローラーと接続した後に実行してください。</string>
+  <string name="0105">グリッパとの接続に失敗しました。グリッパに電源が供給されているか、配線が正しくされているかを確認してください。</string>
+  <string name="0106">動作設定を '{0}' ファイルにバックアップできませんでした。</string>
+  <string name="0107">動作設定を '{0}' ファイルから読み出せませんでした。
+ファイルが壊れている可能性があります。</string>
+  <string name="0108">コントローラーのバックグラウンドタスクが無効です。
+このまま接続を継続すると、グリッパの操作は可能ですが、ロボットのジョグ操作は使用できません。
+
+接続を継続しますか？</string>
+  <string name="0109">SMC電動グリッパ制御ライブラリをプロジェクトに追加できませんでした。
+ライブラリ数の上限に達している場合は、不要なライブラリを削除してから再度実行してください。</string>
+  <string name="0200">通信設定</string>
+  <string name="0201">COMポート:</string>
+  <string name="0202">接続</string>
+  <string name="0203">切断</string>
+  <string name="0300">動作設定</string>
+  <string name="0301">レシピNo.:</string>
+  <string name="0302">動作モード:</string>
+  <string name="0303">位置決め</string>
+  <string name="0304">把持</string>
+  <string name="0305">位置:</string>
+  <string name="0306">速度:</string>
+  <string name="0307">把持力:</string>
+  <string name="0308">バックアップ</string>
+  <string name="0309">リストア</string>
+  <string name="0310">SMC電動グリッパ設定のバックアップ</string>
+  <string name="0311">SMC電動グリッパ設定のリストア</string>
+  <string name="0400">運転</string>
+  <string name="0401">サーボON</string>
+  <string name="0402">サーボOFF</string>
+  <string name="0403">リセット</string>
+  <string name="0404">実行</string>
+  <string name="0405">中断</string>
+  <string name="0406">ジョグ:</string>
+  <string name="0407">開く</string>
+  <string name="0408">閉じる</string>
+  <string name="0409">ステータス:</string>
+  <string name="0410">現在位置:</string>
+  <string name="0411">更新</string>
+  <string name="0412">サーボ:</string>
+</resources>

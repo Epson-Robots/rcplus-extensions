@@ -1,0 +1,135 @@
+﻿<UserControl x:Class="VanguardModelPFScrewdriver.Dialogs.EditProgram.StepEditor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:VanguardModelPFScrewdriver.Dialogs.EditProgram"
+             xmlns:utils="clr-namespace:VanguardModelPFScrewdriver.Utils"
+             AllowDrop="True"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <utils:FloatToPersistentStringConverter x:Key="FloatToString" />
+    </UserControl.Resources>
+
+    <DockPanel>
+        <Thumb
+            x:Name="StepEditorThumb"
+            DockPanel.Dock="Left"
+            IsEnabled="{Binding CanDrag.Value}"
+            Width="10"
+            Height="18"
+            Cursor="SizeNS"
+            Margin="0,0,6,0">
+            <Thumb.Template>
+                <ControlTemplate
+                    TargetType="Thumb">
+                    <Border
+                        Background="Transparent">
+                        <ItemsControl>
+                            <ItemsControl.ItemsSource>
+                                <x:Array
+                                    Type="{x:Type sys:Int32}">
+                                    <sys:Int32>1</sys:Int32>
+                                    <sys:Int32>2</sys:Int32>
+                                    <sys:Int32>3</sys:Int32>
+                                    <sys:Int32>4</sys:Int32>
+                                </x:Array>
+                            </ItemsControl.ItemsSource>
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel
+                                        Orientation="Vertical"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center" />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel
+                                        Orientation="Horizontal"
+                                        Margin="0,1">
+                                        <Ellipse
+                                            Width="2"
+                                            Height="2"
+                                            Fill="DimGray"
+                                            Margin="0.5,0" />
+                                        <Ellipse
+                                            Width="2"
+                                            Height="2"
+                                            Fill="DimGray"
+                                            Margin="0.5,0" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </Border>
+                </ControlTemplate>
+            </Thumb.Template>
+        </Thumb>
+        <TextBox
+            DockPanel.Dock="Left"
+            x:Name="StepNumTurns"
+            Text="{Binding NumTurns.Value, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource FloatToString}, ConverterParameter=f1}"
+            InputMethod.IsInputMethodEnabled="False"
+            IsEnabled="{Binding NumTurnsEnabled.Value}"
+            utils:Hint.Id="{x:Static utils:HintId.StepTurns}"
+            utils:Hint.ToolType="{Binding DataContext.ToolType.Value, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+            utils:Hint.Mode="{Binding DataContext.SelectedMode.Value, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+            HorizontalContentAlignment="Right"
+            Width="70"
+            VerticalAlignment="Center">
+            <i:Interaction.Behaviors>
+                <utils:DecimalPlacesLimiter MaxDecimalPlaces="1" />
+            </i:Interaction.Behaviors>
+        </TextBox>
+        <TextBox
+            DockPanel.Dock="Left"
+            x:Name="StepSpeed"
+            Text="{Binding Speed.Value, UpdateSourceTrigger=PropertyChanged}"
+            InputMethod.IsInputMethodEnabled="False"
+            IsEnabled="{Binding SpeedEnabled.Value}"
+            utils:Hint.Id="{x:Static utils:HintId.StepSpeed}"
+            utils:Hint.ToolType="{Binding DataContext.ToolType.Value, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+            utils:Hint.Mode="{Binding DataContext.SelectedMode.Value, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+            HorizontalContentAlignment="Right"
+            Width="60"
+            VerticalAlignment="Center"
+            Margin="10,0,0,0" />
+        <Button
+            DockPanel.Dock="Right"
+            x:Name="StepDelete"
+            Command="{Binding DeleteCommand}"
+            Width="20"
+            Height="20"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            Margin="0,0,10,0">
+            <Image
+                Source="/VanguardModelPFScrewdriver_728ed9c2-e8ca-4935-aeeb-2afba2bf2626;component/Resources/Images/delete.png"
+                Width="20"
+                Height="20"
+                UseLayoutRounding="True"
+                SnapsToDevicePixels="True"
+                RenderOptions.BitmapScalingMode="NearestNeighbor"
+                Margin="-2,-2,0,0">
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Style.Triggers>
+                            <DataTrigger
+                                Binding="{Binding IsEnabled, RelativeSource={RelativeSource AncestorType=Button}}"
+                                Value="False">
+                                <Setter Property="Opacity" Value="0.3" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+        </Button>
+
+    </DockPanel>
+
+</UserControl>

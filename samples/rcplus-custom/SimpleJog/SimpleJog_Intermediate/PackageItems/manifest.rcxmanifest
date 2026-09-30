@@ -1,0 +1,100 @@
+category: RC+ Extensions
+id: SimpleJog_683e44ad-fd21-49e2-9a44-454aca351aba
+vendor: com.epson
+vendor_info:
+  en: Seiko Epson Corporation
+  ja: Seiko Epson Corporation
+  de: Seiko Epson Corporation
+  fr: Seiko Epson Corporation
+  es: Seiko Epson Corporation
+  zh-Hans: Seiko Epson Corporation
+  zh-Hant: Seiko Epson Corporation
+  default: en
+version: 1.0.0
+released_at: "2026-03-31T00:00:00Z"
+name:
+  en: SimpleJog
+  ja: 簡易ジョグ
+  de: SimpleJog
+  fr: Dépl.Simple
+  es: SimpleJog
+  zh-Hans: 简易步进
+  zh-Hant: 簡易步進
+  default: en
+summary:
+  en: Enables robot jog operation using a custom UI and a gamepad.
+  ja: カスタムUI およびゲームパッドによるロボットのジョグ操作を可能とします。
+  de: Ermöglicht Roboter-Jog-Betrieb über eigene UI und Gamepad
+  fr: Permet déplacement robot avec interface util. personnalisée et manette.
+  es: Permite mov. del robot con IU pers. y mando de videojuegos.
+  zh-Hans: 通过自定义UI以及游戏手柄，实现机器人的步进操作。
+  zh-Hant: 透過自定義UI以及遊戲手把，實現機器人的步進操作。
+  default: en
+description:
+  en: |
+    Enables robot jog operation using a joystick‑style custom UI and a gamepad. 
+    
+    GIP (Gaming Input Protocol) or XInput (XUSB) compatible gamepads that Windows can handle by default are supported. 
+    Operation has been confirmed with the Xbox Wireless Controller. 
+    
+    Gamepad Controls: 
+    - Top left bumper button: Motor on/off 
+    - A button: Teach current position
+  ja: |
+    ジョイスティック風のカスタムUI およびゲームパッドによるロボットのジョグ操作を可能とします。
+    
+    Windows が標準的に扱える GIP（Gaming Input Protocol） または XInput（XUSB） 互換のゲームパッドをサポートしています。
+    Xbox Wireless Controller にて動作確認しています。
+    
+    ゲームパッド操作：
+    - 左上バンパーボタン：モーターOn/Off切り替え
+    - A ボタン：現在位置をティーチ
+  de: |
+    Ermöglicht Roboter-Jog-Betrieb über joystickähnliche eigene UI und Gamepad. 
+    
+    Nutzbar sind von Windows standardmäßig unterstützte Gamepads (GIP- oder XInput-(XUSB)-kompatibel). 
+    Der Betrieb mit dem Xbox Wireless Controller wurde verifiziert. 
+    
+    Gamepad-Bedienung: 
+    - Linke obere Schultertaste (LB): Motor Ein/Aus 
+    - A-Taste: Aktuelle Pos. anlernen
+  fr: |
+    Permet déplacement robot avec interface util. personnalisée de type joystick et manette. 
+    
+    Manettes compatibles GIP (Gaming Input Protocol) ou XInput (XUSB) pouvant être gérées par Windows par défaut prises en charge. 
+    Fonctionnement confirmé avec la manette sans fil Xbox. 
+    
+    Commandes manette : 
+    - Gâchette sup. gauche : Marche/arrêt moteur
+    - Bouton A : Apprendre position actuelle
+  es: |
+    Permite mov. del robot con IU pers. tipo joystick y mando de videojuegos. 
+    
+    Se admiten mandos compatibles con GIP (Gaming Input Protocol) o XInput (XUSB) que Windows puede manejar por defecto. 
+    Se ha confirmado su funcionamiento con el mando inalámbrico Xbox. 
+    
+    Controles de mando: 
+    - Botón superior izq.: Enc./apag. motor 
+    - Botón A: Enseñar posic. actual
+  zh-Hans: |
+    通过摇杆风格的自定义UI以及游戏手柄，实现机器人的步进操作。
+    
+    支持Windows可标准识别的GIP (Gaming Input Protocol)或XInput (XUSB)兼容的游戏手柄。
+    已通过Xbox Wireless Controller进行动作确认。
+    
+    游戏手柄操作：
+    - 左上缓冲键：电机On/Off切换
+    - A键：示教当前位置
+  zh-Hant: |
+    透過搖桿風格的自定義UI以及遊戲手把，實現機器人的步進操作。
+    
+    支援Windows可標準識別的GIP (Gaming Input Protocol)或XInput (XUSB)相容的遊戲手把。
+    已透過Xbox Wireless Controller進行動作確認。
+    
+    遊戲手把操作：
+    - 左上緩衝鍵：馬達On/Off切換
+    - A鍵：示教目前位置
+  default: en
+image_file:
+  en: image.png
+  default: en

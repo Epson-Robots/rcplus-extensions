@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="IntegratedJogPanel.View.SelectSrcToDstControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IntegratedJogPanel.View"
+             xmlns:main="clr-namespace:IntegratedJogPanel"
+             mc:Ignorable="d"
+             Width="278" MinHeight="148">
+    <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="3" Background="White">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="5" ShadowDepth="5" Color="#60a0a0a0"/>
+        </Border.Effect>
+        <DockPanel Margin="8 0 8 10">
+            <TextBlock DockPanel.Dock="Top" x:Name="_txtTitle" Text="Jog layout" Visibility="Collapsed"/>
+            <Grid Margin="0 0 0 0">
+                <Grid.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Height" Value="18"/>
+                    </Style>
+                </Grid.Resources>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="32"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding Path=[JogLayoutPanel_HiddenItems].Value, Source={x:Static main:Main.Captions}}" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Text="{Binding Path=[JogLayoutPanel_Visibletems].Value, Source={x:Static main:Main.Captions}}" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                <ListBox Grid.Row="1" Grid.Column="0" x:Name="_listBoxSrc" DisplayMemberPath="Header"/>
+                <StackPanel Grid.Row="1" Grid.Column="1" Margin="4 0" VerticalAlignment="Center" Width="32">
+                    <Button x:Name="_btnRight" Content="&gt;"/>
+                    <Button x:Name="_btnLeft" Content="&lt;" Margin="0 4 0 0"/>
+                </StackPanel>
+                <ListBox Grid.Row="1" Grid.Column="2" x:Name="_listBoxDst" DisplayMemberPath="Header"/>
+                <StackPanel Grid.Row="1" Grid.Column="3" Margin="4 0 0 0" VerticalAlignment="Center">
+                    <Button x:Name="_btnUp" Content="{Binding Path=[JogLayoutPanel_Up].Value, Source={x:Static main:Main.Captions}}"/>
+                    <Button x:Name="_btnDown" Content="{Binding Path=[JogLayoutPanel_Down].Value, Source={x:Static main:Main.Captions}}" Margin="0 4 0 0"/>
+                </StackPanel>
+                <Button Grid.Row="1" Grid.Column="3" x:Name="_btnReset" Content="{Binding Path=[Common_Reset].Value, Source={x:Static main:Main.Captions}}" VerticalAlignment="Bottom" Margin="4 0 0 0"/>
+            </Grid>
+        </DockPanel>
+    </Border>
+</UserControl>

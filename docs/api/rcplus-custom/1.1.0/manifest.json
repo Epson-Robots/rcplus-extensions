@@ -1,0 +1,1287 @@
+{
+  "source_base_path": "C:/Users/3140346/Documents/Atlas/RoboticsShared/Extensions/RCPlusUserPlugin/APIDoc",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXCaptionGetter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXCaptionGetter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXCaptionGetter",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXCaptionGetter.yml\" sourcestartlinenumber=\"1\">Caption-related API</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXConfiguration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXConfiguration",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXConfiguration.yml\" sourcestartlinenumber=\"1\">Configuration data access API for RC+ Extensions</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerAPI.ControllerSettingValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerAPI.ControllerSettingValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXControllerAPI.ControllerSettingValue",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerAPI.ControllerSettingValue.yml\" sourcestartlinenumber=\"1\">Represents a controller setting value.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXControllerAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerAPI.yml\" sourcestartlinenumber=\"1\">Controller API</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.CnKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.CnKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.CnKind",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.CnKind.yml\" sourcestartlinenumber=\"1\">The connection kind.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.CnSeries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.CnSeries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.CnSeries",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.CnSeries.yml\" sourcestartlinenumber=\"1\">The controller series.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.yml\" sourcestartlinenumber=\"1\">Connection information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.yml\" sourcestartlinenumber=\"1\">Controller Connection API</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXGeneralAPI.WordAttribs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXGeneralAPI.WordAttribs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXGeneralAPI.WordAttribs",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXGeneralAPI.WordAttribs.yml\" sourcestartlinenumber=\"1\">Word attributes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXGeneralAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXGeneralAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXGeneralAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXGeneralAPI.yml\" sourcestartlinenumber=\"1\">General / Miscellaneous APIs</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOGroup.PortRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOGroup.PortRange.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOGroup.PortRange",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOGroup.PortRange.yml\" sourcestartlinenumber=\"1\">Represents a range of I/O port numbers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOGroup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOGroup",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOGroup.yml\" sourcestartlinenumber=\"1\">I/O group information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOLabel-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOLabel-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOLabel<T>",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOLabel-1.yml\" sourcestartlinenumber=\"1\">Represents an I/O label that exposes typed read/write operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOLabel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOLabel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOLabel",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOLabel.yml\" sourcestartlinenumber=\"1\">I/O label object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOWatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOWatcher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOWatcher",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXIOWatcher.yml\" sourcestartlinenumber=\"1\">I/O data monitoring object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXInputIOLabel-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXInputIOLabel-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXInputIOLabel<T>",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXInputIOLabel-1.yml\" sourcestartlinenumber=\"1\">I/O label for input ports.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXMemoryIOLabel-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXMemoryIOLabel-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXMemoryIOLabel<T>",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXMemoryIOLabel-1.yml\" sourcestartlinenumber=\"1\">I/O label for memory I/O.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXOutputIOLabel-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXOutputIOLabel-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXOutputIOLabel<T>",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.IRCXOutputIOLabel-1.yml\" sourcestartlinenumber=\"1\">I/O label for output ports.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.RCXIODataChangedCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.RCXIODataChangedCallback.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.RCXIODataChangedCallback",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.RCXIODataChangedCallback.yml\" sourcestartlinenumber=\"1\">Callback invoked when I/O data changes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.RCXIOKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.RCXIOKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.RCXIOKind",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.RCXIOKind.yml\" sourcestartlinenumber=\"1\">The I/O kind.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXIOAPI.yml\" sourcestartlinenumber=\"1\">Interface for I/O-related APIs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXLangRxCaption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXLangRxCaption.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXLangRxCaption",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXLangRxCaption.yml\" sourcestartlinenumber=\"1\">Language reactive caption</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXLibraryAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXLibraryAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXLibraryAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXLibraryAPI.yml\" sourcestartlinenumber=\"1\">Provides library-related API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXMain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXMain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXMain",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXMain.yml\" sourcestartlinenumber=\"1\">RC+ Extensions Main</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXMainMenuItemProvider.MenuItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXMainMenuItemProvider.MenuItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXMainMenuItemProvider.MenuItem",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXMainMenuItemProvider.MenuItem.yml\" sourcestartlinenumber=\"1\">Represents a menu item.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXMainMenuItemProvider.TopLevelMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXMainMenuItemProvider.TopLevelMenu.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXMainMenuItemProvider.TopLevelMenu",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXMainMenuItemProvider.TopLevelMenu.yml\" sourcestartlinenumber=\"1\">Specifies the top-level menu.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXMainMenuItemProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXMainMenuItemProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXMainMenuItemProvider",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXMainMenuItemProvider.yml\" sourcestartlinenumber=\"1\">Provides main menu items.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointsChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointsChangedEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointsChangedEventArgs",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointsChangedEventArgs.yml\" sourcestartlinenumber=\"1\">Provides event data for a points change.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointsChangedEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointsChangedEventHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointsChangedEventHandler",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.PointsChangedEventHandler.yml\" sourcestartlinenumber=\"1\">Represents the delegate for handling points changed events.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.Elbow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.Elbow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.Elbow",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.Elbow.yml\" sourcestartlinenumber=\"1\">Specifies the elbow configuration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.Hand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.Hand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.Hand",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.Hand.yml\" sourcestartlinenumber=\"1\">Specifies the hand orientation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.Wrist.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.Wrist.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.Wrist",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.Wrist.yml\" sourcestartlinenumber=\"1\">Specifies the wrist orientation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointElement.yml\" sourcestartlinenumber=\"1\">Represents a point element value.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointFileDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointFileDescriptor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointFileDescriptor",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.RCXPointFileDescriptor.yml\" sourcestartlinenumber=\"1\">Descriptor for a points file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXPointAPI.yml\" sourcestartlinenumber=\"1\">API related to points.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPreferencesAPI.PreferenceValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPreferencesAPI.PreferenceValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXPreferencesAPI.PreferenceValue",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXPreferencesAPI.PreferenceValue.yml\" sourcestartlinenumber=\"1\">Represents a preference value for Preferences.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPreferencesAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXPreferencesAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXPreferencesAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXPreferencesAPI.yml\" sourcestartlinenumber=\"1\">API related to Preferences.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramEditorAPI.IRCXProgramEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramEditorAPI.IRCXProgramEditor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProgramEditorAPI.IRCXProgramEditor",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramEditorAPI.IRCXProgramEditor.yml\" sourcestartlinenumber=\"1\">Represents the Program Editor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramEditorAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramEditorAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProgramEditorAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramEditorAPI.yml\" sourcestartlinenumber=\"1\">API related to the Program Editor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXFunctionInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXFunctionInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXFunctionInfo",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXFunctionInfo.yml\" sourcestartlinenumber=\"1\">Function information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXGlobalVariable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXGlobalVariable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXGlobalVariable",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXGlobalVariable.yml\" sourcestartlinenumber=\"1\">Global variable object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXLocalVariable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXLocalVariable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXLocalVariable",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXLocalVariable.yml\" sourcestartlinenumber=\"1\">Local variable object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXModuleVariable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXModuleVariable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXModuleVariable",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXModuleVariable.yml\" sourcestartlinenumber=\"1\">Module variable object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.IRCXCallStackEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.IRCXCallStackEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.IRCXCallStackEntry",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.IRCXCallStackEntry.yml\" sourcestartlinenumber=\"1\">Represents a call stack entry.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.RCXTaskKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.RCXTaskKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.RCXTaskKind",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.RCXTaskKind.yml\" sourcestartlinenumber=\"1\">Represents the kind of a task.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.RCXTaskState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.RCXTaskState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.RCXTaskState",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.RCXTaskState.yml\" sourcestartlinenumber=\"1\">Represents the state of a task.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXTask.yml\" sourcestartlinenumber=\"1\">Represents a task object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXVariable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXVariable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXVariable",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.IRCXVariable.yml\" sourcestartlinenumber=\"1\">Variable object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProgramExecutionAPI.yml\" sourcestartlinenumber=\"1\">API related to program execution.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectFileInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectFileInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectFileInfo",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectFileInfo.yml\" sourcestartlinenumber=\"1\">Project file information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectPropertyValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectPropertyValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectPropertyValue",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.ProjectPropertyValue.yml\" sourcestartlinenumber=\"1\">Represents a setting value for project properties.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectAPI.yml\" sourcestartlinenumber=\"1\">Project-related API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectExplorerItemProvider.Item.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectExplorerItemProvider.Item.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProjectExplorerItemProvider.Item",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectExplorerItemProvider.Item.yml\" sourcestartlinenumber=\"1\">Represents a tree item description.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectExplorerItemProvider.MenuItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectExplorerItemProvider.MenuItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProjectExplorerItemProvider.MenuItem",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectExplorerItemProvider.MenuItem.yml\" sourcestartlinenumber=\"1\">Represents a context menu item description.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectExplorerItemProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectExplorerItemProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProjectExplorerItemProvider",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectExplorerItemProvider.yml\" sourcestartlinenumber=\"1\">Interface for providing items for the Project Explorer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXProjectFileProvider.yml\" sourcestartlinenumber=\"1\">Interface for providing additional files for a project.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.IRCXJogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.IRCXJogger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.IRCXJogger",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.IRCXJogger.yml\" sourcestartlinenumber=\"1\">Represents a jog object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.IRCXJointState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.IRCXJointState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.IRCXJointState",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.IRCXJointState.yml\" sourcestartlinenumber=\"1\">Represents the joint state.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.IRCXRobotInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.IRCXRobotInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.IRCXRobotInfo",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.IRCXRobotInfo.yml\" sourcestartlinenumber=\"1\">Provides robot information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogCartesianAxis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogCartesianAxis.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogCartesianAxis",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogCartesianAxis.yml\" sourcestartlinenumber=\"1\">Jog Cartesian axis specification.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogDistance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogDistance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogDistance",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogDistance.yml\" sourcestartlinenumber=\"1\">Jog step amount (distance increment).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogJointAxis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogJointAxis.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogJointAxis",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogJointAxis.yml\" sourcestartlinenumber=\"1\">Jog joint axis specification.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogMode",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogMode.yml\" sourcestartlinenumber=\"1\">Jog mode specification.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogSpeed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogSpeed.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogSpeed",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXJogSpeed.yml\" sourcestartlinenumber=\"1\">Jog speed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXPartialRobotInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXPartialRobotInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXPartialRobotInfo",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RCXPartialRobotInfo.yml\" sourcestartlinenumber=\"1\">Provides a partial subset of robot information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RobotSettingValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RobotSettingValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RobotSettingValue",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.RobotSettingValue.yml\" sourcestartlinenumber=\"1\">Represents the setting values related to robot configuration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXRobotManagerAPI.yml\" sourcestartlinenumber=\"1\">Robot manager-related API</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXUserControlViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXUserControlViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXUserControlViewModel",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXUserControlViewModel.yml\" sourcestartlinenumber=\"1\">Interface for providing a view model for a UserControl hosted in a docking window.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.ButtonType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.ButtonType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.ButtonType",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.ButtonType.yml\" sourcestartlinenumber=\"1\">Specifies the set of buttons to display in a message box.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.ContentState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.ContentState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.ContentState",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.ContentState.yml\" sourcestartlinenumber=\"1\">Represents flags that indicate the current content state.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.IconType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.IconType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.IconType",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.IconType.yml\" sourcestartlinenumber=\"1\">Specifies the icon to display in a message box.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.ResponseType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.ResponseType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.ResponseType",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.ResponseType.yml\" sourcestartlinenumber=\"1\">Represents the user's response in a message box.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.WebMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.WebMessage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.WebMessage",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.WebMessage.yml\" sourcestartlinenumber=\"1\">Represents the common structure of messages exchanged with the web side.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.WebViewInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.WebViewInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.WebViewInfo",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.WebViewInfo.yml\" sourcestartlinenumber=\"1\">Contains definition and configuration details for a WebView component.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.IRCXWindowAPI.yml\" sourcestartlinenumber=\"1\">Provides window-related API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.RCXCaption.TypeTag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.RCXCaption.TypeTag.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.RCXCaption.TypeTag",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.RCXCaption.TypeTag.yml\" sourcestartlinenumber=\"1\">Specifies how the caption is defined.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.RCXCaption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.RCXCaption.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.RCXCaption",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.RCXCaption.yml\" sourcestartlinenumber=\"1\">Represents a caption specified by number or text.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.yml\" sourcestartlinenumber=\"1\">Common result codes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXSettingValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXSettingValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXSettingValue",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXSettingValue.yml\" sourcestartlinenumber=\"1\">Base class for setting values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.RCXCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.RCXCommon",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.RCXCommon.yml\" sourcestartlinenumber=\"1\">Common definitions for interfaces used by RC+ Extensions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.RCXExternalFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.RCXExternalFunction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.RCXExternalFunction",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.RCXExternalFunction.yml\" sourcestartlinenumber=\"1\">Delegate for invoking an external function.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXControllerAPI.RCXOperationMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXControllerAPI.RCXOperationMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.V2.IRCXControllerAPI.RCXOperationMode",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXControllerAPI.RCXOperationMode.yml\" sourcestartlinenumber=\"1\">The operation mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXControllerAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXControllerAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.V2.IRCXControllerAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXControllerAPI.yml\" sourcestartlinenumber=\"1\">Controller API (Version 2)</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXProgramExecutionAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXProgramExecutionAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.V2.IRCXProgramExecutionAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXProgramExecutionAPI.yml\" sourcestartlinenumber=\"1\">API related to program execution (Version 2).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXRobotManagerAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXRobotManagerAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.V2.IRCXRobotManagerAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXRobotManagerAPI.yml\" sourcestartlinenumber=\"1\">Robot manager-related API (Version 2)</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXWindowAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXWindowAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.V2.IRCXWindowAPI",
+      "Summary": "<p sourcefile=\"api/Epson.RoboticsShared.ExtensionsAPI.V2.IRCXWindowAPI.yml\" sourcestartlinenumber=\"1\">Provides window-related API (Version 2).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.V2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.V2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI.V2",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Epson.RoboticsShared.ExtensionsAPI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Epson.RoboticsShared.ExtensionsAPI",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Redirection",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

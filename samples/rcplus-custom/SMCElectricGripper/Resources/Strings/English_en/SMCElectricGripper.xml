@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">SMC Electric Gripper</string>
+  <string name="0001">SMC Electric Gripper</string>
+  <string name="0002">SMC Electric Gripper Settings</string>
+  <string name="0003">Import SMC Electric Gripper Control Library</string>
+  <string name="0004">SMC Electric Gripper Settings (LEHR)</string>
+  <string name="0100">This feature is not available in the current version of Epson RC+. 
+Please update to the latest version before using it.</string>
+  <string name="0101">The import of the SMC electric gripper control library has been completed.</string>
+  <string name="0102">Failed to extract the SMC electric gripper control library to the Libraries folder. 
+Please check the available disk space and write permissions for the Libraries folder.</string>
+  <string name="0103">The project containing the SMC electric gripper control library is not open. 
+After running "Import SMC electric gripper control library", confirm that "SMC_LEHR.lib" has been added to the project, and then run again.</string>
+  <string name="0104">Failed to connect to the controller. Please connect to the controller and try again.</string>
+  <string name="0105">Failed to connect to the gripper. Please check that the gripper is powered on and the wiring is correct.</string>
+  <string name="0106">Failed to back up the motion settings to the '{0}' file.</string>
+  <string name="0107">Failed to load the motion settings from the '{0}' file. 
+The file may be corrupted.</string>
+  <string name="0108">The controller's background task is disabled. 
+If you continue connecting, you will be able to operate the gripper, but robot jog operations will not be available. 
+
+Do you want to continue the connection?</string>
+  <string name="0109">Failed to add the SMC electric gripper control library to the project. 
+If the maximum number of libraries has been reached, remove unnecessary libraries and try again.</string>
+  <string name="0200">Communication Settings</string>
+  <string name="0201">COM Port:</string>
+  <string name="0202">Connect</string>
+  <string name="0203">Disconnect</string>
+  <string name="0300">Operation Settings</string>
+  <string name="0301">Recipe No.:</string>
+  <string name="0302">Operation Mode:</string>
+  <string name="0303">Positioning</string>
+  <string name="0304">Gripping</string>
+  <string name="0305">Position:</string>
+  <string name="0306">Speed:</string>
+  <string name="0307">Gripping Force:</string>
+  <string name="0308">Backup</string>
+  <string name="0309">Restore</string>
+  <string name="0310">SMC Electric Gripper Settings Backup</string>
+  <string name="0311">SMC Electric Gripper Settings Restoration</string>
+  <string name="0400">Operation</string>
+  <string name="0401">Servo ON</string>
+  <string name="0402">Servo OFF</string>
+  <string name="0403">Reset</string>
+  <string name="0404">Execute</string>
+  <string name="0405">Abort</string>
+  <string name="0406">Jog:</string>
+  <string name="0407">Open</string>
+  <string name="0408">Close</string>
+  <string name="0409">Status:</string>
+  <string name="0410">Current Position:</string>
+  <string name="0411">Refresh</string>
+  <string name="0412">Servo:</string>
+</resources>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">Pince électrique SMC</string>
+  <string name="0001">Pince électrique SMC</string>
+  <string name="0002">Param. pince électrique SMC</string>
+  <string name="0003">Importer biblio. contrôles de pince électrique SMC</string>
+  <string name="0004">Param. pince électrique SMC (LEHR)</string>
+  <string name="0100">Cette fonctionnalité n'est pas disponible dans la version actuelle d'Epson RC+. 
+Mettez à jour vers la dernière version avant utilisation.</string>
+  <string name="0101">L'importation de la bibliothèque de contrôles de pince électrique SMC est terminée.</string>
+  <string name="0102">Échec extraction bibliothèque de contrôles de la pince électrique SMC dans dossier Bibliothèques. 
+Vérifiez l'espace disque disponible et les autorisations d'écriture du dossier Bibliothèques.</string>
+  <string name="0103">Le projet contenant la bibliothèque de contrôles de pince électrique SMC n'est pas ouvert. 
+Après l'exécution de "Importer bibliothèque de contrôles de pince électrique SMC", vérifiez que "SMC_LEHR.lib" a été ajouté au projet, puis exécutez à nouveau.</string>
+  <string name="0104">Échec de connexion au contrôleur. Effectuez la connexion au contrôleur et réessayez.</string>
+  <string name="0105">Échec de connexion à la pince. Vérifiez que la pince est alimentée et que le câblage est correct.</string>
+  <string name="0106">Échec sauvegarde param. de mouvement dans fichier '{0}'.</string>
+  <string name="0107">Échec chargement param. de mouvement à partir du fichier '{0}'. 
+Le fichier est peut-être corrompu.</string>
+  <string name="0108">Tâche en arrière-plan du contrôleur désactivée. 
+Si vous poursuivez la connexion, vous pourrez utiliser la pince, mais les opérations de déplacement du robot ne seront pas disponibles. 
+
+Voulez-vous poursuivre la connexion ?</string>
+  <string name="0109">Échec ajout bibliothèque de contrôles de pince électrique SMC au projet. 
+Si le nombre maximal de bibliothèques a été atteint, supprimez les bibliothèques inutiles et réessayez.</string>
+  <string name="0200">Param. de communication</string>
+  <string name="0201">Port COM:</string>
+  <string name="0202">Connecter</string>
+  <string name="0203">Déconnecter</string>
+  <string name="0300">Param. de fonctionnement</string>
+  <string name="0301">N° recette:</string>
+  <string name="0302">Mode opérationnel:</string>
+  <string name="0303">Positionnement</string>
+  <string name="0304">Préhension</string>
+  <string name="0305">Position:</string>
+  <string name="0306">Vitesse:</string>
+  <string name="0307">Force de préhension:</string>
+  <string name="0308">Sauvegarder</string>
+  <string name="0309">Restaurer</string>
+  <string name="0310">Sauvegarde param. pince électrique SMC</string>
+  <string name="0311">Restauration param. pince électrique SMC</string>
+  <string name="0400">Opération</string>
+  <string name="0401">Servo act.</string>
+  <string name="0402">Servo désact.</string>
+  <string name="0403">Réinit.</string>
+  <string name="0404">Exécuter</string>
+  <string name="0405">Abandonner</string>
+  <string name="0406">Déplacement:</string>
+  <string name="0407">Ouvrir</string>
+  <string name="0408">Fermer</string>
+  <string name="0409">État:</string>
+  <string name="0410">Pos actuelle:</string>
+  <string name="0411">Rafraîchir</string>
+  <string name="0412">Servo:</string>
+</resources>

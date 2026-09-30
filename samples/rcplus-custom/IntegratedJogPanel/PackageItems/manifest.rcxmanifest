@@ -1,0 +1,178 @@
+category: RC+ Extensions.V2
+id: IntegratedJogPanel_841a13a3-4730-4591-bb8a-47c31dc2f8ee
+rcplus_version: 8.1.4.0
+vendor: com.epson
+vendor_info:
+  en: Seiko Epson Corporation
+  ja: Seiko Epson Corporation
+  de: Seiko Epson Corporation
+  fr: Seiko Epson Corporation
+  es: Seiko Epson Corporation
+  zh-Hans: Seiko Epson Corporation
+  zh-Hant: Seiko Epson Corporation
+  default: en
+version: 1.0.0
+released_at: "2026-06-30T00:00:00Z"
+name:
+  en: IntegratedJogPanel
+  ja: 統合Jogパネル
+  de: Integriertes Jog-Panel
+  fr: Panneau Dépl. intégré
+  es: Panel de mov. integrado
+  zh-Hans: 集成式步进面板
+  zh-Hant: 整合式步進面板
+  default: en
+summary:
+  en: The integrated Jog panel enables efficient controller operation, jogging, and point editing from a single screen.
+  ja: コントローラー操作、ジョグ、ポイントの編集を一つの画面で効率的おこなうための統合Jogパネルを提供します。
+  de: Das integrierte Jog-Panel ermöglicht eine effiziente Bedienung des Controllers, das Verfahren (Jogging) sowie die Bearbeitung von Punkten über eine einzige Bildschirmansicht.
+  fr: Le panneau Dépl. intégré permet le fonctionnement efficace du contrôleur, le déplacement et l'édition de point à partir d'un seul écran.
+  es: El panel de mov. integrado permite manejo eficiente del contr., mov. paso a paso y editar puntos desde una pantalla.
+  zh-Hans: 提供用于在单一界面中高效进行控制器操作、步进操作及点位编辑的集成式步进面板。
+  zh-Hant: 提供可在單一畫面中高效率進行控制器操作、步進操作與點位編輯的整合式步進面板。
+  default: en
+description:
+  en: |
+    This extension provides an integratedJogpanel for Epson RC+ 8.0. 
+    
+    The main features of the integratedJogpanel are as follows. While checking point positions in the 2D view, you can create and edit a continuous point list on a single screen. 
+    
+    * Controller operation 
+    * I/O operation 
+    * Jogging 
+    * Point 2D view display 
+    * Point list editing 
+    
+    The following are examples of intended use cases. 
+    
+    * Create a group of points with meaningful alignment. 
+    * After roughly determining the initial points, fine adjustments and additional point insertion can be performed. 
+    * Create points while operating I/O.
+    
+    For installation instructions and detailed usage information, please refer to the README available on GitHub. 
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.1.4.0/samples/rcplus-custom/IntegratedJogPanel>
+  ja: |
+    本Extensionは、Epson RC+ 8.0に統合Jogパネルを提供します。
+    
+    統合Jogパネルの主な機能は以下のとおりです。ポイント位置を2Dビューで確認しながら、連続したポイント一覧の作成、編集を一画面で行うことができます。
+    
+    * コントローラー操作
+    * I/O操作
+    * ジョグ
+    * ポイント2Dビュー表示
+    * ポイント一覧編集
+    
+    以下のような作業での活用を想定しています。
+    
+    * 並びに意味があるポイント群を作成する
+    * はじめおおよそのポイントを決めたあとに微調整やポイントの追加挿入をする
+    * I/Oを操作しながらポイントを作成する
+    
+    インストール方法や詳細な使用方法については、GitHub 上で公開している README を参照してください。
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.1.4.0/samples/rcplus-custom/IntegratedJogPanel>
+  de: |
+    Diese Erweiterung bietet ein IntegriertesJogPanel für Epson RC+ 8.0. 
+    
+    Die Hauptfunktionen des IntegriertesJogPanel sind die folgenden. Während Sie die Punktpositionen in der 2D-Ansicht kontrollieren, können Sie auf einem einzigen Bildschirm eine fortlaufende Punktliste erstellen und bearbeiten. 
+    
+    * Bedienung der Steuerung
+    * E/A-Betrieb
+    * Jog-Betrieb
+    * Anzeige der 2D-Punktansicht
+    * Bearbeitung der Punktliste
+    
+    Im Folgenden finden sich Beispiele für vorgesehene Anwendungsfälle. 
+    
+    * Erstellen einer Gruppe von Punkten mit einer sinnvollen Ausrichtung. 
+    * Nach der groben Festlegung der Startpunkte können Feinjustierungen und das Einfügen weiterer Punkte vorgenommen werden. 
+    * Erstellen von Punkten während des E/A-Betriebs.
+    
+    Installationsanweisungen und detaillierte Informationen zur Verwendung finden sich in der README-Datei auf GitHub.
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.1.4.0/samples/rcplus-custom/IntegratedJogPanel>
+  fr: |
+    Cette extension fournit un Pann. Dépl. intégré pour Epson RC+ 8.0. 
+    
+    Les fonctionnalités principales du Pann. Dépl. intégré sont les suivantes. Lors de la vérification des positions des points dans la vue 2D, vous pouvez créer et modifier une liste de points continus sur un seul écran. 
+    
+    * Fctment contrôleur
+    * Opération E/S
+    * Déplacement
+    * Affichage vue 2D point
+    * Modif. liste des points
+    
+    Les exemples de cas d'utilisation prévus sont indiqués ci-dessous. 
+    
+    * Créer un groupe de points avec un alignement significatif. 
+    * Après détermination approx. des points initiaux, des ajustements précis et l'insertion de points supplémentaires peuvent être effectués. 
+    * Créer des points lors d'opérations d'E/S.
+    
+    Pour les instructions d'installation et des informations d'utilisation détaillées, consultez le fichier README disponible sur GitHub.
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.1.4.0/samples/rcplus-custom/IntegratedJogPanel>
+  es: |
+    Esta extensión ofrece un PanelMovimientoIntegrado para Epson RC+ 8.0. 
+    
+    Las princip. caract. del PanelMovimientoIntegrado son las siguientes. Mientras comprueba pos. de ptos. en vista 2D, puede crear y editar una lista continua de ptos. en una sola pantalla. 
+    
+    * Func. de controlador 
+    * Func. de E/S 
+    * Movimiento 
+    * Visual. ptos. en vista 2D 
+    * Edic. lista puntos 
+    
+    Estos son ejemplos de casos de uso previstos. 
+    
+    * Crear grupo de puntos con alineación significativa. 
+    * Tras determinar aprox. los puntos iniciales, se pueden realizar ajustes precisos e insertar puntos adicionales. 
+    * Crear puntos mientras se maneja la E/S.
+    
+    Para instrucc. de instalación e inf. detallada sobre el uso, consulte el archivo README disponible en GitHub. 
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.1.4.0/samples/rcplus-custom/IntegratedJogPanel>
+  zh-Hans: |
+    本扩展为Epson RC+ 8.0提供集成式步进面板。
+    
+    集成式步进面板的主要功能如下。可在2D视图中确认点位位置，同时在同一界面中进行连续点位列表的创建与编辑。
+    
+    * 控制器操作
+    * I/O操作
+    * 步进操作
+    * 点位2D视图显示
+    * 点位列表编辑
+    
+    预计将应用于以下作业：
+    
+    * 创建具有明确排列规律的点位群
+    * 先确定大致的初始点位，然后进行微调或添加点位
+    * 一边操作I/O一边创建点位
+    
+    关于安装方法及详细的使用方法，请参阅GitHub上公开的README。
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.1.4.0/samples/rcplus-custom/IntegratedJogPanel>
+  zh-Hant: |
+    "本擴充功能為 Epson RC+ 8.0 提供整合式步進面板。
+    
+    整合式步進面板的主要功能如下。可在 2D 視圖中確認點位位置的同時，於單一畫面中進行連續點位清單的建立與編輯。
+    
+    * 控制器操作
+    * I/O 操作
+    * 步進操作
+    * 點位 2D 視圖顯示
+    * 點位清單編輯
+    
+    預計將應用於以下作業：
+    
+    * 建立具有排列關係的點位群組
+    * 確定大致的起點位後，進行微調或新增點位
+    * 一邊操作 I/O 一邊建立點位
+    
+    有關安裝方式與詳細使用方法，請參閱 GitHub 上公開的 README。
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.1.4.0/samples/rcplus-custom/IntegratedJogPanel>"
+  default: en
+image_file:
+  en: image.png
+  default: en

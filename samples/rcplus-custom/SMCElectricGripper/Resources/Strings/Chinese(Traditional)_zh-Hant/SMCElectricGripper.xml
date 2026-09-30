@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">SMC 電動夾爪</string>
+  <string name="0001">SMC 電動夾爪</string>
+  <string name="0002">SMC 電動夾爪設定</string>
+  <string name="0003">匯入 SMC 電動夾爪控制函式庫</string>
+  <string name="0004">SMC 電動夾爪設定（LEHR）</string>
+  <string name="0100">目前的 Epson RC+ 無法使用此功能。
+請更新至最新版本後再使用。</string>
+  <string name="0101">已完成匯入 SMC 電動夾爪控制函式庫。</string>
+  <string name="0102">無法將 SMC 電動夾爪控制函式庫解壓縮至 Libraries 資料夾。
+請確認磁碟剩餘空間，以及對 Libraries 資料夾的寫入權限。</string>
+  <string name="0103">未打開包含 SMC 電動夾爪控制函式庫的專案。
+執行「匯入 SMC 電動夾爪控制函式庫」，確認專案中已註冊「SMC_LEHR.lib」，再重新執行。</string>
+  <string name="0104">控制器連線失敗。請先連接控制器後再執行。</string>
+  <string name="0105">與夾爪連線失敗。請確認夾爪是否已供電，以及配線是否正確。</string>
+  <string name="0106">無法將動作設定備份至'{0}'檔案。</string>
+  <string name="0107">無法從'{0}'檔案讀取動作設定。
+檔案可能已損毀。</string>
+  <string name="0108">控制器的背景任務無效。
+在此狀態下繼續連接雖然可以操作夾爪，但無法使用機器人的步進操作。
+
+是否要繼續連接？</string>
+  <string name="0109">無法將 SMC 電動夾爪控制函式庫新增至專案中。
+若函式庫數量已達上限，請刪除不需要的函式庫後再重新執行。</string>
+  <string name="0200">通訊設定</string>
+  <string name="0201">COM連接埠：</string>
+  <string name="0202">連接</string>
+  <string name="0203">斷開連接</string>
+  <string name="0300">動作設定</string>
+  <string name="0301">配方編號：</string>
+  <string name="0302">動作模式：</string>
+  <string name="0303">定位</string>
+  <string name="0304">夾持</string>
+  <string name="0305">位置：</string>
+  <string name="0306">速度：</string>
+  <string name="0307">夾持力：</string>
+  <string name="0308">備份</string>
+  <string name="0309">還原</string>
+  <string name="0310">備份 SMC 電動夾爪設定</string>
+  <string name="0311">還原 SMC 電動夾爪設定</string>
+  <string name="0400">運行</string>
+  <string name="0401">伺服 ON</string>
+  <string name="0402">伺服 OFF</string>
+  <string name="0403">重設</string>
+  <string name="0404">執行</string>
+  <string name="0405">中斷</string>
+  <string name="0406">步進：</string>
+  <string name="0407">打開</string>
+  <string name="0408">關閉</string>
+  <string name="0409">狀態：</string>
+  <string name="0410">目前位置：</string>
+  <string name="0411">更新</string>
+  <string name="0412">伺服:</string>
+</resources>

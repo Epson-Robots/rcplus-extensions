@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">IntegratedJogPanel</string>
+  <string name="0001">IntegratedJogPanel</string>
+  <string name="0100">IntegratedJogPanel</string>
+  <string name="0110">IntegratedJogPanel Item</string>
+  <string name="0120">IntegratedJogPanel Item Command</string>
+  <string name="0200">IntegratedJogPanel</string>
+  <string name="0201">IntegratedJogPanel File</string>
+  <string name="0300">IntegratedJogPanel</string>
+  <string name="0400">IntegratedJogPanel</string>
+  <string name="0401">IntegratedJogPanel</string>
+  <string name="0501">OK</string>
+  <string name="0502">Cancel</string>
+  <string name="0503">Reset</string>
+  <string name="10001">To Jog Only</string>
+  <string name="10002">To Full View</string>
+  <string name="11000">Jog</string>
+  <string name="11001">Jog layout</string>
+  <string name="11002">Edit</string>
+  <string name="11003">Update Point</string>
+  <string name="11004">Insert Before</string>
+  <string name="11005">Insert After</string>
+  <string name="11006">Add Point</string>
+  <string name="11007">Controller Connection</string>
+  <string name="11101">Hidden Items</string>
+  <string name="11102">Visible Items</string>
+  <string name="11103">Up</string>
+  <string name="11104">Down</string>
+  <string name="11200">Bit Select</string>
+  <string name="11300">Jog Distance</string>
+  <string name="11301">Spin integer</string>
+  <string name="11302">Match distance in mm</string>
+  <string name="11303">Match distance in deg</string>
+  <string name="12000">Points</string>
+  <string name="12001">Up</string>
+  <string name="12002">Move the selected point up.</string>
+  <string name="12003">Down</string>
+  <string name="12004">Move the selected point down.</string>
+  <string name="12005">Remove</string>
+  <string name="12006">Remove selected point.</string>
+  <string name="12007">RemoveAll</string>
+  <string name="12008">Remove all points.</string>
+  <string name="12009">To Point</string>
+  <string name="12010">Move to the selected point.</string>
+  <string name="12011">Top to Select</string>
+  <string name="12012">Run from the top to the selected point.</string>
+  <string name="12013">Top to End</string>
+  <string name="12014">Run from the top to the last point.</string>
+  <string name="12015">Add Points from Clipboard</string>
+  <string name="12016">Add point data copied to the clipboard from the RC+ point editor.</string>
+  <string name="12017">Set Points to Clip</string>
+  <string name="12018">Copy point data to the clipboard for copying into the RC+ point editor.</string>
+  <string name="12019">Load from RC+ Point File</string>
+  <string name="12020">Load points from the selected RC+ point file.</string>
+  <string name="12021">Save to RC+ Point File</string>
+  <string name="12022">Save points to a new or existing RC+ point file.</string>
+  <string name="12023">*Editable</string>
+  <string name="12024">Stop</string>
+  <string name="12025">Stop executing the motion command.</string>
+  <string name="12026">The point list cannot be loaded if it contains gaps or is not a continuous sequence starting from point 0.</string>
+  <string name="12027">Point lists containing points with a Local value other than 0 cannot be loaded.</string>
+  <string name="12028">Points are already set in the list. What do you want to do? 
+
+[Yes] Overwrite with the imported point list
+[No] Add the imported point list
+[Cancel] Stop importing</string>
+  <string name="12029">Saving point {0} failed.</string>
+  <string name="12100">Select RC+ Point File</string>
+  <string name="13000">View</string>
+  <string name="13001">Mouse drag --- Pan view
+Mouse wheel --- Zoom view
+Mouse click robot point --- Select robot point</string>
+  <string name="13002">Mouse drag --- Pan view
+Mouse wheel --- Zoom view
+Mouse click robot point --- Select robot point and Go
+Mouse drag when a point is selected and the robot is at the selected point
+ --- Move robot and update point</string>
+  <string name="13003">Robot Information</string>
+  <string name="13004">View Selection</string>
+  <string name="13005">Tool Jog Button Layout</string>
+  <string name="13006">Points</string>
+  <string name="13007">Trajectory</string>
+  <string name="13008">Pt Adv</string>
+  <string name="13009">Pt Label</string>
+  <string name="13010">Tool Point</string>
+  <string name="13011">Adjust Mode</string>
+  <string name="13012">DANGER! Adjust Mode</string>
+  <string name="13013">The robot will move in response to mouse operations. Please be careful.</string>
+  <string name="13014">Change</string>
+  <string name="13015">Movement within {0} mm is allowed.</string>
+</resources>

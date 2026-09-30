@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="IntegratedJogPanel.View.IOItemControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IntegratedJogPanel.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="90" d:DesignWidth="50">
+    <Border x:Name="_border" BorderBrush="#e0e0e0" BorderThickness="0 1 1 1" Padding="2" Width="34" Height="54" Background="Transparent">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" x:Name="_txtBlockLabel" HorizontalAlignment="Center" VerticalAlignment="Top" Text="Hoge" TextWrapping="Wrap" FontSize="9" Margin="0 1">
+                <TextBlock.RenderTransform>
+                    <RotateTransform Angle="0" />
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock Grid.Row="1" x:Name="_txtBlockBitNo" HorizontalAlignment="Center" Text="0" FontSize="11"/>
+            <Grid Grid.Row="2" x:Name="_Mark">
+                <Ellipse Width="18" Height="18" Stroke="LightGray" StrokeThickness="1"/>
+                <Ellipse Width="12" Height="12" Fill="LightGray" x:Name="_markGreen"/>
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>

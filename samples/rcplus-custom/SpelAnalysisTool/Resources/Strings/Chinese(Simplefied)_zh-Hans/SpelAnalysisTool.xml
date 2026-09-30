@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0001">SPEL分析工具</string>
+  <string name="0100">确定</string>
+  <string name="0102">取消</string>
+  <string name="1001">函数开始</string>
+  <string name="1002">加载CSV</string>
+  <string name="1003">将SpelLogger添加到项目</string>
+  <string name="1004">布局</string>
+  <string name="1100">目标参数</string>
+  <string name="1101">应用</string>
+  <string name="1200">调整参数</string>
+  <string name="1201">导出inc</string>
+  <string name="1202">删除</string>
+  <string name="1300">视图</string>
+  <string name="1301">实时</string>
+  <string name="1302">回放</string>
+  <string name="1601">图表数量</string>
+  <string name="1701">隐藏项目</string>
+  <string name="1702">显示项目</string>
+  <string name="1703">重置</string>
+  <string name="2000">函数开始</string>
+  <string name="2001">函数开始</string>
+  <string name="2003">函数</string>
+  <string name="2004">函数执行期间读取日志</string>
+  <string name="3000">将SpelLogger添加到项目</string>
+  <string name="3001">SpelLogge类型</string>
+  <string name="3002">文件</string>
+  <string name="3003">库</string>
+  <string name="3004">添加使用SpelLogger API的示例程序</string>
+  <string name="10001">无法将SpelLogger库解压到Libraries文件夹。
+请检查磁盘剩余空间以及对Libraries文件夹的写入权限。</string>
+  <string name="10002">无法将SpelLogger库添加到项目中。
+如果库数量已达到上限，请删除不需要的库后再重新执行。</string>
+</resources>

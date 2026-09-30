@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">SMC-Elektrogreifer</string>
+  <string name="0001">SMC-Elektrogreifer</string>
+  <string name="0002">Einstellungen des SMC-Elektrogreifers</string>
+  <string name="0003">SMC-Elektrogreifer-Steuerbibliothek importieren</string>
+  <string name="0004">Einstellungen des SMC-Elektrogreifers (LEHR)</string>
+  <string name="0100">Diese Funktion ist in der aktuellen Version von Epson RC+ nicht verfügbar. 
+Bitte aktualisieren Sie auf die neueste Version, bevor Sie diese Funktion verwenden.</string>
+  <string name="0101">Der Import der SMC-Elektrogreifer-Steuerbibliothek wurde abgeschlossen.</string>
+  <string name="0102">Die SMC-Elektrogreifer-Steuerbibliothek konnte nicht in den Ordner Libraries extrahiert werden. 
+Bitte überprüfen Sie den verfügbaren Speicherplatz und die Schreibberechtigungen für den Ordner Libraries.</string>
+  <string name="0103">Das Projekt, das die SMC-Elektrogreifer-Steuerbibliothek enthält, wurde nicht geöffnet. 
+Führen Sie den Befehl "SMC-Elektrogreifer-Steuerbibliothek importieren" aus und vergewissern Sie sich, dass "SMC_LEHR.lib" im Projekt registriert ist, bevor Sie den Vorgang erneut ausführen.</string>
+  <string name="0104">Die Verbindung zur Steuerung konnte nicht hergestellt werden. Bitte stellen Sie eine Verbindung zur Steuerung her und versuchen Sie es erneut.</string>
+  <string name="0105">Die Verbindung zum Greifer konnte nicht hergestellt werden. Bitte prüfen Sie, ob der Greifer eingeschaltet ist und die Verdrahtung korrekt ist.</string>
+  <string name="0106">Die Sicherung der Bewegungseinstellungen in der Datei '{0}' ist fehlgeschlagen.</string>
+  <string name="0107">Das Laden der Bewegungseinstellungen aus der Datei '{0}' ist fehlgeschlagen. 
+Die Datei ist möglicherweise beschädigt.</string>
+  <string name="0108">Die Hintergrundaufgabe der Steuerung ist deaktiviert. 
+Wenn Sie die Verbindung fortsetzen, können Sie den Greifer bedienen, aber die der Jog-Betrieb des Roboters steht nicht zur Verfügung. 
+
+Möchten Sie die Verbindung fortsetzen?</string>
+  <string name="0109">Das Hinzufügen der SMC-Elektrogreifer-Steuerbibliothek zum Projekt ist fehlgeschlagen. 
+Wenn die maximale Anzahl an Bibliotheken erreicht ist, entfernen Sie nicht benötigte Bibliotheken und versuchen Sie es erneut.</string>
+  <string name="0200">Kommunikationseinstellungen</string>
+  <string name="0201">COM-Port:</string>
+  <string name="0202">Verbinden</string>
+  <string name="0203">Trennen</string>
+  <string name="0300">Betriebseinstellungen</string>
+  <string name="0301">Rezept-Nr.:</string>
+  <string name="0302">Betriebsart:</string>
+  <string name="0303">Positionierung</string>
+  <string name="0304">Greifen</string>
+  <string name="0305">Position:</string>
+  <string name="0306">Geschwindigkeit:</string>
+  <string name="0307">Greifkraft:</string>
+  <string name="0308">Backup</string>
+  <string name="0309">Whst.</string>
+  <string name="0310">Sicherung der Einstellungen des SMC-Elektrogreifers</string>
+  <string name="0311">Wiederherstellung der Einstellungen des SMC-Elektrogreifers</string>
+  <string name="0400">Vorgang</string>
+  <string name="0401">Servo EIN</string>
+  <string name="0402">Servo AUS</string>
+  <string name="0403">Reset</string>
+  <string name="0404">Ausführen</string>
+  <string name="0405">Abbrechen</string>
+  <string name="0406">Einrichten:</string>
+  <string name="0407">Öffnen</string>
+  <string name="0408">Schließen</string>
+  <string name="0409">Status:</string>
+  <string name="0410">Aktuelle Position:</string>
+  <string name="0411">Aktualisieren</string>
+  <string name="0412">Servo:</string>
+</resources>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">SMC电动夹爪</string>
+  <string name="0001">SMC电动夹爪</string>
+  <string name="0002">SMC电动夹爪设置</string>
+  <string name="0003">导入SMC电动夹爪控制库</string>
+  <string name="0004">SMC电动夹爪设置（LEHR）</string>
+  <string name="0100">当前版本的Epson RC+无法使用该功能。
+请升级到最新版本后再使用。</string>
+  <string name="0101">SMC电动夹爪控制库导入完成。</string>
+  <string name="0102">无法将SMC电动夹爪控制库解压到Libraries文件夹。
+请检查磁盘剩余空间以及对Libraries文件夹的写入权限。</string>
+  <string name="0103">未打开包含SMC电动夹爪控制库的项目。
+执行“导入SMC电动夹爪控制库”，确认项目中已注册“SMC_LEHR.lib”，然后重新执行。</string>
+  <string name="0104">连接控制器失败。请连接控制器后再执行。</string>
+  <string name="0105">连接夹爪失败。请确认夹爪是否已通电，以及接线是否正确。</string>
+  <string name="0106">无法将动作设置备份到 '{0}' 文件。</string>
+  <string name="0107">无法从 '{0}' 文件读取动作设置。
+文件可能已损坏。</string>
+  <string name="0108">控制器的后台任务无效。
+在此状态下继续连接虽然可以操作夹爪，但无法使用机器人的步进操作。
+
+是否继续连接？</string>
+  <string name="0109">无法将SMC电动夹爪控制库添加到项目中。
+如果库数量已达到上限，请删除不需要的库后再重新执行。</string>
+  <string name="0200">通信设置</string>
+  <string name="0201">COM端口：</string>
+  <string name="0202">连接</string>
+  <string name="0203">断开连接</string>
+  <string name="0300">动作设置</string>
+  <string name="0301">配方编号：</string>
+  <string name="0302">动作模式：</string>
+  <string name="0303">定位</string>
+  <string name="0304">夹持</string>
+  <string name="0305">位置：</string>
+  <string name="0306">速度：</string>
+  <string name="0307">夹持力：</string>
+  <string name="0308">备份</string>
+  <string name="0309">恢复</string>
+  <string name="0310">备份SMC电动夹爪设置</string>
+  <string name="0311">恢复SMC电动夹爪设置</string>
+  <string name="0400">运行</string>
+  <string name="0401">伺服ON</string>
+  <string name="0402">伺服OFF</string>
+  <string name="0403">重置</string>
+  <string name="0404">执行</string>
+  <string name="0405">中止</string>
+  <string name="0406">步进：</string>
+  <string name="0407">打开</string>
+  <string name="0408">关闭</string>
+  <string name="0409">状态：</string>
+  <string name="0410">当前位置：</string>
+  <string name="0411">更新</string>
+  <string name="0412">伺服:</string>
+</resources>

@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="SpelAnalysisTool.ViewControls.SelectSrcToDstControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SpelAnalysisTool"
+             xmlns:vc="clr-namespace:SpelAnalysisTool.ViewControls"
+             mc:Ignorable="d" 
+             Height="160">
+    <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="3" Background="White">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="5" ShadowDepth="5" Color="#60a0a0a0"/>
+        </Border.Effect>
+        <DockPanel Margin="8 0 8 10">
+            <Grid Margin="0 0 0 0">
+                <Grid.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Height" Value="18"/>
+                    </Style>
+                </Grid.Resources>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="32"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding Path=[Layout_HiddenItems].Value, Source={x:Static local:Main.Captions}}" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Text="{Binding Path=[Layout_VisibleItems].Value, Source={x:Static local:Main.Captions}}" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                <Button Grid.Row="0" Grid.Column="3" x:Name="_btnClose" Content="X" HorizontalAlignment="Right" Width="20"/>
+                <ListBox Grid.Row="1" Grid.Column="0" x:Name="_listBoxSrc" DisplayMemberPath="Name"/>
+                <StackPanel Grid.Row="1" Grid.Column="1" Margin="4 0" VerticalAlignment="Center" Width="32">
+                    <Button x:Name="_btnToVisible" Content="&gt;"/>
+                    <Button x:Name="_btnToHidden" Content="&lt;" Margin="0 4 0 0"/>
+                </StackPanel>
+                <Border Grid.Row="1" Grid.Column="2" BorderBrush="Gray" BorderThickness="1">
+                    <Grid x:Name="_gridDst">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <vc:CellControl Grid.Row="0" Grid.Column="0" Idx="1"/>
+                        <vc:CellControl Grid.Row="1" Grid.Column="0" Idx="2"/>
+                        <vc:CellControl Grid.Row="2" Grid.Column="0" Idx="3"/>
+                        <vc:CellControl Grid.Row="0" Grid.Column="1" Idx="4"/>
+                        <vc:CellControl Grid.Row="1" Grid.Column="1" Idx="5"/>
+                        <vc:CellControl Grid.Row="2" Grid.Column="1" Idx="6"/>
+                        <vc:CellControl Grid.Row="0" Grid.Column="2" Idx="7"/>
+                        <vc:CellControl Grid.Row="1" Grid.Column="2" Idx="8"/>
+                        <vc:CellControl Grid.Row="2" Grid.Column="2" Idx="9"/>
+                    </Grid>
+                </Border>
+                <StackPanel Grid.Row="1" Grid.Column="3" Margin="4 0 0 0" VerticalAlignment="Center">
+                    <Button x:Name="_btnUp" Content="Up"/>
+                    <Grid Margin="0 4 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40"/>
+                            <ColumnDefinition Width="4"/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" x:Name="_btnLeft" Content="Left"/>
+                        <Button Grid.Column="2" x:Name="_btnRight" Content="Right"/>
+                    </Grid>
+                    <Button x:Name="_btnDown" Content="Down" Margin="0 4 0 0"/>
+                </StackPanel>
+                <Button Grid.Row="1" Grid.Column="3" x:Name="_btnReset" Content="{Binding Path=[Layout_Reset].Value, Source={x:Static local:Main.Captions}}" VerticalAlignment="Bottom" Margin="4 0 0 0"/>
+            </Grid>
+        </DockPanel>
+    </Border>
+</UserControl>

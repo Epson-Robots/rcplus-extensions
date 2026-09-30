@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0000">PanelMovimientoIntegrado</string>
+  <string name="0001">PanelMovimientoIntegrado</string>
+  <string name="0100">PanelMovimientoIntegrado</string>
+  <string name="0110">Elem. PanelMovimientoIntegrado</string>
+  <string name="0120">Comando elem. PanelMovimientoIntegrado</string>
+  <string name="0200">PanelMovimientoIntegrado</string>
+  <string name="0201">Arch. PanelMovimientoIntegrado</string>
+  <string name="0300">PanelMovimientoIntegrado</string>
+  <string name="0400">PanelMovimientoIntegrado</string>
+  <string name="0401">PanelMovimientoIntegrado</string>
+  <string name="0501">Aceptar</string>
+  <string name="0502">Cancelar</string>
+  <string name="0503">Restab.</string>
+  <string name="10001">A Mov. solo</string>
+  <string name="10002">A Vista comp.</string>
+  <string name="11000">Mover</string>
+  <string name="11001">Diseño mov.</string>
+  <string name="11002">Editar</string>
+  <string name="11003">Actualiz. pto.</string>
+  <string name="11004">Insertar antes</string>
+  <string name="11005">Ins. después</string>
+  <string name="11006">Agr. pto.</string>
+  <string name="11007">Conexión a Controlador</string>
+  <string name="11101">Elem. ocultos</string>
+  <string name="11102">Elem. visibles</string>
+  <string name="11103">Arriba</string>
+  <string name="11104">Abajo</string>
+  <string name="11200">Selec. bits</string>
+  <string name="11300">Distancia de mov.</string>
+  <string name="11301">Selec. entero</string>
+  <string name="11302">Dist. de ajuste en mm</string>
+  <string name="11303">Dist. ajuste en grados</string>
+  <string name="12000">Puntos</string>
+  <string name="12001">Arriba</string>
+  <string name="12002">Desplace pto. selec. arriba.</string>
+  <string name="12003">Abajo</string>
+  <string name="12004">Desplace pto. selec. abajo.</string>
+  <string name="12005">Quitar</string>
+  <string name="12006">Quite el punto selecc.</string>
+  <string name="12007">QuitarTodo</string>
+  <string name="12008">Quite todos ptos.</string>
+  <string name="12009">Pto. dest.</string>
+  <string name="12010">Desplácese al punto selecc.</string>
+  <string name="12011">De arriba a sel.</string>
+  <string name="12012">Desplácese de arriba al punto selecc.</string>
+  <string name="12013">Hasta fin</string>
+  <string name="12014">Desplácese de arriba al último pto.</string>
+  <string name="12015">Agr. ptos desde portapapeles</string>
+  <string name="12016">Agregue datos ptos. copiados a portapap. desde editor de ptos. de RC+.</string>
+  <string name="12017">Establ. ptos. a portapapeles</string>
+  <string name="12018">Copie datos ptos. a portapapeles para pegarlos en editor de ptos. de RC+.</string>
+  <string name="12019">Cargar de arch. ptos. de RC+</string>
+  <string name="12020">Cargar puntos de arch. de puntos de RC+ selec.</string>
+  <string name="12021">Guardar a arch. ptos. de RC+</string>
+  <string name="12022">Guarde ptos. en arch. ptos. RC+ nuevo o existente.</string>
+  <string name="12023">*Editable</string>
+  <string name="12024">Detener</string>
+  <string name="12025">Detenga ejec. del comando de mov.</string>
+  <string name="12026">La lista de ptos. no se puede cargar si contiene huecos o no es una sec. continua que comience en pto. 0.</string>
+  <string name="12027">No se pueden cargar listas de puntos con puntos con valor Local distinto de 0.</string>
+  <string name="12028">Ya hay puntos ajustados en la lista. ¿Qué desea hacer? 
+
+[Sí] Sobrescribir con lista de ptos. Importada
+[No] Añadir lista ptos. importada
+[Cancelar] Detener import.</string>
+  <string name="12029">Error al guardar pto, {0}.</string>
+  <string name="12100">Sel. arch. ptos. RC+</string>
+  <string name="13000">Ver</string>
+  <string name="13001">Arrast. ratón --- Despl. vista
+Rueda ratón --- Zoom vista
+Clic en pto. de robot --- Sel. pto. de robot</string>
+  <string name="13002">Arrast. ratón --- Despl. vista
+Rueda ratón --- Zoom vista
+Clic en pto. de robot --- Sel. pto. de robot y avanzar
+Arrastrar el ratón con un punto seleccionado y el robot en dicho punto
+ --- Mover robot y actual. punto</string>
+  <string name="13003">Inf. del robot</string>
+  <string name="13004">Ver selección</string>
+  <string name="13005">Dispos. botón mov. herr.</string>
+  <string name="13006">Puntos</string>
+  <string name="13007">Trayectoria</string>
+  <string name="13008">Adv. pto.</string>
+  <string name="13009">Etiq. pto.</string>
+  <string name="13010">Pto. herr.</string>
+  <string name="13011">Modo ajuste</string>
+  <string name="13012">¡PELIGRO! Modo ajuste</string>
+  <string name="13013">El robot se moverá en respuesta a oper. del ratón. Tenga cuidado.</string>
+  <string name="13014">Cambiar</string>
+  <string name="13015">Se permite despl. de hasta {0} mm.</string>
+</resources>
