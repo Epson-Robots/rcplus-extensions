@@ -1,7 +1,7 @@
 # Epson RC+ 8.0 <br/>RC+ Extensions
 
-Rev.3  
-ENM269S9174F  
+Rev.2  
+ENM266S8626F  
 
 [日本語](./readme_ja.md) / [English](./readme.md)
 
@@ -32,11 +32,8 @@ For details on each sample, refer to readme that is placed in each folder.
 | --- | --- |
 | SimpleJog | This allows for jog control of the robot using a custom UI or a gamepad. The project is separated into Beginner and Intermediate. |
 | WebCamRecorder | You can use the web camera connected to the PC to preview and record videos. The project is separated into Beginner and Intermediate. |
-| IntegratedJogPanel |While viewing the point position in 2D view, you can create and edit the continuous list of points on a single screen efficiently. |
+| IntegratedJogPanel | While viewing the point position in 2D view, you can create and edit the continuous list of points on a single screen efficiently. |
 | SMCElectricGripper | It enables you to set and control the SMC LEHR series electric grippers. |
-| SpelAnalysisTool | To facilitate analysis of SPEL+ programs, this extension provides a logging library and a screen for displaying output logs in tables, graphs, and other formats. |
-| VanguardModelPFScrewdriver | An extension for configuring and controlling the electric torque screwdriver manufactured by Vanguard Systems Inc.  |
-
 
 **PC Vision Custom Vision Objects**
 
@@ -45,9 +42,9 @@ For details on each sample, refer to readme that is placed in each folder.
 | AutoContrast | This is a custom vision object that changes the color to enhance the contrast. |
 | FeatureMatch | This is a custom vision object that uses the matching feature to identify positions. |
 
-## 3. RC+ Custom
+### 3. RC+ Custom
 
-### 3.1 Description of APIs
+#### 3.1 Description of APIs
 
 In RC+ Custom, you can use the Extensions API to call Epson RC+ 8.0 functions.  
 The major APIs are shown below. For more details, refer to the API reference.  
@@ -55,15 +52,15 @@ The major APIs are shown below. For more details, refer to the API reference.
 
 | API | Overview |
 | --- | --- |
-|IRCXProjectAPI |An API set related to the SPEL+ project. See [Project](#361-Project). |
-|IRCXPointAPI |An API set related to point data operation. See [Points](#362-Points). |
-|IRCXProgramEditorAPI |An API set related to Epson RC+ 8.0 program editor operation. See [Program editor](#363-Programeditor). |
-|IRCXControllerConnectionAPI |An API set related to controller connection. See [Controller connection](#364-Controllerconnection). |
-|IRCXControllerAPI |An API set for acquiring controller information and setting up the controller. See [Controller settings](#365-Controllersettings). |
-|IRCXIOAPI |An API set related to I/O operation. See [I/O](#366-io). |
-|IRCXRobotManagerAPI |An API set related to robot operation. See [Robot operation](#367-Robotoperation). |
-|IRCXProgramExecutionAPI |An API set related to Epson RC+ 8.0 program execution. See [Program execution](#368-Programexecution). |
-|IRCXPreferencesAPI |An API set related to setting up the Epson RC+ 8.0 development environment. See [Setting the development environment](#369-Settingthedevelopmentenvironment). |
+|IRCXProjectAPI |An API set related to the SPEL+ project. See [Project](#311-project). |
+|IRCXPointAPI |An API set related to point data operation. See [Points](#312-points). |
+|IRCXProgramEditorAPI |An API set related to Epson RC+ 8.0 program editor operation. See [Program editor](#313-program-editor). |
+|IRCXControllerConnectionAPI |An API set related to controller connection. See [Controller connection](#314-controller-connection). |
+|IRCXControllerAPI |An API set for acquiring controller information and setting up the controller. See [Controller settings](#315-controller-settings). |
+|IRCXIOAPI |An API set related to I/O operation. See [I/O](#316-io). |
+|IRCXRobotManagerAPI |An API set related to robot operation. See [Robot operation](#317-robot-operation). |
+|IRCXProgramExecutionAPI |An API set related to Epson RC+ 8.0 program execution. See [Program execution](#318-program-execution). |
+|IRCXPreferencesAPI |An API set related to setting up the Epson RC+ 8.0 development environment. See [Setting the development environment](#319-setting-the-development-environment). |
 
 To use the Extensions API, declare the following to acquire the API instance.
 
@@ -71,7 +68,7 @@ To use the Extensions API, declare the following to acquire the API instance.
 var extensionAPI = Main.GetAPI<IRCXProjectAPI>();
 ```
 
-#### 3.1.1 Project
+##### 3.1.1 Project
 
 An API set related to project operation.
 
@@ -125,7 +122,7 @@ var addResult = api.AddPoint(pointFileName, point);
 var deleteResult = api.DeletePoint(pointFileName, 10);
 ```
 
-#### 3.1.3 Program editor
+##### 3.1.3 Program editor
 
 An API set related to program editor operation.
 
@@ -152,7 +149,7 @@ ret = await editor.ClearBreakpointAsync(1);
 ret = await editor.ClearAllBreakpointsAsync();
 ```
 
-#### 3.1.4 Controller connection
+##### 3.1.4 Controller connection
 
 An API set related to controller connection.
 
@@ -169,7 +166,7 @@ int number = lastConnection.Number;
 
 // Connects to the controller.  
 // Specify the controller number to connect to as the first argument.
-bool connectResult = await api?.ConnectControllerAsync(number, false);
+bool connectResult = await api?.ConnectionControllerAsync(lastConnection).ConfigureAwait(false);
 
 if (connectResult) {
     // Process executed when the connection succeeds.
@@ -180,14 +177,14 @@ if (connectResult) {
 bool? isConnected = api?.IsOnline;  // The current connection state of the controller.
 if (isConnected == true) {
     // Disconnects from the controller.
-    await api?.DisconnectControllerAsync();  
+    await api?.DisconnectControllerAsync().ConfigureAwait(false);  
 }
 ```
 
-#### 3.1.5 Controller settings
+##### 3.1.5 Controller settings
 
 An API set for acquiring controller information and setting up the controller.  
-A connection to a controller is required. For information on connecting a controller, refer to Controller connection.
+A connection to a controller is required. For information on connecting a controller, refer to [Controller connection](#314-controller-connection).
 
 ```C#
 // Retrieves the API instance.
@@ -208,16 +205,17 @@ var (ret, id) = await api.StartSetControllerSettingsAsync();
 settings["Name"].Value = "MyController"; 
 
 // Submits the updated values for the specified category.
-result = await api.SetControllerSettingsAsync(id, categoryName, settings); 
+var result = await api.SetControllerSettingsAsync(id, categoryName, settings); 
 
 // Commits the changes and applies them to the controller.
 var setResult = await api.CommitSetControllerSettingsAsync(id); 
 ```
 
-#### 3.1.6 I/O
+##### 3.1.6 I/O
 
 An API set related to I/O operation.  
-A connection to a controller is required. For information on connecting a controller, refer to Controller connection.
+A connection to a controller is required. For information on connecting a controller, refer to [Controller connection](#314-controller-connection).
+
 ```C#
 // Retrieves the API instance.
 IRCXIOAPI api = Main.GetAPI<IRCXIOAPI>()!;  
@@ -237,13 +235,13 @@ var ret = api.CreateWatcher<bool>(IRCXIOAPI.RCXIOKind.Input, 0, (watcher, oldDat
 });
 
 // To stop monitoring the I/O state, dispose of the watcher object.
-if (ret.Item2 != null) {
-    IRCXIOAPI.IRCXIOWatcher? watcher = ret.Item2;
-    watcher?.Dispose();
+if (ret != null) {
+    IRCXIOAPI.IRCXIOWatcher? watcher = ret.Value.Item2;
+    _watcher?.Dispose();
 }
 ```
 
-#### 3.1.7 Robot operation
+##### 3.1.7 Robot operation
 
 An API set related to robot operation.
 
@@ -273,7 +271,7 @@ var jogger = await api.CreateJoggerAsync();
 var _ = jogger.StartJointJogAsync(IRCXRobotManagerAPI.RCXJogJointAxis.J1);
 ```
 
-#### 3.1.8 Program execution
+##### 3.1.8 Program execution
 
 An API set related to program execution.
 
@@ -292,7 +290,7 @@ await api.StartFunctionAsync(userFunctions.ElementAt(0), false, false, Id);
 await api.ExecuteSpelCommandAsync("Motor ON");
 ```
 
-#### 3.1.9 Setting the development environment
+##### 3.1.9 Setting the development environment
 
 An API set related to setting up the development environment.
 
@@ -312,7 +310,7 @@ preferences["IsAutoSave"].Value = false;
 await api.SetPreferencesAsync(preferenceCategories.ElementAt(0), preferences);
 ```
 
-#### 3.1.10 Windows
+##### 3.1.10 Windows
 
 An API set for displaying docking windows and message boxes.
 
@@ -322,14 +320,14 @@ IRCXWindowAPI? api = Main.GetAPI<IRCXWindowAPI>();
 
 // Show message box.
 var response = api?.ShowMessageBox(
-    new RCXCaption(Main.CommonId, Constants.Caption.ExtensionName),
+    new RCXCaption(Main.CommonId, Caption.ExtensionName),
     new RCXCaption("Are you OK?"),
     IRCXWindowAPI.ButtonType.Yes_No,
     IRCXWindowAPI.IconType.Question
 );
-if (response == IRCXWindowAPI.ResponseType.Yes)
+if (response == IRCXWindowAPI.ResponseType.OK)
 {
-    // Process when the response is Yes.
+    // Process when the response is OK.
 }
 ```
 
@@ -362,19 +360,19 @@ IRCXWindowAPI? api = Main.GetAPI<IRCXWindowAPI>();
 if (api != null)
 {
     // Show "Epson Global Portal" site in a docking window
-    var webViewInfo = new IRCXWindowAPI.WebViewInfo(
+    var webVewInfo = new IRCXWindowAPI.WebViewInfo(
         (_, _, _) => new Uri("https://epson.com/"),
-            Main.CommonId,
-            $"{Main.CommonId}.External",
-            new RCXCaption(Main.CommonId, Constants.Caption.WindowTitle),
-            Main.CommonIcon
+        Id,
+        $"{Id}.External",
+        new RCXCaption(CommonId, Caption.WindowTitle_External),
+        Main.CommonIcon
     );
 
     await api.ShowDockingWebViewWindowAsync(webViewInfo).ConfigureAwait(true);
 }
 ```
 
-### 3.2 Description of Extension Points
+#### 3.2 Description of Extension Points
 
 RC+ Custom provides a mechanism (extension points) for incorporating unique features into Epson RC+, such as adding menu items, managing project files, and displaying docking windows.  
 These work by implementing the interfaces for extension points provided by the Extensions API as exports of the Managed Extensibility Framework (MEF), which is .NET's built-in extension framework.  
@@ -382,7 +380,7 @@ When creating an Extension project, you can select the extension point you want 
 
 This section describes how to implement the extension points.
 
-#### 3.2.1 Main menu items and toolbar buttons
+##### 3.2.1 Main menu items and toolbar buttons
 
 Extensions can add their own menu items to the main menu. The menu items can also be hierarchically organized using submenus.
 
@@ -409,10 +407,10 @@ public class MainMenuItem : IRCXMainMenuItemProvider
         {
             return new IRCXMainMenuItemProvider.MenuItem
             {
-                Caption = new RCXCaption(Main.CommonId, Constants.Caption.MainMenu),
+                Caption = new RCXCaption(Main.CommonId, Caption.MainMenu),
                 Icon = Main.CommonIcon,
                 CommandName = "Main",
-                ToolTip = new RCXCaption(Main.CommonId, Constants.Caption.MainMenu),
+                ToolTip = new RCXCaption(Main.CommonId, Caption.MainMenu),
             };
         }
     }
@@ -472,7 +470,7 @@ If ToolTip is null, no toolbar button is displayed for that menu item.
 
 At present, there is no way to dynamically change the strings displayed in menu items.
 
-#### 3.2.2 Docking window
+##### 3.2.2 Docking window
 
 An extension can display a docking window by providing a user control as its content and its view model.
 
@@ -613,7 +611,7 @@ public void ShowHelp()
 }
 ```
 
-#### 3.2.3 Project files
+##### 3.2.3 Project files
 
 You can add custom files managed by the extension to an Epson RC+ project.
 
@@ -698,7 +696,7 @@ The tree items are configured as follows.
 - Child item indicating the file name of the file being added
   - It has a context menu consisting of three items: "Open," "Exclude from Project," and "Delete."
 
-#### 3.2.4 Project Explorer tree items
+##### 3.2.4 Project Explorer tree items
 
 Extensions can add their own tree items to the Project Explorer of an open Epson RC+ project. If the tree items are linked to your own files, use the "Project files" extension point mentioned above.
 
@@ -763,7 +761,7 @@ public partial class ProjectExplorerItem : IRCXProjectExplorerItemProvider
 }
 ```
 
-#### 3.2.5 External functions
+##### 3.2.5 External functions
 
 A SPEL+ program can use Declare statements to invoke external functions defined in a DLL. This mechanism has existed since earlier versions of Epson RC+ and is subject to the constraint that DLLs must be 32-bit native.
 
@@ -798,12 +796,12 @@ public RCXExternalFunction CubeRoot = (command, parameters) =>
 {
     if (parameters.Count == 0 || !double.TryParse(parameters[0], out var input))
     {
-        return ValueTuple.Create(RCXCommon.RCXResult.BadArgument, string.Empty);
+        return ValueTuple.Create(RCXResult.BadArgument, string.Empty);
     }
 
     double output = Math.Cbrt(input);
 
-    return ValueTuple.Create(RCXCommon.RCXResult.Success, output.ToString());
+    return ValueTuple.Create(RCXResult.Success, output.ToString());
 };
 ```
 
@@ -813,21 +811,21 @@ The following are built-in "External functions" that are always available in Eps
 
 1. Execute external program (waits for completion and returns the first line of output)
     ```
-    ret = CallExternal("Execute program [arg(s)]", ByRef output$)
+    ret = CallExternal("Execute program [arg(s)]", output$)
     ```
 2. Start external program (does not wait for completion)
     ```
-    ret = CallExternal("ExecuteNoWait program [arg(s)]", ByRef output$)
+    ret = CallExternal("ExecuteNoWait program [arg(s)]", output$)
     ```
 3. Acquire the string corresponding to the CallExternal result code
     ```
-    ret = CallExternal("ErrorStr " + Str$(ret), ByRef output$)
+    ret = CallExternal("ErrorStr Str$(retCode)" output$)
     ```
-    - 例
+    - (Example)
         ```
         Int32 ret
         String output$
-        CallExternal("ErrorStr " + Str$(ret), ByRef output$)
+        ret = CallExternal("ErrorStr 0", ByRef output$)
         Print output$
         ```
       - "Success" is displayed in the Run window.
@@ -837,15 +835,9 @@ The following are built-in "External functions" that are always available in Eps
 In addition, the bridge DLL provides functions for controlling the operation of external functions (Requires a Declare statement similar to CallExternal).
 
 1. GetTimeout(ByRef timeout As Int32) As Int32
-    - Acquires the CallExternal timeout period. The unit is milliseconds, and the initial value is 30,000.  
-    ```
-    Declare GetTimeout, "C:\EpsonRC80\ExternalFunctionBridge.dll", "GetTimeout",(ByRef timeout As Int32) As Int32  
-    ```
+    - Acquires the CallExternal timeout period. The unit is milliseconds, and the initial value is 30,000.
 2. SetTimeout(timeout As Int32) As Int32
-    - Sets the CallExternal timeout period. The unit is milliseconds.  
-    ```
-    Declare SetTimeout, "C:\EpsonRC80\ExternalFunctionBridge.dll", "SetTimeout",(timeout As Int32) As Int32 
-    ```
+    - Sets the CallExternal timeout period. The unit is milliseconds.
 
 ## 4. Developing PC Vision Custom Vision Objects
 

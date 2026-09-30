@@ -1,4 +1,0 @@
-#define AP_CYCLE_CNT 3
-#define AP_INIT_SPEED 100
-#define AP_INIT_ACCEL 30
-#define AP_BOW_SPEED 100

@@ -1,7 +1,7 @@
 # Epson RC+ 8.0<br/>RC+ Extensions
 
-Rev.3  
-JAM269S9173F  
+Rev.2  
+JAM266S8625F  
 
 [日本語](./readme_ja.md) / [English](./readme.md)
 
@@ -34,9 +34,6 @@ Extensionを開発するうえで、具体的な実装方法を確認する際�
 | WebCamRecorder | PC接続のウェブカメラを使用し、映像のプレビュー表示と録画が可能です。初級編(Beginner)と中級編(Intermediate)でプロジェクトは分かれています。 |
 | IntegratedJogPanel | ポイント位置を2Dビューで確認しながら、連続したポイント一覧の作成・編集を一画面で効率よく行うことが可能です。 |
 | SMCElectricGripper | SMC電動グリッパ LEHRシリーズの設定および制御を可能とします。 |
-| SpelAnalysisTool | 簡単にSPEL+プログラムの分析を行えるようにするために、ログ出力ライブラリと出力されたログを表やグラフなどで表示する画面を提供します。 |
-| VanguardModelPFScrewdriver | 株式会社バンガードシステムズ製の電動トルクドライバーに対応した拡張機能です。 |
-
 
 **PCビジョン カスタムビジョンオブジェクト**
 
@@ -45,10 +42,9 @@ Extensionを開発するうえで、具体的な実装方法を確認する際�
 | AutoContrast | コントラストを高めるように色変換するカスタムビジョンオブジェクトです。 |
 | FeatureMatch | 特徴量マッチングを使用して位置検出をおこなうカスタムビジョンオブジェクトです。 |
 
+### 3. RC+カスタム
 
-## 3. RC+カスタム
-
-### 3.1 API解説
+#### 3.1 API解説
 
 RC+カスタムでは、Extensions APIを利用してEpson RC+ 8.0の機能を呼び出すことができます。  
 主なAPIを以下に示します。より詳細な内容はAPIリファレンスを参照ください。  
@@ -72,7 +68,7 @@ Extensions APIを利用するには、以下のように記述し、APIインス
 var extensionAPI = Main.GetAPI<IRCXProjectAPI>();
 ```
 
-#### 3.1.1 プロジェクト
+##### 3.1.1 プロジェクト
 
 プロジェクト操作に関するAPI群です。
 
@@ -96,7 +92,7 @@ ret = await api.CloseProjectFileAsync("Main.prg");
 ret = await api.CloseAsync();
 ```
 
-#### 3.1.2 ポイント
+##### 3.1.2 ポイント
 
 ポイントデータの操作に関するAPI群です。
 
@@ -126,7 +122,7 @@ var addResult = api.AddPoint(pointFileName, point);
 var deleteResult = api.DeletePoint(pointFileName, 10);
 ```
 
-#### 3.1.3 プログラムエディター
+##### 3.1.3 プログラムエディター
 
 プログラムエディター操作に関するAPI群です。
 
@@ -153,7 +149,7 @@ ret = await editor.ClearBreakpointAsync(1);
 ret = await editor.ClearAllBreakpointsAsync();
 ```
 
-#### 3.1.4 コントローラー接続
+##### 3.1.4 コントローラー接続
 
 コントローラーの接続に関するAPI群です。
 
@@ -170,7 +166,7 @@ int number = lastConnection.Number;
 
 // Connects to the controller.  
 // Specify the controller number to connect to as the first argument.
-bool connectResult = await api?.ConnectControllerAsync(number, false);
+bool connectResult = await api?.ConnectionControllerAsync(lastConnection).ConfigureAwait(false);
 
 if (connectResult) {
     // Process executed when the connection succeeds.
@@ -181,11 +177,11 @@ if (connectResult) {
 bool? isConnected = api?.IsOnline;  // The current connection state of the controller.
 if (isConnected == true) {
     // Disconnects from the controller.
-    await api?.DisconnectControllerAsync();  
+    await api?.DisconnectControllerAsync().ConfigureAwait(false);  
 }
 ```
 
-#### 3.1.5 コントローラー設定
+##### 3.1.5 コントローラー設定
 
 コントローラーの情報を取得したり、コントローラーに設定をしたりするためのAPI群です。  
 コントローラーに接続している必要があります。コントローラー接続に関しては[コントローラー接続](#314-コントローラー接続)を参照ください。
@@ -209,13 +205,13 @@ var (ret, id) = await api.StartSetControllerSettingsAsync();
 settings["Name"].Value = "MyController"; 
 
 // Submits the updated values for the specified category.
-result = await api.SetControllerSettingsAsync(id, categoryName, settings); 
+var result = await api.SetControllerSettingsAsync(id, categoryName, settings); 
 
 // Commits the changes and applies them to the controller.
 var setResult = await api.CommitSetControllerSettingsAsync(id); 
 ```
 
-#### 3.1.6 I/O
+##### 3.1.6 I/O
 
 I/O操作に関するAPI群です。  
 コントローラーに接続している必要があります。コントローラー接続に関しては[コントローラー接続](#314-コントローラー接続)を参照ください。
@@ -239,13 +235,13 @@ var ret = api.CreateWatcher<bool>(IRCXIOAPI.RCXIOKind.Input, 0, (watcher, oldDat
 });
 
 // To stop monitoring the I/O state, dispose of the watcher object.
-if (ret.Item2 != null) {
-    IRCXIOAPI.IRCXIOWatcher? watcher = ret.Item2;
-    watcher?.Dispose();
+if (ret != null) {
+    IRCXIOAPI.IRCXIOWatcher? watcher = ret.Value.Item2;
+    _watcher?.Dispose();
 }
 ```
 
-#### 3.1.7 ロボット操作
+##### 3.1.7 ロボット操作
 
 ロボット操作に関するAPI群です。
 
@@ -275,7 +271,7 @@ var jogger = await api.CreateJoggerAsync();
 var _ = jogger.StartJointJogAsync(IRCXRobotManagerAPI.RCXJogJointAxis.J1);
 ```
 
-#### 3.1.8 プログラム実行
+##### 3.1.8 プログラム実行
 
 プログラム実行操作に関するAPI群です。
 
@@ -294,7 +290,7 @@ await api.StartFunctionAsync(userFunctions.ElementAt(0), false, false, Id);
 await api.ExecuteSpelCommandAsync("Motor ON");
 ```
 
-#### 3.1.9 開発環境設定
+##### 3.1.9 開発環境設定
 
 開発環境設定に関するAPI群です。
 
@@ -314,7 +310,7 @@ preferences["IsAutoSave"].Value = false;
 await api.SetPreferencesAsync(preferenceCategories.ElementAt(0), preferences);
 ```
 
-#### 3.1.10 ウィンドウ
+##### 3.1.10 ウィンドウ
 
 ドッキングウィンドウやメッセージボックスを表示する等のAPI群です。
 
@@ -324,14 +320,14 @@ IRCXWindowAPI? api = Main.GetAPI<IRCXWindowAPI>();
 
 // Show message box.
 var response = api?.ShowMessageBox(
-    new RCXCaption(Main.CommonId, Constants.Caption.ExtensionName),
+    new RCXCaption(Main.CommonId, Caption.ExtensionName),
     new RCXCaption("Are you OK?"),
     IRCXWindowAPI.ButtonType.Yes_No,
     IRCXWindowAPI.IconType.Question
 );
-if (response == IRCXWindowAPI.ResponseType.Yes)
+if (response == IRCXWindowAPI.ResponseType.OK)
 {
-    // Process when the response is Yes.
+    // Process when the response is OK.
 }
 ```
 
@@ -364,19 +360,19 @@ IRCXWindowAPI? api = Main.GetAPI<IRCXWindowAPI>();
 if (api != null)
 {
     // Show "Epson Global Portal" site in a docking window
-    var webViewInfo = new IRCXWindowAPI.WebViewInfo(
+    var webVewInfo = new IRCXWindowAPI.WebViewInfo(
         (_, _, _) => new Uri("https://epson.com/"),
-            Main.CommonId,
-            $"{Main.CommonId}.External",
-            new RCXCaption(Main.CommonId, Constants.Caption.WindowTitle),
-            Main.CommonIcon
+        Id,
+        $"{Id}.External",
+        new RCXCaption(CommonId, Caption.WindowTitle_External),
+        Main.CommonIcon
     );
 
     await api.ShowDockingWebViewWindowAsync(webViewInfo).ConfigureAwait(true);
 }
 ```
 
-### 3.2 拡張ポイント解説
+#### 3.2 拡張ポイント解説
 
 RC+カスタムでは、メニュー項目の追加、プロジェクトファイルの管理、ドッキングウィンドウの表示など、Epson RC+に独自の機能を組み込むための仕組み(拡張ポイント)を提供しています。  
 これらは、Extensions APIが用意する拡張ポイントのためのインターフェースを、.NET の組み込み拡張フレームワークであるManaged Extensibility Framework(MEF)のExportとして実装することで動作します。  
@@ -384,7 +380,7 @@ Extensionプロジェクト作成時には、利用したい拡張ポイント�
 
 ここでは、各拡張ポイントの実装方法について説明します。
 
-#### 3.2.1 メインメニュー項目およびツールバーボタン
+##### 3.2.1 メインメニュー項目およびツールバーボタン
 
 Extensionは、メインメニューにExtension用のメニュー項目を追加できます。メニュー項目は、サブメニューを使って階層化することもできます。
 
@@ -411,10 +407,10 @@ public class MainMenuItem : IRCXMainMenuItemProvider
         {
             return new IRCXMainMenuItemProvider.MenuItem
             {
-                Caption = new RCXCaption(Main.CommonId, Constants.Caption.MainMenu),
+                Caption = new RCXCaption(Main.CommonId, Caption.MainMenu),
                 Icon = Main.CommonIcon,
                 CommandName = "Main",
-                ToolTip = new RCXCaption(Main.CommonId, Constants.Caption.MainMenu),
+                ToolTip = new RCXCaption(Main.CommonId, Caption.MainMenu),
             };
         }
     }
@@ -474,7 +470,7 @@ ToolTipをnullにすると、そのメニュー項目に対するツールバー
 
 今のところ、メニュー項目に表示する文字列等を、動的に変更する手段は用意されていません。
 
-#### 3.2.2 ドッキングウィンドウ
+##### 3.2.2 ドッキングウィンドウ
 
 Extensionは、コンテンツとなるユーザーコントロールと、そのビューモデルを提供することで、ドッキングウィンドウを表示できます。
 
@@ -615,7 +611,7 @@ public void ShowHelp()
 }
 ```
 
-#### 3.2.3 プロジェクトファイル
+##### 3.2.3 プロジェクトファイル
 
 Epson RC+のプロジェクトに、Extensionが管理する独自のファイルを追加することができます。
 
@@ -700,7 +696,7 @@ UseDefaultProjectExplorerItemフラグをtrueにすると、プロジェクト�
 - 追加されているファイルの、ファイル名を示す子項目
   - 「開く」「プロジェクトから除外」「削除」の3項目からなるコンテキストメニューを持ちます。
 
-#### 3.2.4 プロジェクトエクスプローラーのツリー項目
+##### 3.2.4 プロジェクトエクスプローラーのツリー項目
 
 Extension は、開いているEpson RC+ プロジェクトの、プロジェクトエクスプローラーに、独自のツリー項目を追加できます。ツリー項目が、独自のファイルに紐づく場合は、前述の「プロジェクトファイル」拡張ポイントを用いてください。
 
@@ -765,7 +761,7 @@ public partial class ProjectExplorerItem : IRCXProjectExplorerItemProvider
 }
 ```
 
-#### 3.2.5 外部ファンクション
+##### 3.2.5 外部ファンクション
 
 SPEL+ プログラムは、Declareステートメントを使って、DLLで定義されている外部ファンクションを実行することができます。この仕組みは、以前のバージョンのEpson RC+ から存在するもので、DLLには 32 ビットネイティブでなければならないという制約があります。
 
@@ -800,12 +796,12 @@ public RCXExternalFunction CubeRoot = (command, parameters) =>
 {
     if (parameters.Count == 0 || !double.TryParse(parameters[0], out var input))
     {
-        return ValueTuple.Create(RCXCommon.RCXResult.BadArgument, string.Empty);
+        return ValueTuple.Create(RCXResult.BadArgument, string.Empty);
     }
 
     double output = Math.Cbrt(input);
 
-    return ValueTuple.Create(RCXCommon.RCXResult.Success, output.ToString());
+    return ValueTuple.Create(RCXResult.Success, output.ToString());
 };
 ```
 
@@ -815,21 +811,21 @@ public RCXExternalFunction CubeRoot = (command, parameters) =>
 
 1. 外部プログラム実行(終了を待って、出力の1行目を返します)
     ```
-    ret = CallExternal("Execute program [arg(s)]", ByRef output$)
+    ret = CallExternal("Execute program [arg(s)]", output$)
     ```
 2. 外部プログラム起動(終了を待ちません)
     ```
-    ret = CallExternal("ExecuteNoWait program [arg(s)]", ByRef output$)
+    ret = CallExternal("ExecuteNoWait program [arg(s)]", output$)
     ```
 3. CallExternalの結果コードに対応する文字列の取得
     ```
-    ret = CallExternal("ErrorStr " + Str$(ret), ByRef output$)
+    ret = CallExternal("ErrorStr Str$(retCode)" output$)
     ```
     - 例
         ```
         Int32 ret
         String output$
-        CallExternal("ErrorStr " + Str$(ret), ByRef output$)
+        ret = CallExternal("ErrorStr 0", ByRef output$)
         Print output$
         ```
       - Run ウィンドウに Success と出力されます。
@@ -839,15 +835,9 @@ public RCXExternalFunction CubeRoot = (command, parameters) =>
 このほか、ブリッジ DLL には、外部ファンクションの動作を制御するための関数があります(CallExternalと同様なDeclare ステートメントが必要です)。
 
 1. GetTimeout(ByRef timeout As Int32) As Int32
-    - CallExternalのタイムアウト時間を取得します。単位はミリ秒で、初期値は 30,000 です。  
-    ```
-    Declare GetTimeout, "C:\EpsonRC80\ExternalFunctionBridge.dll", "GetTimeout",(ByRef timeout As Int32) As Int32  
-    ```
+    - CallExternalのタイムアウト時間を取得します。単位はミリ秒で、初期値は 30,000 です。
 2. SetTimeout(timeout As Int32) As Int32
-    - CallExternalのタイムアウト時間を設定します。単位はミリ秒です。  
-    ```
-    Declare SetTimeout, "C:\EpsonRC80\ExternalFunctionBridge.dll", "SetTimeout",(timeout As Int32) As Int32 
-    ```
+    - CallExternalのタイムアウト時間を設定します。単位はミリ秒です。
 
 ## 4. PCビジョン カスタムビジョンオブジェクトの開発
 
