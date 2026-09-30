@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IRCXControllerConnectionAPI | ExtensionsAPI </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IRCXControllerConnectionAPI | ExtensionsAPI ">
+      
+      <meta name="description" content="Controller Connection API">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ExtensionsAPI">
+            ExtensionsAPI
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI">
+
+
+
+  <h1 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI" class="text-break">
+Interface IRCXControllerConnectionAPI  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Epson.html">Epson</a>.<a class="xref" href="Epson.RoboticsShared.html">RoboticsShared</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.html">ExtensionsAPI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Epson.RoboticsShared.ExtensionsAPI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Controller Connection API</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IRCXControllerConnectionAPI : INotifyPropertyChanged</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged">INotifyPropertyChanged.PropertyChanged</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_Connections_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.Connections*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_Connections" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.Connections">
+  Connections
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the collection of available connection entries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IRCXControllerConnectionAPI.IRCXConnection&gt; Connections { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.html">IRCXControllerConnectionAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.html">IRCXConnection</a>&gt;</dt>
+    <dd><p>A collection of <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.html">IRCXControllerConnectionAPI.IRCXConnection</a> instances representing available connections.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_IsAutoConnectEnabled_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IsAutoConnectEnabled*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_IsAutoConnectEnabled" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IsAutoConnectEnabled">
+  IsAutoConnectEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether automatic connection is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool? IsAutoConnectEnabled { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p><code>true</code> if auto-connect is enabled;
+<code>false</code> if it is disabled;
+<code>null</code> if the state cannot be retrieved.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_IsMonitorMode_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IsMonitorMode*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_IsMonitorMode" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IsMonitorMode">
+  IsMonitorMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the controller is in monitor mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsMonitorMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the controller is in monitor mode;
+<code>false</code> otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_IsOfflineMode_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IsOfflineMode*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_IsOfflineMode" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IsOfflineMode">
+  IsOfflineMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the system is in offline mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool? IsOfflineMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p><code>true</code> if offline mode is enabled;
+<code>false</code> if it is disabled;
+<code>null</code> if the state cannot be retrieved.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_IsOnline_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IsOnline*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_IsOnline" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IsOnline">
+  IsOnline
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the controller is online.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool? IsOnline { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd><p><code>true</code> if the controller is online;
+<code>false</code> if it is offline;
+<code>null</code> if the state cannot be determined (e.g., during connection or disconnection).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_AddConnectionAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.AddConnectionAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_AddConnectionAsync_System_String_Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_IRCXConnection_CnKind_Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_IRCXConnection_CnSeries_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.AddConnectionAsync(System.String,Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.CnKind,Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.CnSeries,System.String)">
+  AddConnectionAsync(string, CnKind, CnSeries, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously adds new connection information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; AddConnectionAsync(string name, IRCXControllerConnectionAPI.IRCXConnection.CnKind kind, IRCXControllerConnectionAPI.IRCXConnection.CnSeries series, string? ipAddress = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>name for the connection.</p>
+</dd>
+    <dt><code>kind</code> <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.html">IRCXControllerConnectionAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.html">IRCXConnection</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.CnKind.html">CnKind</a></dt>
+    <dd><p>The connection kind.</p>
+</dd>
+    <dt><code>series</code> <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.html">IRCXControllerConnectionAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.html">IRCXConnection</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.CnSeries.html">CnSeries</a></dt>
+    <dd><p>The controller series.</p>
+</dd>
+    <dt><code>ipAddress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The IP address to use, if applicable; otherwise <code>null</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that completes with an <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXCommon.RCXResult</a> indicating the outcome.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_ConnectControllerAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.ConnectControllerAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_ConnectControllerAsync_System_Nullable_System_Int32__System_Boolean_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.ConnectControllerAsync(System.Nullable{System.Int32},System.Boolean)">
+  ConnectControllerAsync(int?, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously connects to the controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; ConnectControllerAsync(int? connectionNumber = null, bool prohibitMonitorMode = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connectionNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The number of the controller to connect to. If <code>null</code>, it connects to the last connected controller.</p>
+</dd>
+    <dt><code>prohibitMonitorMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Indicates whether connections in monitor mode are disallowed. When <code>true</code>, a monitor-mode connection is prohibited.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>A task that returns <code>true</code> if the connection completes successfully; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_CopyVirtualConnectionAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.CopyVirtualConnectionAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_CopyVirtualConnectionAsync_System_String_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.CopyVirtualConnectionAsync(System.String,System.String)">
+  CopyVirtualConnectionAsync(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously creates and adds a copy of the connection information for a virtual controller connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; CopyVirtualConnectionAsync(string name, string sourceName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name to assign to the copied connection.</p>
+</dd>
+    <dt><code>sourceName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the source virtual connection to copy from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that completes with an <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXCommon.RCXResult</a> indicating the outcome.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_DeleteConnectionAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.DeleteConnectionAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_DeleteConnectionAsync_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.DeleteConnectionAsync(System.String)">
+  DeleteConnectionAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously deletes the specified connection information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; DeleteConnectionAsync(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the connection to delete.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that completes with an <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXCommon.RCXResult</a> indicating the outcome.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_DeleteConnectionAsync_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>USB connections and connection information of controllers that are currently connected cannot be deleted.</p>
+</div>
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_DisconnectControllerAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.DisconnectControllerAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_DisconnectControllerAsync" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.DisconnectControllerAsync">
+  DisconnectControllerAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disconnects from the controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DisconnectControllerAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous disconnect operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_GetLastConnection_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.GetLastConnection*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_GetLastConnection" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.GetLastConnection">
+  GetLastConnection()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the connection information of the most recent connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IRCXControllerConnectionAPI.IRCXConnection? GetLastConnection()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.html">IRCXControllerConnectionAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.html">IRCXConnection</a></dt>
+    <dd><p>The <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.html">IRCXControllerConnectionAPI.IRCXConnection</a> describing the last connection; otherwise <code>null</code>
+if it cannot be determined.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_GetLastConnection_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The returned information may differ from the original connection settings
+if changes were made after the disconnect.</p>
+</div>
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_ModifyEthernetConnectionAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.ModifyEthernetConnectionAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_ModifyEthernetConnectionAsync_System_String_System_String_Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_IRCXConnection_CnSeries_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.ModifyEthernetConnectionAsync(System.String,System.String,Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.CnSeries,System.String)">
+  ModifyEthernetConnectionAsync(string, string, CnSeries, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously updates the connection information for an Ethernet connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; ModifyEthernetConnectionAsync(string name, string newName, IRCXControllerConnectionAPI.IRCXConnection.CnSeries newSeries, string newIpAddress)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The current name of the connection.</p>
+</dd>
+    <dt><code>newName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new name to assign to the connection.</p>
+</dd>
+    <dt><code>newSeries</code> <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.html">IRCXControllerConnectionAPI</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.html">IRCXConnection</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.IRCXConnection.CnSeries.html">CnSeries</a></dt>
+    <dd><p>The new controller series to set.</p>
+</dd>
+    <dt><code>newIpAddress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new IP address to set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that completes with an <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXCommon.RCXResult</a> indicating the outcome.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_ModifyEthernetConnectionAsync_System_String_System_String_Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_IRCXConnection_CnSeries_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Connection information of a controller that is currently connected cannot be updated.</p>
+</div>
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_ModifyVirtualConnectionAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.ModifyVirtualConnectionAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_ModifyVirtualConnectionAsync_System_String_System_String_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.ModifyVirtualConnectionAsync(System.String,System.String)">
+  ModifyVirtualConnectionAsync(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously updates the connection information for a virtual controller connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; ModifyVirtualConnectionAsync(string name, string newName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The current name of the connection.</p>
+</dd>
+    <dt><code>newName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new name to assign to the connection.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that completes with an <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXCommon.RCXResult</a> indicating the outcome.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_ModifyVirtualConnectionAsync_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Connection information of a controller that is currently connected cannot be updated.</p>
+</div>
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_SetAutoConnectEnabledAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.SetAutoConnectEnabledAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_SetAutoConnectEnabledAsync_System_Boolean_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.SetAutoConnectEnabledAsync(System.Boolean)">
+  SetAutoConnectEnabledAsync(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously enables or disables auto-connect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; SetAutoConnectEnabledAsync(bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> to enable auto-connect; <code>false</code> to disable it.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that completes with an <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXCommon.RCXResult</a> indicating the outcome.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_SetOfflineModeAsync_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.SetOfflineModeAsync*"></a>
+
+  <h3 id="Epson_RoboticsShared_ExtensionsAPI_IRCXControllerConnectionAPI_SetOfflineModeAsync_System_Boolean_" data-uid="Epson.RoboticsShared.ExtensionsAPI.IRCXControllerConnectionAPI.SetOfflineModeAsync(System.Boolean)">
+  SetOfflineModeAsync(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously enables or disables offline mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;RCXCommon.RCXResult&gt; SetOfflineModeAsync(bool enabled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> to enable offline mode; <code>false</code> to disable it.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.html">RCXCommon</a>.<a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXResult</a>&gt;</dt>
+    <dd><p>A task that completes with an <a class="xref" href="Epson.RoboticsShared.ExtensionsAPI.RCXCommon.RCXResult.html">RCXCommon.RCXResult</a> indicating the outcome.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

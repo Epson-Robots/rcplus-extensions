@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0001">SPEL分析工具</string>
+  <string name="0100">確定</string>
+  <string name="0102">取消</string>
+  <string name="1001">函數開始</string>
+  <string name="1002">CSV讀取</string>
+  <string name="1003">將SpelLogger新增至專案</string>
+  <string name="1004">版面配置</string>
+  <string name="1100">目標參數</string>
+  <string name="1101">套用</string>
+  <string name="1200">調整參數</string>
+  <string name="1201">inc匯出</string>
+  <string name="1202">刪除</string>
+  <string name="1300">視圖</string>
+  <string name="1301">直播</string>
+  <string name="1302">重現</string>
+  <string name="1601">圖形數</string>
+  <string name="1701">隱藏項目</string>
+  <string name="1702">顯示項目</string>
+  <string name="1703">重設</string>
+  <string name="2000">函數開始</string>
+  <string name="2001">函數開始</string>
+  <string name="2003">函數</string>
+  <string name="2004">從執行中的函數讀取日誌</string>
+  <string name="3000">將SpelLogger新增至專案</string>
+  <string name="3001">SpelLogge類型</string>
+  <string name="3002">檔案</string>
+  <string name="3003">函式庫</string>
+  <string name="3004">新增使用SpelLogger API的範例程式</string>
+  <string name="10001">無法將SpelLogger函式庫解壓縮至Libraries資料夾。
+請確認磁碟剩餘空間，以及對Libraries資料夾的寫入權限。</string>
+  <string name="10002">無法將SpelLogger函式庫新增至專案。
+若已達函式庫數量上限，請刪除不需要的函式庫後再次執行。</string>
+</resources>
