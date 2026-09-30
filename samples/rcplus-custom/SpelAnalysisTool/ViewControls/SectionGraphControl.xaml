@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="SpelAnalysisTool.ViewControls.SectionGraphControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SpelAnalysisTool.ViewControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="600">
+    <Border BorderBrush="LightGray" BorderThickness="0" Margin="0">
+        <Grid Margin="8 0 4 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <local:StatGraphControl Grid.Column="0" x:Name="_graph" Margin="0" Background="White"/>
+        </Grid>
+    </Border>
+</UserControl>

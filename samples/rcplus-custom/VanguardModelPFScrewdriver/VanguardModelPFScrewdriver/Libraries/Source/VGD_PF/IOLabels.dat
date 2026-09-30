@@ -1,0 +1,44 @@
+ENVT0100,LM:2026/07/22 00:55:42:627,DS:0000000701,CS:05957,MA:00-1C-42-81-EF-21,EI:           
+sRCVersion="8.0.0"
+InputBitLabels {
+	nNumberOfLabels=1
+	Label1 {
+		nBit=0
+		sLabel="SuctionState"
+		sDescription=""
+	}
+}
+InputByteLabels {
+	nNumberOfLabels=0
+}
+InputWordLabels {
+	nNumberOfLabels=0
+}
+OutputBitLabels {
+	nNumberOfLabels=2
+	Label1 {
+		nBit=0
+		sLabel="VacuumOn"
+		sDescription=""
+	}
+	Label2 {
+		nBit=1
+		sLabel="VacuumBreakOn"
+		sDescription=""
+	}
+}
+OutputByteLabels {
+	nNumberOfLabels=0
+}
+OutputWordLabels {
+	nNumberOfLabels=0
+}
+MemoryBitLabels {
+	nNumberOfLabels=0
+}
+MemoryByteLabels {
+	nNumberOfLabels=0
+}
+MemoryWordLabels {
+	nNumberOfLabels=0
+}

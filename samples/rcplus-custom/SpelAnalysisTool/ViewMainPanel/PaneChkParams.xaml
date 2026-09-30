@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="SpelAnalysisTool.ViewMainPanel.PaneChkParams"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SpelAnalysisTool"
+             xmlns:vc="clr-namespace:SpelAnalysisTool.ViewControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="400">
+    <Grid>
+        <TabControl>
+            <TabItem Header="{Binding Path=[ChkParams_Title].Value, Source={x:Static local:Main.Captions}}">
+                <Grid Margin="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto">
+                        <StackPanel x:Name="_stackPanelChkParams"/>
+                    </ScrollViewer>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 4 0 0">
+                        <Button x:Name="_btnApplyChkParams" Content="{Binding Path=[ChkParams_Apply].Value, Source={x:Static local:Main.Captions}}"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

@@ -1,0 +1,129 @@
+category: RC+ Extensions.V2
+id: SpelAnalysisTool_0a8c4e66-1e0b-420c-87d8-482129214e8d
+rcplus_version: 8.2.0.0
+vendor: com.epson
+vendor_info:
+  en: Seiko Epson Corporation
+  ja: Seiko Epson Corporation
+  de: Seiko Epson Corporation
+  fr: Seiko Epson Corporation
+  es: Seiko Epson Corporation
+  zh-Hans: Seiko Epson Corporation
+  zh-Hant: Seiko Epson Corporation
+  default: en
+version: 1.0.0
+released_at: "2026-09-30T00:00:00Z"
+name:
+  en: Spel Analysis Tool
+  ja: SPEL分析ツール
+  de: SPEL-Analyse-Tool
+  fr: Outil d'analyse SPEL
+  es: Herr. análisis SPEL
+  zh-Hans: SPEL分析工具
+  zh-Hant: SPEL分析工具
+  default: en
+summary:
+  en: To facilitate analysis of SPEL+ programs, this extension provides a logging library and a screen for displaying output logs in tables, graphs, and other formats.
+  ja: 簡単にSPEL+プログラムの分析を行えるようにするために、ログ出力ライブラリと出力されたログを表やグラフなどで表示する画面を提供します。
+  de: Um die Analyse von SPEL-Programmen zu erleichtern, stellt diese Erweiterung eine Protokollierungsbibliothek sowie einen Bildschirm zur Anzeige von Ausgabelogs in Tabellen, Diagrammen und anderen Formaten bereit.
+  fr: Pour faciliter l'analyse de programmes SPEL+, cette extension propose une bibliothèque de connexion et un écran pour afficher des journaux de sortie sous forme de tableaux, graphiques et autres formats.
+  es: Para facilitar el análisis de prog. SPEL+, esta extensión ofrece una biblio. de reg. y una pantalla para mostrar reg. de salida en tablas, gráficos y otros formatos.
+  zh-Hans: 为了便于对SPEL+程序进行分析，提供日志输出库以及用于以表格、图表等形式显示输出日志的界面。
+  zh-Hant: 為了能簡單分析SPEL+程式，本功能提供日誌輸出函式庫，以及以表格或圖形等方式顯示輸出日誌的畫面。
+  default: en
+description:
+  en: |
+    By using the logging library API included with this extension in your program, you can output the following logs: 
+    
+    * Profile information when logs are output 
+    * Cycle and section timing information 
+    * Motion information such as robot posture and position
+    
+    Output logs can be viewed as tables and graphs on a dedicated screen. 
+    Furthermore, you can easily check whether cycle times and other parameters are within the target range using the target value setting function on the same screen. 
+    
+    For installation instructions and detailed usage, please refer to the README available on GitHub.
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.2.0.0/samples/rcplus-custom/SpelAnalysisTool>
+  ja: |
+    当拡張機能に含まれるログ出力ライブラリのAPIをお客様のプログラムに実装いただくことで以下のログを出力できるようになります。
+    
+    * ログ出力時のプロファイル情報
+    * サイクルやセクションの時間情報
+    * ロボット姿勢や位置などのモーション情報
+    
+    出力されたログは専用画面で表やグラフによる確認ができます。
+    また、同画面にある目標値設定機能を利用することでサイクルタイムなどが目標に収まっているかを簡単に確認することも可能です。
+    
+    インストール方法や詳細な使用方法については、GitHub 上で公開している README を参照してください。
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.2.0.0/samples/rcplus-custom/SpelAnalysisTool>
+  de: |
+    Durch die Verwendung der in dieser Erweiterung enthaltenen Logging-Bibliothek-API in Ihrem Programm können Sie folgende Logs ausgeben: 
+    
+    * Profilinformationen beim Log-Ausgang 
+    * Zyklus- und Abschnittszeitinformationen 
+    * Bewegungsinformationen wie Roboterhaltung und -position
+    
+    Ausgabelogs können auf einem speziellen Bildschirm als Tabellen und Diagramme angezeigt werden. 
+    Außerdem können Sie mit der Zielwert-Einstellfunktion auf demselben Bildschirm einfach überprüfen, ob Zykluszeiten und andere Parameter im Zielbereich liegen. 
+    
+    Installationsanweisungen und detaillierte Informationen zur Verwendung finden Sie in der README-Datei auf GitHub.
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.2.0.0/samples/rcplus-custom/SpelAnalysisTool>
+  fr: |
+    Grâce à l'API de bibliothèque de connexion incluse avec cette extension dans votre programme, vous pouvez afficher les journaux suivants : 
+    
+    * Informations de profil lorsque les journaux sont générés
+    * Informations de délai de cycle et de section
+    * Informations de mouvement comme la posture et position de robot
+    
+    Les journaux de sortie peuvent être affichés sous forme de tableaux et de graphiques sur un écran dédié. 
+    Vous pouvez également vérifier facilement si les temps de cycle et autres paramètres sont dans la plage cible grâce à la fonction de réglage de valeur cible sur le même écran. 
+    
+    Pour les instructions d'installation et l'utilisation détaillée, consultez le fichier README disponible sur GitHub.
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.2.0.0/samples/rcplus-custom/SpelAnalysisTool>
+  es: |
+    Al utilizar en su programa la API de la biblioteca de reg. incluida en esta extensión, podrá generar los siguientes registros: 
+    
+    * Inf. de perfil en momento de generar los reg.
+    * Inf. sobre tiempos de ciclo y de sección
+    * Inf. de movimiento, como postura y posición del robot
+    
+    Los reg. generados pueden verse como tablas y gráf. en pantalla específ. 
+    Además, puede comprobar fácilmente si los tiempos de ciclo y otros parám. están dentro del rango obj. con la func. de conf. de valores objetivo disp. en misma pantalla. 
+    
+    Para instr. de inst. e inf. detallada sobre su uso, consulte el archivo README disponible en GitHub.
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.2.0.0/samples/rcplus-custom/SpelAnalysisTool>
+  zh-Hans: |
+    通过将本扩展功能中包含的日志输出库API集成到您的程序中，即可输出以下日志。
+    
+    * 日志输出时的配置文件信息
+    * 周期和区段的时间信息
+    * 机器人姿态和位置等运动信息
+    
+    输出的日志可在专用界面中通过表格和图表进行查看。
+    此外，通过使用该界面中的目标值设置功能，还可以轻松确认周期时间等指标是否满足目标值。
+    
+    关于安装方法及详细的使用方法，请参阅GitHub上公开的README。
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.2.0.0/samples/rcplus-custom/SpelAnalysisTool>
+  zh-Hant: |
+    在您的程式中實作本擴充功能所含日誌輸出函式庫的API，即可輸出以下日誌。
+    
+    * 日誌輸出時的設定檔資訊
+    * 循環及區段的時間資訊
+    * 機器人姿勢及位置等動作資訊
+    
+    輸出的日誌可在專用畫面中以表格或圖形確認。
+    此外，使用同一畫面中的目標值設定功能，也能簡單確認循環時間等是否符合目標。
+    
+    有關安裝方式與詳細使用方法，請參閱GitHub上公開的README。
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.2.0.0/samples/rcplus-custom/SpelAnalysisTool>
+  default: en
+image_file:
+  en: image.png
+  default: en

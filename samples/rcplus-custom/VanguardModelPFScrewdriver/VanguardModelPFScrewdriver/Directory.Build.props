@@ -1,0 +1,10 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <ManifestPath>PackageItems\manifest.rcxmanifest</ManifestPath>
+  </PropertyGroup>
+
+  <Import Project="ExtensionAssets.props"
+          Condition="Exists('ExtensionAssets.props')" />
+
+</Project>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0001">SPEL-Analyse-Tool</string>
+  <string name="0100">OK</string>
+  <string name="0102">Abbruchen</string>
+  <string name="1001">Funktion starten</string>
+  <string name="1002">CSV laden</string>
+  <string name="1003">SpelLogger zu Proj. hinzuf.</string>
+  <string name="1004">Layout</string>
+  <string name="1100">Zielparam.</string>
+  <string name="1101">Anw.</string>
+  <string name="1200">Anpass.-Param.</string>
+  <string name="1201">Export inc</string>
+  <string name="1202">Löschen</string>
+  <string name="1300">Ans.</string>
+  <string name="1301">Live</string>
+  <string name="1302">Wiederg.</string>
+  <string name="1601">Graph Nr.</string>
+  <string name="1701">Verst. Elem.</string>
+  <string name="1702">Sichtb. Elem.</string>
+  <string name="1703">Reset</string>
+  <string name="2000">Funktion starten</string>
+  <string name="2001">Funktion starten</string>
+  <string name="2003">Funktion</string>
+  <string name="2004">Logs bei laufender Funktion lesen.</string>
+  <string name="3000">SpelLogger zu Proj. hinzuf.</string>
+  <string name="3001">SpelLogger-Typ</string>
+  <string name="3002">Datei</string>
+  <string name="3003">Biblio.</string>
+  <string name="3004">Beispielprogr. mit SpelLogger-API hinzufügen.</string>
+  <string name="10001">SpelLogger-Biblio. konnte nicht nach Libraries extrahiert werden. 
+Freien Speicherplatz und Schreibrechte für Libraries prüfen.</string>
+  <string name="10002">SpelLogger-Biblio. konnte nicht zum Projekt hinzugef. werden. 
+Bei max. Biblio.-Anzahl unnötige Biblio. entfernen und erneut versuchen.</string>
+</resources>

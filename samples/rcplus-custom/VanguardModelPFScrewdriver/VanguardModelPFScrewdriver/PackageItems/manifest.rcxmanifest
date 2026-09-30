@@ -1,0 +1,137 @@
+category: RC+ Extensions.V2
+id: VanguardModelPFScrewdriver_728ed9c2-e8ca-4935-aeeb-2afba2bf2626
+rcplus_version: 8.2.0.0
+vendor: com.epson
+vendor_info:
+  en: Seiko Epson Corporation
+  default: en
+version: 1.0.0
+released_at: "2026-09-30T00:00:00Z"
+name:
+  en: Vanguard Systems Screwdriver
+  ja: Vanguard Systems 電動ドライバー
+  de: Vanguard Systems Elektrischer Drehmomentschrauber
+  fr: Vanguard Systems Tournevis électrique
+  es: Vanguard Systems Atornillador eléc.
+  zh-Hans: Vanguard Systems 电动螺丝刀
+  zh-Hant: Vanguard Systems 電動螺絲刀
+  default: en
+summary:
+  en: An extension for configuring and controlling the electric torque screwdriver manufactured by Vanguard Systems Inc.
+  ja: 株式会社バンガードシステムズ製の電動トルクドライバーの設定・制御を行う拡張機能です。
+  de: Eine Erweiterung zur Konfiguration und Steuerung des von Vanguard Systems Inc. hergestellten Elektrodrehmoment-Schraubers.
+  fr: Une extension pour configurer et contrôler le tournevis à couple électrique fabriqué par Vanguard Systems Inc.
+  es: Una extensión para configurar y controlar el atornillador eléctrico de par fabricado por Vanguard Systems Inc.
+  zh-Hans: 这是用于配置和控制 Vanguard Systems Inc. 生产的电动扭矩螺丝刀的扩展功能。
+  zh-Hant: 用於設定及控制由 Vanguard Systems 股份有限公司製造的電動扭矩螺絲刀之擴充功能。
+  default: en
+description:
+  en: |
+    This extension supports the electric torque screwdriver manufactured by Vanguard Systems Inc. 
+    
+    Main features: 
+    * Communication with the screwdriver system (CT-CONTS controller and intelligent driver unit) 
+    * Display of screwdriver system information 
+    * Downloading, uploading, and editing programs for screw tightening, screw loosening, and screwdriver rotation 
+    * Executing screw tightening and related operations, displaying results, and plotting torque waveform graphs 
+    * Saving screwdriver system configuration project files (multiple projects supported), including connection settings for robot controllers
+    
+    A control library is also provided, enabling screw tightening and related operations directly from SPEL+ programs. 
+    
+    For installation instructions and detailed usage, please refer to the README available on GitHub.
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.2.0.0/samples/rcplus-custom/VanguardModelPFScrewdriver>
+  ja: |
+    株式会社バンガードシステムズ製の電動トルクドライバーに対応した拡張機能です。
+    
+    主な機能:
+    * ドライバーシステム（CT-CONTS コントローラーおよび知能化ドライバー本体）との通信
+    * ドライバーシステムに関する情報の表示
+    * ネジ締め、ネジ緩め、ドライバ回転のためのプログラムのダウンロード、アップロードおよび編集
+    * ネジ締め等の試行、結果表示およびトルク波形グラフの描画
+    * ロボットコントローラーからの接続設定を含む、ドライバーシステム設定のプロジェクトファイル保存（複数可能）
+    
+    SPEL+ プログラムからネジ締め等を行えるようにする制御ライブラリーも提供します。
+    
+    インストール方法や詳細な使用方法については、GitHub 上で公開している README を参照してください。
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.2.0.0/samples/rcplus-custom/VanguardModelPFScrewdriver>
+  de: |
+    Diese Erweiterung unterstützt den von Vanguard Systems Inc. hergestellten Elektrodrehmoment-Schrauber. 
+    
+    Hauptfunktionen: 
+    * Kommunikation mit dem Schraubersystem (CT-CONTS-Steuerung und intelligente Schraubereinheit) 
+    * Anzeige von Informationen des Schraubersystems
+    * Herunterladen, Hochladen und Bearbeiten von Programmen zum Anziehen und Lösen von Schrauben sowie zur Rotation des Schraubers
+    * Ausführen von Schraubvorgängen und zugehörigen Operationen, Anzeigen der Ergebnisse und Plotten von Drehmomentverlaufskurven 
+    * Speichern von Konfigurationsprojektdateien des Schraubersystems (mehrere Projekte werden unterstützt), einschließlich Verbindungseinstellungen für Robotersteuerungen
+    
+    Eine Steuerbibliothek wird ebenfalls bereitgestellt, die das Ausführen von Schraubvorgängen und zugehörigen Operationen direkt aus SPEL+-Programmen ermöglicht. 
+    
+    Installationsanweisungen und detaillierte Informationen zur Verwendung finden Sie in der README-Datei auf GitHub.
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.2.0.0/samples/rcplus-custom/VanguardModelPFScrewdriver>
+  fr: |
+    Cette extension prend en charge le tournevis à couple électrique fabriqué par Vanguard Systems Inc.
+    
+    Principales fonctions : 
+    * Communication avec le système de tournevis (contrôleur CT-CONTS et unité de tournevis intelligente)
+    * Affichage des informations du système de tournevis
+    * Téléchargement, téléversement et modification des programmes de serrage de vis, desserrage de vis et rotation du tournevis
+    * Exécution du serrage de vis et opérations liées, affichage des résultats et création des graphiques de forme d'onde de couple
+    * Enreg. des fichiers projet de configuration du système tournevis (plusieurs projets pris en charge), y compris les param. connexion aux contrôl. robot
+    
+    Une bibliothèque de contrôle est également prévue, permettant le serrage de vis et opérations liées directement depuis les programmes SPEL+. 
+    
+    Pour les instructions d'installation et l'utilisation détaillée, consultez le fichier README disponible sur GitHub.
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.2.0.0/samples/rcplus-custom/VanguardModelPFScrewdriver>
+  es: |
+    Esta extensión es compatible con el atornillador eléctrico de par de Vanguard Systems Inc.
+    
+    Características principales: 
+    * Comunicación con sistema del atornillador (controlador CT-CONTS y unidad de atornillador intelig.)
+    * Visualización de información del sistema del atornillador
+    * Descarga, carga y edición de prog. para apretar tornillos, aflojar tornillos y rotar el atornillador
+    * Apriete de tornillos y oper. relacionadas, visualización de result. y representación gráfica de las curvas de par
+    * Guardado de arch. de proyecto de configuración de sist. de atornillador (múltiples proyectos admitidos), con aj. de conex. para controladores de robots
+    
+    También se proporciona una biblio. de control que permite apretar tornillos y oper. relacionadas desde programas SPEL+. 
+    
+    Para instr. de inst. e inf. detallada sobre su uso, consulte el archivo README disponible en GitHub.
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.2.0.0/samples/rcplus-custom/VanguardModelPFScrewdriver>
+  zh-Hans: |
+    本扩展功能适用于 Vanguard Systems Inc. 生产的电动扭矩螺丝刀。
+    
+    主要功能：
+    * 与螺丝刀系统（CT-CONTS 控制器及智能螺丝刀本体）进行通信
+    * 显示螺丝刀系统的相关信息
+    * 下载、上传以及编辑用于拧紧、松开螺丝及控制螺丝刀旋转的程序
+    * 执行拧紧螺丝等操作、显示结果并绘制扭矩波形图
+    * 保存螺丝刀系统设置的项目文件（可保存多个），包括机器人控制器的连接设置
+    
+    同时还提供控制库，支持通过 SPEL+ 程序执行拧紧螺丝等操作。
+    
+    关于安装方法及详细的使用方法，请参阅 GitHub 上公开的README。
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.2.0.0/samples/rcplus-custom/VanguardModelPFScrewdriver>
+  zh-Hant: |
+    本擴充功能支援 Vanguard Systems 股份有限公司製造的電動扭矩螺絲刀。
+    
+    主要功能: 
+    * 與螺絲刀系統(CT-CONTS 控制器及智慧型螺絲刀本體)通訊
+    * 顯示螺絲刀系統相關資訊
+    * 下載、上傳及編輯鎖螺絲、鬆螺絲及螺絲刀旋轉控制程式
+    * 執行鎖螺絲等操作、顯示結果及繪製扭矩波形圖
+    * 將包含機器人控制器連線設定的螺絲刀系統設定儲存為專案檔案(可儲存多個)
+    
+    另提供可從 SPEL+ 程式執行鎖螺絲等操作的控制函式庫。
+    
+    有關安裝方式與詳細使用方法，請參閱 GitHub 上公開的README。
+    
+    <https://github.com/Epson-Robots/rcplus-extensions/tree/8.2.0.0/samples/rcplus-custom/VanguardModelPFScrewdriver>
+  default: en
+image_file:
+  en: image.png
+  default: en

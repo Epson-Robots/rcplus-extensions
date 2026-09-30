@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0001">SPEL分析ツール</string>
+  <string name="0100">OK</string>
+  <string name="0102">キャンセル</string>
+  <string name="1001">ファンクション開始</string>
+  <string name="1002">CSV読み込み</string>
+  <string name="1003">SpelLoggerをプロジェクトに追加</string>
+  <string name="1004">レイアウト</string>
+  <string name="1100">目標パラメーター</string>
+  <string name="1101">適用</string>
+  <string name="1200">調整パラメーター</string>
+  <string name="1201">inc書き出し</string>
+  <string name="1202">削除</string>
+  <string name="1300">ビュー</string>
+  <string name="1301">ライブ</string>
+  <string name="1302">再現</string>
+  <string name="1601">グラフ数</string>
+  <string name="1701">非表示アイテム</string>
+  <string name="1702">表示アイテム</string>
+  <string name="1703">リセット</string>
+  <string name="2000">ファンクション開始</string>
+  <string name="2001">ファンクション開始</string>
+  <string name="2003">ファンクション</string>
+  <string name="2004">ファンクション実行中からログを読み込む</string>
+  <string name="3000">SpelLoggerをプロジェクトに追加</string>
+  <string name="3001">SpelLoggeタイプ</string>
+  <string name="3002">ファイル</string>
+  <string name="3003">ライブラリー</string>
+  <string name="3004">SpelLogger APIを使用するサンプルプログラムを追加する</string>
+  <string name="10001">SpelLoggerライブラリーをLibrariesフォルダに展開できませんでした。
+ディスクの空き容量や、Librariesフォルダへの書き込み権限を確認してください。</string>
+  <string name="10002">SpelLoggerライブラリーをプロジェクトに追加できませんでした。
+ライブラリー数の上限に達している場合は、不要なライブラリーを削除してから再度実行してください。</string>
+</resources>
