@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="0001">Outil d'analyse SPEL</string>
+  <string name="0100">OK</string>
+  <string name="0102">Annuler</string>
+  <string name="1001">Démarrer la fonction</string>
+  <string name="1002">Charger CSV</string>
+  <string name="1003">Ajouter SpelLogger au projet</string>
+  <string name="1004">Disposition</string>
+  <string name="1100">Param. cible</string>
+  <string name="1101">Appliquer</string>
+  <string name="1200">Param. de réglage</string>
+  <string name="1201">Exporter inc</string>
+  <string name="1202">Supprimer</string>
+  <string name="1300">Afficher</string>
+  <string name="1301">Dir.</string>
+  <string name="1302">Rejouer</string>
+  <string name="1601">Num graph</string>
+  <string name="1701">Éléments masqués</string>
+  <string name="1702">Éléments visibles</string>
+  <string name="1703">Réinit.</string>
+  <string name="2000">Démarrer la fonction</string>
+  <string name="2001">Démarrer la fonction</string>
+  <string name="2003">Fonction</string>
+  <string name="2004">Lisez les journaux alors que la fct est en cours d'exéc.</string>
+  <string name="3000">Ajouter SpelLogger au projet</string>
+  <string name="3001">Type de SpelLogger</string>
+  <string name="3002">Fichier</string>
+  <string name="3003">Bibliothèque</string>
+  <string name="3004">Ajoutez un exemple de programme qui utilise l'API SpelLogger.</string>
+  <string name="10001">Échec d'extraction de la bibliothèque SpelLogger dans le dossier Libraries. 
+Vérifiez espace disque disponible et autorisations d'écriture sur le dossier Libraries.</string>
+  <string name="10002">Échec d'ajout de la bibliothèque SpelLogger au projet. 
+Si le nombre maximal de bibliothèques a été atteint, supprimez les bibliothèques inutiles et réessayez.</string>
+</resources>
