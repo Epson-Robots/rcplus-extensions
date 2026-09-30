@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Epson.RoboticsShared.Modbus.Client</RootNamespace>
+    <Authors>Seiko Epson Corporation</Authors>
+    <Company>Seiko Epson Corporation</Company>
+    <Copyright>Copyright (C) Seiko Epson Corporation 2026. All rights reserved.</Copyright>
+  </PropertyGroup>
+
+  <Target Name="Packaging" />
+
+</Project>

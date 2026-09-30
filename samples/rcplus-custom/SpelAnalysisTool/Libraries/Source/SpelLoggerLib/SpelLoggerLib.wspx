@@ -1,0 +1,95 @@
+﻿{
+  "docking_layout": "<DockSiteLayout xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" SerializationFormat=\"All\" Version=\"2\">\r\n\t<AutoHideHost>\r\n\t\t<AutoHideTabStrip Side=\"Left\">\r\n\t\t\t<ToolWindowContainer DockedSize=\"0,0\">\r\n\t\t\t\t<UIElement xsi:type=\"Track\" ContainerDockedSize=\"233,832\" CreationDateTime=\"2026-05-08T19:00:35.3316677+09:00\" UniqueId=\"210badab-9b7c-4798-872c-3031b5294350\" />\r\n\t\t\t</ToolWindowContainer>\r\n\t\t</AutoHideTabStrip>\r\n\t</AutoHideHost>\r\n\t<Content xsi:type=\"SplitContainer\" Orientation=\"Vertical\" DockedSize=\"1916,907.04\">\r\n\t\t<UIElement xsi:type=\"SplitContainer\" Orientation=\"Horizontal\" DockedSize=\"1392,834\">\r\n\t\t\t<UIElement xsi:type=\"ToolWindowContainer\" DockedSize=\"283,834\" SelectedWindowUniqueId=\"210badab-9b7c-4798-872c-3031b5294350\">\r\n\t\t\t\t<UIElement xsi:type=\"ToolWindowRef\" UniqueId=\"210badab-9b7c-4798-872c-3031b5294350\" />\r\n\t\t\t</UIElement>\r\n\t\t\t<UIElement xsi:type=\"Workspace\">\r\n\t\t\t\t<Content xsi:type=\"TabbedMdiHost\">\r\n\t\t\t\t\t<Content xsi:type=\"TabbedMdiContainer\" DockedSize=\"1629,834\" SelectedWindowUniqueId=\"9fae2d06-7c9a-4bd2-8120-9a88b330d27a\">\r\n\t\t\t\t\t\t<UIElement xsi:type=\"DocumentWindowRef\" UniqueId=\"9fae2d06-7c9a-4bd2-8120-9a88b330d27a\" />\r\n\t\t\t\t\t\t<UIElement xsi:type=\"Track\" ContainerDockedSize=\"1629,834\" CreationDateTime=\"2026-07-29T18:25:40.2931522+09:00\" UniqueId=\"5e6c336f-4d48-4c1d-b931-03435359f5b3\" />\r\n\t\t\t\t\t\t<UIElement xsi:type=\"DocumentWindowRef\" UniqueId=\"823b52f1-d1e4-46b4-8d8e-a2013d2957c4\" />\r\n\t\t\t\t\t</Content>\r\n\t\t\t\t</Content>\r\n\t\t\t</UIElement>\r\n\t\t</UIElement>\r\n\t\t<UIElement xsi:type=\"ToolWindowContainer\" DockedSize=\"1392,69\" SelectedWindowUniqueId=\"4c4f3983-25b2-44ca-a594-53e2312e16a0\">\r\n\t\t\t<UIElement xsi:type=\"ToolWindowRef\" UniqueId=\"4c4f3983-25b2-44ca-a594-53e2312e16a0\" />\r\n\t\t</UIElement>\r\n\t</Content>\r\n\t<DocumentWindows>\r\n\t\t<DocumentWindow UniqueId=\"823b52f1-d1e4-46b4-8d8e-a2013d2957c4\" SerializationId=\"MainDockingView.ProgramFileEditor:Main.prg\" ContainerDockedSize=\"1916,834\" IsOpen=\"true\" LastActiveDateTime=\"2026-08-05T15:01:47.350699+09:00\" State=\"Document\" Type=\"Epson.RoboticsShared.Common.ViewVMs.Components.DocumentWindow, Epson.RoboticsShared.Common\" FileName=\"Main.prg\" />\r\n\t\t<DocumentWindow UniqueId=\"9fae2d06-7c9a-4bd2-8120-9a88b330d27a\" SerializationId=\"MainDockingView.ProgramFileEditor:SpelLogger.prg\" ContainerDockedSize=\"1629,834\" IsOpen=\"true\" LastActiveDateTime=\"2026-09-24T11:26:23.7557319+09:00\" State=\"Document\" Type=\"Epson.RoboticsShared.Common.ViewVMs.Components.DocumentWindow, Epson.RoboticsShared.Common\" FileName=\"SpelLogger.prg\" />\r\n\t\t<DocumentWindow UniqueId=\"5e6c336f-4d48-4c1d-b931-03435359f5b3\" SerializationId=\"SpelAnalysisTool_cb63cf21-814a-4900-8995-524584ec0208.DockingWindow\" ContainerDockedSize=\"1629,834\" IsOpen=\"true\" LastActiveDateTime=\"2026-07-22T17:06:46.8819157+09:00\" State=\"Document\" Type=\"Epson.RoboticsShared.Common.ViewVMs.Components.DocumentWindow, Epson.RoboticsShared.Common\" FileName=\"SPEL分析ツール\" />\r\n\t</DocumentWindows>\r\n\t<ToolWindows>\r\n\t\t<ToolWindow UniqueId=\"210badab-9b7c-4798-872c-3031b5294350\" SerializationId=\"MainDockingView.ProjectExplorerWindow\" ContainerDockedSize=\"283,834\" IsOpen=\"true\" LastActiveDateTime=\"2026-08-05T15:01:50.2541165+09:00\" State=\"Docked\" Type=\"Epson.RoboticsShared.Common.ViewVMs.Components.ToolWindow, Epson.RoboticsShared.Common\" />\r\n\t\t<ToolWindow UniqueId=\"4c4f3983-25b2-44ca-a594-53e2312e16a0\" SerializationId=\"MainDockingView.StatusWindow\" ContainerDockedSize=\"1392,69\" IsOpen=\"true\" LastActiveDateTime=\"2026-09-24T11:26:58.2541976+09:00\" State=\"Docked\" Type=\"Epson.RoboticsShared.Common.ViewVMs.Components.ToolWindow, Epson.RoboticsShared.Common\" />\r\n\t</ToolWindows>\r\n</DockSiteLayout>",
+  "program_files": [
+    {
+      "name": "Main.prg",
+      "hash_code": "5F-FB-42-3A-0D-C1-8C-73-50-F6-FA-2C-15-C7-37-5C-52-34-34-3E-E6-4A-E1-09-0E-49-64-BB-6A-C6-79-FE",
+      "break_points": [],
+      "editor_view_state": "\"{\\\"cursorState\\\":[{\\\"inSelectionMode\\\":false,\\\"selectionStart\\\":{\\\"lineNumber\\\":1,\\\"column\\\":1},\\\"position\\\":{\\\"lineNumber\\\":1,\\\"column\\\":1}}],\\\"viewState\\\":{\\\"scrollLeft\\\":0,\\\"firstPosition\\\":{\\\"lineNumber\\\":1,\\\"column\\\":1},\\\"firstPositionDeltaTop\\\":2},\\\"contributionsState\\\":{\\\"editor.contrib.folding\\\":{\\\"lineCount\\\":5,\\\"provider\\\":\\\"syntax\\\"}}}\""
+    },
+    {
+      "name": "SpelLogger.prg",
+      "hash_code": "38-8B-18-00-98-35-D3-F4-A9-FA-7F-6C-1D-5A-59-74-14-E0-87-0B-9F-6D-94-04-FB-D8-13-31-7A-89-7F-2D",
+      "break_points": [],
+      "editor_view_state": "\"{\\\"cursorState\\\":[{\\\"inSelectionMode\\\":false,\\\"selectionStart\\\":{\\\"lineNumber\\\":38,\\\"column\\\":37},\\\"position\\\":{\\\"lineNumber\\\":38,\\\"column\\\":37}}],\\\"viewState\\\":{\\\"scrollLeft\\\":0,\\\"firstPosition\\\":{\\\"lineNumber\\\":1,\\\"column\\\":1},\\\"firstPositionDeltaTop\\\":2},\\\"contributionsState\\\":{\\\"editor.contrib.folding\\\":{\\\"lineCount\\\":195,\\\"provider\\\":\\\"syntax\\\"}}}\""
+    }
+  ],
+  "force_guide_files": [],
+  "i_o_monitor": {
+    "opened": false,
+    "window": {
+      "left": -1,
+      "top": -1,
+      "width": -1,
+      "height": -1
+    },
+    "layout_data": ""
+  },
+  "project_explorer": {
+    "project_opened": true,
+    "programs_opened": true,
+    "includes_opened": true,
+    "labels_opened": false,
+    "macros_opened": false,
+    "functions_opened": true,
+    "vision_opened": false,
+    "vision_sequences_opened": false,
+    "vision_calibs_opened": false,
+    "g_u_i_b_opened": false,
+    "g_u_i_b_forms_opened": false,
+    "robot_points_opened": true,
+    "common_points_opened": true,
+    "forces_opened": false,
+    "common_forces_opened": false,
+    "robots_openeds": [
+      true
+    ],
+    "force_guide_opened": false,
+    "force_sequences_opened": false,
+    "other_files_opened": false,
+    "curve_files_opened": false,
+    "libraries_opened": false,
+    "express_sequences_opened": false,
+    "user_plugins_openeds": []
+  },
+  "run_window": {
+    "num_of_displays": 1,
+    "displays": [],
+    "display_vision": false,
+    "splitter_distance": 0.0
+  },
+  "force_guide": {
+    "show_flow_chart": true,
+    "splitter_distance1": 0,
+    "splitter_distance2": 0,
+    "splitter_distance3": 0,
+    "splitter_distance4": 0,
+    "splitter_distance5": 0,
+    "splitter_distance6": 0,
+    "splitter_distance7": 0,
+    "splitter_distance8": 0,
+    "selected_tab": 0
+  },
+  "vision_guide": {
+    "show_flow_chart": true,
+    "splitter_distance1": 0,
+    "splitter_distance2": 0,
+    "splitter_distance3": 0,
+    "splitter_distance4": 0,
+    "splitter_distance5": 0,
+    "splitter_distance6": 0,
+    "splitter_distance7": 0
+  },
+  "force_files": [],
+  "g_u_i_builder": {
+    "splitter_distance1": 0,
+    "splitter_distance2": 0,
+    "splitter_distance3": 0,
+    "splitter_distance4": 0,
+    "splitter_distance5": 0,
+    "splitter_distance6": 0
+  },
+  "libraries": [],
+  "express_sequences": [],
+  "user_plugins": []
+}

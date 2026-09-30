@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="SpelAnalysisTool.ViewControls.TriangleSliderControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SpelAnalysisTool.ViewControls"
+             mc:Ignorable="d" 
+             Height="10" d:DesignWidth="300">
+    <Grid x:Name="_grid" ClipToBounds="True" Background="Transparent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="_colDefA" Width="*"/>
+            <ColumnDefinition x:Name="_colDefB" Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Path Grid.Column="1" Data="M0,0 12,0 6,10 Z" Fill="#555" Margin="-6 0 0 0"/>
+    </Grid>
+</UserControl>

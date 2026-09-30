@@ -1,0 +1,145 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+    <Configurations>Debug;Release</Configurations>
+    <CaptionsSource>Captions.xlsx</CaptionsSource>
+    <CaptionsGeneratedMarker>obj\Captions.stamp</CaptionsGeneratedMarker>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <AssemblyName>$(ExtensionId)</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="install.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libraries\VGD_PF.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Hints.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\category_inv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\item_inv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\Images\add.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Resources\Images\category.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\Images\delete.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\edit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\information.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Resources\Images\item.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\Images\menu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\preferences.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Resources\Strings\English_en\VanguardModelPFScrewdriver.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Strings\Japanese_ja\VanguardModelPFScrewdriver.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Strings\German_de\VanguardModelPFScrewdriver.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Strings\French_fr\VanguardModelPFScrewdriver.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Strings\Spanish_es\VanguardModelPFScrewdriver.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Strings\Chinese(Simplefied)_zh-Hans\VanguardModelPFScrewdriver.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Strings\Chinese(Traditional)_zh-Hant\VanguardModelPFScrewdriver.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Extension.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PackageItems\manifest.rcxmanifest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ManifestEditor>true</ManifestEditor>
+    </Content>
+    <UpToDateCheckInput Include="PackageItems\manifest.rcxmanifest" />
+    <Content Include="PackageItems\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Libraries\VGD_PF.zip" />
+    <None Remove="Resources\Hints.json" />
+    <None Remove="Resources\Images\add.png" />
+    <None Remove="Resources\Images\category.png" />
+    <None Remove="Resources\Images\category_inv.png" />
+    <None Remove="Resources\Images\delete.png" />
+    <None Remove="Resources\Images\edit.png" />
+    <None Remove="Resources\Images\information.png" />
+    <None Remove="Resources\Images\item.png" />
+    <None Remove="Resources\Images\item_inv.png" />
+    <None Remove="Resources\Images\menu.png" />
+    <None Remove="Resources\Images\preferences.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Epson.RoboticsShared.ExtensionsAPI" Version="$(ExtensionsApiVersion)" />
+    <PackageReference Include="Epson.RoboticsShared.ScottPlot.WPF" Version="4.1.63" />
+    <PackageReference Include="ReactiveProperty.WPF" Version="7.12.0" />
+    <PackageReference Include="System.ComponentModel.Composition" Version="4.7.0" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Modbus\Client\Client.csproj" />
+  </ItemGroup>
+
+  <Target Name="GenerateCaptionResources" BeforeTargets="PreBuildEvent" Inputs="$(CaptionsSource)" Outputs="$(CaptionsGeneratedMarker)">
+    <Message Text="Create Caption Resources" Importance="high" />
+    <Exec Command="&quot;$(EPSON_RC80_EXTENSIONS_API_DIR)\Tools\generateStringResources.exe&quot; &quot;$(CaptionsSource)&quot; &quot;localized strings&quot; --outdir Resources\Strings --basename &quot;$(ProjectName)&quot; --symbol Constants.cs" />
+    <Touch Files="$(CaptionsGeneratedMarker)" AlwaysCreate="true" />
+  </Target>
+
+  <Target Name="DeleteMarkerThenUninstall" AfterTargets="Clean">
+    <Delete Files="$(CaptionsGeneratedMarker)" />
+    <CallTarget Targets="Uninstall" />
+  </Target>
+
+  <Target Name="Install" AfterTargets="PostBuildEvent">
+    <Message Text="Install Extension Binaries for Experimental Mode" Importance="high" />
+    <Exec Command="&quot;$(EPSON_RC80_EXTENSIONS_API_DIR)\Tools\extensionInstaller.exe&quot; install.json &quot;bin\$(PlatformTarget)\$(Configuration)\$(TargetFramework)&quot; &quot;$(EPSON_RC80_DIR)&quot;" />
+  </Target>
+
+  <Target Name="Uninstall">
+    <Message Text="Uninstall Extension Binaries for Experimental Mode" Importance="high" />
+    <Exec Command="&quot;$(EPSON_RC80_EXTENSIONS_API_DIR)\Tools\extensionInstaller.exe&quot; -u install.json &quot;bin\$(PlatformTarget)\$(Configuration)\$(TargetFramework)&quot; &quot;$(EPSON_RC80_DIR)&quot;" />
+  </Target>
+
+  <Target Name="Packaging">
+    <Message Text="Create RC+ Extensions Package" Importance="high" />
+    <Exec Command="&quot;$(EPSON_RC80_EXTENSIONS_API_DIR)\Tools\validateManifest.exe&quot; PackageItems\manifest.rcxmanifest" />
+    <Exec Command="&quot;$(EPSON_RC80_EXTENSIONS_API_DIR)\Tools\generatePackage.exe&quot; . &quot;bin\$(PlatformTarget)\$(Configuration)&quot; &quot;$(Configuration)&quot;" />
+  </Target>
+
+</Project>
